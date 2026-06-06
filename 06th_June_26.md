@@ -65,3 +65,52 @@ Ensure all cards feature smooth hover states (like a gentle shadow or slight lif
 ``` Powershell
 git add .
 git commit -m "Configure customized brand layout, typography, and pastel card utility tokens"
+```
+
+# Phase 3 — Multi-View Architecture & Dynamic Product Sub-Pages
+
+## Prompt 3.1 — Building Interactive Light-Themed Navigation and Content Views
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Destroys old dark themes, synchronizes the main portfolio to toggle views, and setups up detailed light-themed inner product pages for all 6 target modules.
+
+### AI Prompt
+```text
+We want to fully scale our React application into a high-end multi-view layout using state management inside `src/App.jsx`. Ensure that all dark blues, heavy dark backgrounds, or unappealing dark styling blocks are completely removed from the entire application workspace. Every container, background, and text layer must reflect a clean, premium light-themed tech aesthetic (white backgrounds, soft gray transitions, and sharp charcoal text).
+
+Please configure, structure, and connect the following views:
+
+1. Main Portfolio Home View (`src/components/sections/PortfolioHome.jsx`):
+   - Implement the clean white personal portfolio UI with Royal Blue accents as seen on aitogethernow.com.
+   - Set up the main tracking badge: "ENTERPRISE AI OPERATIONS & INFRASTRUCTURE".
+   - Set up the hero title: "Orchestrating Enterprise AI Implementation."
+   - Clicking the primary dark-styled CTA button "EXPLORE FORWARD MOVES AI →" must instantly transition our state to render the Forward Moves sub-platform.
+
+2. Forward Moves Venture Platform View (`src/components/sections/ForwardMovesHome.jsx`):
+   - This page acts as the main Dashboard Hub for the product. Set up a bright grid layout presenting 6 distinct sub-page entry points utilizing our premium pastel color tokens:
+     * Card 1: Reskilling Portal (Soft lavender style)
+     * Card 2: Careers Tracking (Soft blue style)
+     * Card 3: AI Career Scout (Soft warm peach/cream style)
+     * Card 4: Resume Prep (Soft mint green style)
+     * Card 5: Glossary System (Soft violet style)
+     * Card 6: Comparison Matrix (Soft light-teal style)
+   - Ensure each card is clickable and dynamically triggers a view change to that specific module.
+
+3. Modular Content Detail Pages (`src/components/sections/CardDetailView.jsx`):
+   - Create a clean component file to dynamically handle the information layout for the active selection based on a `type` property.
+   - For example, when viewing 'reskilling' or 'careers', show highly informative, crisp layout layers. 
+   - Ensure every sub-page details section entirely matches the light mode aesthetic, featuring explicit informational blocks, light card cards, and violet/blue outline action buttons.
+
+4. Top Navigation Synchronization (`src/components/layout/Navbar.jsx`):
+   - Set up `const [view, setView] = useState('portfolio')` inside `src/App.jsx` to govern current rendering layout blocks.
+   - The Navbar must change its links dynamically based on the current view.
+   - When on the portfolio view, display only: "FORWARD MOVES AI" and "CONTACT".
+   - When inside any Forward Moves platform view, render the full navigation selection verbatim: "🏡 HOME", "DASHBOARD HUB", "COMPARISON", "RESKILLING", "CAREERS", "AI CAREER SCOUT", "RESUME PREP", "GLOSSARY". Clicking "🏡 HOME" must seamlessly return the state back to the portfolio home view.
+```
+# Live Preview Workflow
+# Run this inside your terminal to stream live hot-reloads side-by-side:
+```powershell
+npm run dev
+```
+# Repository Sync Checkpoint
+git add .
+git commit -m "Implement 6-section product grid routing, drop old dark styles, and build dynamic navbar tabs"

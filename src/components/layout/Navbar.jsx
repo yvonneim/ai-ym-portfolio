@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
-import { useTheme } from '../../context/ThemeContext';
 import './Navbar.css';
 
-/**
- * Responsive Navbar component
- * Features: Mobile menu toggle, theme switcher, responsive design
- */
-const Navbar = () => {
-  const { isDarkMode, toggleTheme } = useTheme();
+const Navbar = ({ view, setView }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -18,69 +12,60 @@ const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const navLinks = [
-    { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'Contact', href: '#contact' },
+  const portfolioLinks = [
+    { label: 'FORWARD MOVES AI', action: () => setView('dashboard') },
+    {
+      label: 'CONTACT',
+      action: () => {
+        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      },
+    },
   ];
+
+  const platformLinks = [
+    { label: '🏡 HOME', action: () => setView('portfolio') },
+    { label: 'DASHBOARD HUB', action: () => setView('dashboard') },
+    { label: 'COMPARISON', action: () => setView('comparison') },
+    { label: 'RESKILLING', action: () => setView('reskilling') },
+    { label: 'CAREERS', action: () => setView('careers') },
+    { label: 'AI CAREER SCOUT', action: () => setView('scout') },
+    { label: 'RESUME PREP', action: () => setView('resume') },
+    { label: 'GLOSSARY', action: () => setView('glossary') },
+  ];
+
+  const navItems = view === 'portfolio' ? portfolioLinks : platformLinks;
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Logo */}
         <div className="navbar-logo">
-          <a href="#home">Portfolio</a>
+          <button type="button" className="navbar-logo-button" onClick={() => setView('portfolio')}>
+            FORWARD MOVES
+          </button>
         </div>
 
-        {/* Menu toggle button for mobile */}
         <button
           className={`hamburger-menu ${isMobileMenuOpen ? 'active' : ''}`}
           onClick={toggleMobileMenu}
           aria-label="Toggle navigation menu"
           aria-expanded={isMobileMenuOpen}
         >
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
+          <span className="hamburger-line" />
+          <span className="hamburger-line" />
+          <span className="hamburger-line" />
         </button>
 
-        {/* Navigation links */}
         <div className={`navbar-menu ${isMobileMenuOpen ? 'active' : ''}`}>
           <ul className="navbar-list">
-            {navLinks.map((link) => (
-              <li key={link.href} className="navbar-item">
-                <a
-                  href={link.href}
-                  className="navbar-link"
-                  onClick={closeMobileMenu}
-                >
-                  {link.label}
-                </a>
+            {navItems.map((item) => (
+              <li key={item.label} className="navbar-item">
+                <button type="button" className="navbar-link" onClick={() => { item.action(); closeMobileMenu(); }}>
+                  {item.label}
+                </button>
               </li>
             ))}
           </ul>
-
-          {/* Theme toggle button */}
-          <button
-            className="theme-toggle"
-            onClick={toggleTheme}
-            aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
-            title={`${isDarkMode ? 'Light' : 'Dark'} Mode`}
-          >
-            {isDarkMode ? '☀️' : '🌙'}
-          </button>
         </div>
-
-        {/* Theme toggle for desktop (outside mobile menu) */}
-        <button
-          className="theme-toggle desktop-only"
-          onClick={toggleTheme}
-          aria-label={`Switch to ${isDarkMode ? 'light' : 'dark'} mode`}
-          title={`${isDarkMode ? 'Light' : 'Dark'} Mode`}
-        >
-          {isDarkMode ? '☀️' : '🌙'}
-        </button>
       </div>
     </nav>
   );

@@ -194,6 +194,28 @@
     background-color: #f7fef5;
   }
 
+  /* Violet Card - Premium Pastel */
+  .card-violet {
+    @apply card-base bg-[#f5f3ff];
+    border-color: #e9d5ff;
+  }
+
+  .card-violet:hover {
+    border-color: #c4b5fd;
+    background-color: #faf5ff;
+  }
+
+  /* Teal Card - Light Minty Aqua */
+  .card-teal {
+    @apply card-base bg-[#ecfeff];
+    border-color: #99f6e4;
+  }
+
+  .card-teal:hover {
+    border-color: #5eead4;
+    background-color: #f0fdfa;
+  }
+
   /* Accent Gradient Utility */
   .gradient-accent {
     background: linear-gradient(135deg, var(--color-accent-start), var(--color-accent-end));
@@ -454,7 +476,7 @@
 }
 
 /* ============================================
-   Accessibility & Dark Mode Support (Optional)
+   Accessibility Support
    ============================================ */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -464,9 +486,4 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-}
-
-@media (prefers-color-scheme: dark) {
-  /* Optional: Add dark mode support if needed in future */
-  /* This preserves your light theme as default */
 }
