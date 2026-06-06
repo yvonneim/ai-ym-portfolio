@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firebase Staging & Subpage Launch Runbook</title>
+  
+  <!-- Tailwind CSS & Inter Font -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'stage-dark': '#0f172a',
+            'stage-panel': '#ffffff',
+            'stage-border': '#e2e8f0',
+            'stage-accent': '#2563eb',
+            'stage-green': '#10b981',
+            'stage-orange': '#f97316'
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'sans-serif'],
+            mono: ['Fira Code', 'Courier New', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f8fafc;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 min-h-screen flex flex-col justify-between selection:bg-stage-accent/10 selection:text-stage-accent">
+
+  <!-- Top Progress Navigation Bar -->
+  <header class="border-b border-slate-200/80 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <span class="w-3.5 h-3.5 bg-stage-accent rounded-full animate-pulse shadow-[0_0_8px_rgba(37,99,235,0.4)]"></span>
+        <span class="font-black text-sm tracking-widest text-slate-900 uppercase">STAGING_RUNBOOK v1.0</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-xs font-mono text-slate-600 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">
+          Staging Target: <span class="text-stage-green font-bold">yiynew-e0a98.web.app</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Step Guide Layout -->
+  <main class="flex-grow max-w-4xl mx-auto px-6 py-12">
+    
+    <!-- Header Section referencing User's Image -->
+    <section class="mb-10 text-center md:text-left">
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 border border-blue-200 text-stage-accent rounded-full text-xs font-bold uppercase tracking-wider mb-4">
+        🔒 Risk-Free Sandbox Deployment
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-4">
+        Deploying a Safe Testing Subpage <br>to Firebase Hosting
+      </h1>
+      <p class="text-slate-600 text-sm md:text-base max-w-2xl leading-relaxed">
+        As seen in your Firebase panel (<span class="font-mono text-slate-900 font-semibold">image_e2d88d.jpg</span>), your current live releases are tied directly to your domain handles. We are going to deploy an isolated test subpage (<span class="font-mono text-slate-900 font-semibold">resume-test.html</span>) so you can verify its visual and structural components live on your phone or browser with absolute zero risk of impacting your primary pages.
+      </p>
+    </section>
+
+    <!-- Interactive Step Progression Tracker -->
+    <div class="space-y-6">
+      
+      <!-- Step 1 Card -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 transition-all duration-300 hover:border-slate-300 shadow-sm">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-700 font-mono text-sm shrink-0">
+            01
+          </div>
+          <div class="flex-1 min-w-0">
+            <h3 class="text-base font-bold text-slate-900 mb-2">Create the Sandboxed Subpage File</h3>
+            <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-4">
+              Open your local code editor (VS Code) and right-click inside your subfolder path to create a separate testing sandbox file:
+            </p>
+            <!-- BLOCKED OFF CODE PATH -->
+            <div class="bg-slate-950 rounded-xl p-3.5 border border-slate-900 flex items-center justify-between gap-3 mb-4">
+              <span class="text-xs font-mono text-stage-green overflow-x-auto whitespace-nowrap">C:\AI_Portfolio\public\forward-moves-ai\resume-test.html</span>
+              <button onclick="copyToClipboard('C:\\AI_Portfolio\\public\\forward-moves-ai\\resume-test.html')" class="text-xs bg-slate-900 hover:bg-slate-800 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-800 transition-colors font-semibold shrink-0">Copy Path</button>
+            </div>
+            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+              Copy the experimental or newly developed code (like the text-area optimization portal layout we analyzed earlier) and paste it entirely inside this safe new <span class="font-mono text-slate-900 font-semibold">resume-test.html</span> file.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 Card -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 transition-all duration-300 hover:border-slate-300 shadow-sm">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-700 font-mono text-sm shrink-0">
+            02
+          </div>
+          <div class="flex-1 min-w-0">
+            <h3 class="text-base font-bold text-slate-900 mb-2">Configure Firebase Routing Parameters</h3>
+            <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-4">
+              Open your master configuration file (<span class="font-mono text-slate-900 font-semibold">firebase.json</span>) in your root folder. Add a safe rewrite rule pointing to our new test page so it is indexed cleanly.
+            </p>
+            <!-- BLOCKED OFF JSON BLOCK -->
+            <div class="bg-slate-950 rounded-xl p-4 border border-slate-900 overflow-x-auto mb-4 font-mono text-xs text-slate-200 leading-relaxed">
+              <pre>{
+  "source": "/resume-test",
+  "destination": "/forward-moves-ai/resume-test.html"
+}</pre>
+            </div>
+            <p class="text-slate-600 text-xs md:text-sm leading-relaxed">
+              Add this block directly inside your <span class="font-mono text-slate-900 font-semibold">"rewrites"</span> array. This guarantees that visiting <span class="font-mono text-stage-accent font-bold">/resume-test</span> will cleanly serve your test file from behind the scenes!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 Card -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 transition-all duration-300 hover:border-slate-300 shadow-sm">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-700 font-mono text-sm shrink-0">
+            03
+          </div>
+          <div class="flex-1 min-w-0">
+            <h3 class="text-base font-bold text-slate-900 mb-2">Run the Build & Deploy Commands</h3>
+            <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-4">
+              Open your VS Code terminal window. Ensure you are sitting at your master project root directory and execute the safe hosting-only deployment pipeline:
+            </p>
+            <!-- BLOCKED OFF COMMAND BLOCK -->
+            <div class="bg-slate-950 rounded-xl p-3.5 border border-slate-900 flex items-center justify-between gap-3 mb-4">
+              <span class="text-xs font-mono text-stage-orange">firebase deploy --only hosting</span>
+              <button onclick="copyToClipboard('firebase deploy --only hosting')" class="text-xs bg-slate-900 hover:bg-slate-800 text-slate-200 px-3 py-1.5 rounded-lg border border-slate-800 transition-colors font-semibold shrink-0">Copy Command</button>
+            </div>
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 flex gap-3 text-slate-700 text-xs md:text-sm leading-relaxed">
+              <span class="text-lg">💡</span>
+              <p>
+                <strong>Pro-Tip:</strong> Using the <span class="font-mono font-bold text-slate-900">--only hosting</span> flag is a critical time-saver here. It completely bypasses your Cloud Functions, skipping unnecessary billing configurations, and instantly pushes your static HTML pages to the cloud in under 10 seconds.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 Card -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-6 transition-all duration-300 hover:border-slate-300 shadow-sm">
+        <div class="flex items-start gap-4">
+          <div class="w-8 h-8 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-700 font-mono text-sm shrink-0">
+            04
+          </div>
+          <div class="flex-1 min-w-0">
+            <h3 class="text-base font-bold text-slate-900 mb-2">Verify and Test Live in Production</h3>
+            <p class="text-slate-600 text-xs md:text-sm leading-relaxed mb-4">
+              Once your terminal prints out <span class="font-mono text-stage-green font-bold">✔ Deploy complete!</span>, open a fresh Incognito or Private tab and navigate straight to your staging link:
+            </p>
+            <!-- BLOCKED OFF URL BLOCK -->
+            <div class="bg-slate-950 rounded-xl p-3.5 border border-slate-900 flex items-center justify-between gap-3 mb-4">
+              <span class="text-xs font-mono text-stage-green overflow-x-auto whitespace-nowrap">https://yiynew-e0a98.web.app/forward-moves-ai/resume-test.html</span>
+              <button onclick="copyToClipboard('https://yiynew-e0a98.web.app/forward-moves-
