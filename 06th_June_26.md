@@ -7,25 +7,31 @@
 ### Terminal Step A: Create Folders (Windows PowerShell)
 ```powershell
 mkdir src/components/layout, src/components/ui, src/components/sections, src/context, src/hooks, src/utils, src/assets -Force
-
+```
 ### Terminal Step B: Create the Missing Files (Windows PowerShell)
-```powershell
 New-Item src/components/layout/Navbar.jsx, src/components/layout/Footer.jsx, src/context/ThemeContext.jsx -Force
 
-AI Prompt
-Your Next Step: The Vibe Code
-Copy the exact text inside the box below.
+### Terminal Step C: Initialize Your Git Safety Net (Windows PowerShell)
+git init
+git add .
+git commit -m "Initial commit: Empty project architecture and workspace files"
 
-Open your VS Code AI Chat or Composer panel (usually on the right side of your screen, or opened by pressing Ctrl + I).
+# Prompt 1.3 — Populating Boilerplate JSX Code
+Where to paste: Open your VS Code AI Composer panel (Ctrl + I or Cmd + I on Mac). Ensure the Composer is set to Project or Agent mode so it can edit multiple files simultaneously.
 
-Paste the text into the AI chat box and hit Enter.
+Intent: Automatically populates your empty components with highly responsive semantic layouts and hooks them directly into your main app entry point.
 
-I have initialized the directory structure and created empty files. Please analyze our project root. Generate and configure the baseline boilerplate files for our structural scaffold:
-1. Populate `src/components/layout/Navbar.jsx` and `src/components/layout/Footer.jsx` with responsive layouts.
-2. Populate the context provider in `src/context/ThemeContext.jsx` (supporting light/dark mode toggles).
-3. Update `src/App.jsx` to assemble these elements into a clean, unified base layout.
+# AI Prompt
+I have initialized our folder architecture and generated empty files for `Navbar.jsx`, `Footer.jsx`, and `ThemeContext.jsx`. 
 
-Ensure all imports match our newly created directories perfectly.
+Please analyze our project workspace and perform the following code generation operations:
+1. Populate `src/context/ThemeContext.jsx` with a fully functional React context provider that manages a 'light' vs 'dark' mode string state, persisting the preference inside the browser's localStorage.
+2. Populate `src/components/layout/Navbar.jsx` with a modern, responsive navigation container utilizing mobile responsive flex layouts, a simple text logo, a theme toggle button hooked to our theme context, and basic navigation links.
+3. Populate `src/components/layout/Footer.jsx` with a clean structural layout displaying a dynamic copyright year script and social link icons.
+4. Open `src/App.jsx`, clear its current placeholder code, import our new layout elements, and wrap the layout components cleanly inside our Theme Provider.
 
-```Powershell
-git add . ; git commit -m "Complete Phase 1 architecture setup" ; git push
+Ensure all file imports match our structural directories flawlessly and output complete, production-ready code.
+
+# Repository Sync Checkpoint
+git add .
+git commit -m "Complete Phase 1 architecture setup"
