@@ -1,0 +1,472 @@
+/* ============================================
+   Tailwind CSS v4 - Premium Light Theme Config
+   ============================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   CSS Design Tokens & Variables
+   ============================================ */
+:root {
+  /* Primary Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-gradient-start: #f9f9fb;
+  --color-bg-gradient-end: #ffffff;
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-text-tertiary: #9ca3af;
+  
+  /* Accent Gradient */
+  --color-accent-start: #7c3aed;
+  --color-accent-end: #a855f7;
+  
+  /* Card Border Colors (Subtle) */
+  --color-border-subtle: #e5e7eb;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+}
+
+/* ============================================
+   Global Base Styles
+   ============================================ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-[#f9f9fb] to-white text-[#111827] font-sans antialiased;
+    background-image: linear-gradient(135deg, var(--color-bg-gradient-start), var(--color-bg-gradient-end));
+    color: var(--color-text-primary);
+    line-height: 1.6;
+  }
+
+  /* Headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-[#111827];
+    letter-spacing: -0.01em;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl font-bold;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl font-bold;
+  }
+
+  h6 {
+    @apply text-base md:text-lg font-bold;
+  }
+
+  /* Paragraphs */
+  p {
+    @apply text-[#4b5563] leading-relaxed;
+  }
+
+  /* Links */
+  a {
+    @apply transition-colors duration-200 hover:text-[#7c3aed] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7c3aed] rounded;
+  }
+
+  /* Lists */
+  ul,
+  ol {
+    @apply list-inside;
+  }
+
+  li {
+    @apply mb-2;
+  }
+
+  /* Code */
+  code,
+  pre {
+    @apply font-mono text-sm bg-[#f3f4f6] text-[#374151] rounded px-2 py-1;
+  }
+
+  pre {
+    @apply p-4 overflow-x-auto;
+  }
+
+  /* Buttons */
+  button {
+    @apply transition-all duration-200 font-medium;
+  }
+
+  /* Form Elements */
+  input,
+  textarea,
+  select {
+    @apply px-4 py-2 border border-[#e5e7eb] rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7c3aed] bg-white text-[#111827];
+  }
+
+  textarea {
+    @apply resize-vertical;
+  }
+}
+
+/* ============================================
+   Component Layer - Reusable Card Tokens
+   ============================================ */
+@layer components {
+  /* Base Card Styling */
+  .card-base {
+    @apply rounded-xl border transition-all duration-300 ease-in-out;
+    border-color: var(--color-border-subtle);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-base:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+  }
+
+  /* Lavender Card - #F5F3FF */
+  .card-lavender {
+    @apply card-base bg-[#f5f3ff];
+    border-color: #e9d5ff;
+  }
+
+  .card-lavender:hover {
+    border-color: #d8b4fe;
+    background-color: #faf5ff;
+  }
+
+  /* Blue Card - #EFF6FF */
+  .card-blue {
+    @apply card-base bg-[#eff6ff];
+    border-color: #dbeafe;
+  }
+
+  .card-blue:hover {
+    border-color: #bfdbfe;
+    background-color: #f0f9ff;
+  }
+
+  /* Cream Card - #FFFBEB */
+  .card-cream {
+    @apply card-base bg-[#fffbeb];
+    border-color: #fef3c7;
+  }
+
+  .card-cream:hover {
+    border-color: #fde68a;
+    background-color: #fffcf0;
+  }
+
+  /* Mint Card - #F0FDF4 */
+  .card-mint {
+    @apply card-base bg-[#f0fdf4];
+    border-color: #dbeafe;
+  }
+
+  .card-mint:hover {
+    border-color: #bbf7d0;
+    background-color: #f7fef5;
+  }
+
+  /* Accent Gradient Utility */
+  .gradient-accent {
+    background: linear-gradient(135deg, var(--color-accent-start), var(--color-accent-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Primary Button */
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-[#7c3aed] to-[#a855f7] text-white font-semibold rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7c3aed];
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    @apply px-6 py-3 bg-white text-[#111827] font-semibold rounded-lg border-2 border-[#e5e7eb] shadow-sm transition-all duration-300 hover:border-[#7c3aed] hover:text-[#7c3aed] hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7c3aed];
+  }
+
+  /* Tertiary Button */
+  .btn-tertiary {
+    @apply px-6 py-3 bg-transparent text-[#7c3aed] font-semibold rounded-lg transition-all duration-300 hover:bg-[#f5f3ff] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#7c3aed];
+  }
+
+  /* Container */
+  .container-fluid {
+    @apply w-full px-4 sm:px-6 lg:px-8 mx-auto;
+    max-width: 100%;
+  }
+
+  .container-lg {
+    @apply w-full px-4 sm:px-6 lg:px-8 mx-auto;
+    max-width: 1200px;
+  }
+
+  .container-md {
+    @apply w-full px-4 sm:px-6 lg:px-8 mx-auto;
+    max-width: 900px;
+  }
+
+  .container-sm {
+    @apply w-full px-4 sm:px-6 mx-auto;
+    max-width: 640px;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-block px-3 py-1 rounded-full text-xs font-semibold transition-all duration-200;
+  }
+
+  .badge-primary {
+    @apply bg-gradient-to-r from-[#7c3aed] to-[#a855f7] text-white;
+  }
+
+  .badge-secondary {
+    @apply bg-[#f5f3ff] text-[#7c3aed] border border-[#e9d5ff];
+  }
+
+  /* Section Padding */
+  .section-padding {
+    @apply py-12 sm:py-16 md:py-20 lg:py-24;
+  }
+
+  .section-padding-sm {
+    @apply py-6 sm:py-8 md:py-10;
+  }
+
+  .section-padding-lg {
+    @apply py-16 sm:py-20 md:py-28 lg:py-32;
+  }
+
+  /* Text Utilities */
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-accent-start), var(--color-accent-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-subtle {
+    @apply text-[#9ca3af];
+  }
+
+  /* Focus Utilities */
+  .focus-ring {
+    @apply outline-none ring-2 ring-offset-2 ring-[#7c3aed];
+  }
+
+  /* Transition Utilities */
+  .transition-fast {
+    transition-duration: var(--transition-fast);
+  }
+
+  .transition-base {
+    transition-duration: var(--transition-base);
+  }
+
+  .transition-slow {
+    transition-duration: var(--transition-slow);
+  }
+}
+
+/* ============================================
+   Utility Layer - Additional Refinements
+   ============================================ */
+@layer utilities {
+  /* Backdrop Blur */
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+  }
+
+  .backdrop-blur-lg {
+    backdrop-filter: blur(16px);
+  }
+
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+
+  /* Selection Styling */
+  ::selection {
+    background: var(--color-accent-start);
+    color: white;
+  }
+
+  ::-moz-selection {
+    background: var(--color-accent-start);
+    color: white;
+  }
+
+  /* Smooth Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .animate-slideUp {
+    animation: slideUp 0.6s ease-in-out;
+  }
+
+  .animate-slideInFromLeft {
+    animation: slideInFromLeft 0.6s ease-in-out;
+  }
+
+  .animate-slideInFromRight {
+    animation: slideInFromRight 0.6s ease-in-out;
+  }
+
+  /* Responsive Display Utilities */
+  @screen sm {
+    .sm\:flex {
+      display: flex;
+    }
+
+    .sm\:hidden {
+      display: none;
+    }
+  }
+
+  @screen md {
+    .md\:flex {
+      display: flex;
+    }
+
+    .md\:hidden {
+      display: none;
+    }
+  }
+
+  @screen lg {
+    .lg\:flex {
+      display: flex;
+    }
+
+    .lg\:hidden {
+      display: none;
+    }
+  }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+  body {
+    background: white;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    display: none;
+  }
+}
+
+/* ============================================
+   Accessibility & Dark Mode Support (Optional)
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Optional: Add dark mode support if needed in future */
+  /* This preserves your light theme as default */
+}

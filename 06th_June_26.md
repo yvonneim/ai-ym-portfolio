@@ -35,3 +35,33 @@ Ensure all file imports match our structural directories flawlessly and output c
 # Repository Sync Checkpoint
 git add .
 git commit -m "Complete Phase 1 architecture setup"
+
+# Phase 2 — Tailwind v4 & Global Styling (Custom Brand Identity)
+
+## Prompt 2.1 — Brand Typography and Custom Card Tokens
+* **Where to paste:** Your VS Code AI Chat / Composer panel (`Ctrl + I`).
+* **Intent:** Completely rewrites the global CSS to implement your premium light-themed aesthetic and saves your pastel card colors as reusable Tailwind classes.
+
+### AI Prompt
+```text
+We are using Tailwind CSS v4, which configures design tokens directly inside the main CSS entry point using CSS variables. 
+
+Please locate and open `src/index.css`. Completely rewrite it to implement our premium light-themed tech aesthetic exactly matching these design rules from our brand assets:
+
+1. Global Styles:
+- Primary Background: Crisp, bright light-grey background gradient (#F9F9FB blending smoothly into white)
+- Primary Text: Deep charcoal/slate black for headings and body copy to ensure ultra-sharp readability (#111827)
+- Accent Colors: Set up a signature electric violet/purple gradient token (#7C3AED to #A855F7)
+
+2. Reusable Card Theme Tokens (Define these as custom classes or CSS variables):
+- Create a `.card-lavender` class: Soft lavender background (#F5F3FF) with a subtle border tint.
+- Create a `.card-blue` class: Soft sky blue background (#EFF6FF) with a subtle border tint.
+- Create a `.card-cream` class: Soft warm peach/cream background (#FFFBEB) with a subtle border tint.
+- Create a `.card-mint` class: Soft mint green background (#F0FDF4) with a subtle border tint.
+
+Ensure all cards feature smooth hover states (like a gentle shadow or slight lift transition). The styling must respect standard HTML semantics and apply beautifully across our components.
+```
+## Repository Sync Checkpoint
+``` Powershell
+git add .
+git commit -m "Configure customized brand layout, typography, and pastel card utility tokens"
