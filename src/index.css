@@ -1,11 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-brand-blue: #1e40af;
-  --color-brand-purple: #7c3aed;
+  --font-sans: "DM Sans", sans-serif;
+  --font-serif: "Playfair Display", serif;
 }
 
-/* Custom Base Utilities */
+:root {
+  color-scheme: normal;
+  color: #111827;
+  background-color: #F9F9FB;
+  font-family: var(--font-sans);
+}
+
+html {
+  min-height: 100%;
+  background: radial-gradient(circle at center, rgba(124, 58, 237, 0.08) 0%, transparent 42%), #F9F9FB;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.hero-mesh {
+  background: radial-gradient(ellipse 80% 60% at 70% 20%, rgba(167, 139, 250, 0.18) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 10% 80%, rgba(196, 181, 253, 0.14) 0%, transparent 55%), #FAFABA;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(228, 228, 231, 0.6);
+}
+
+.card-shadow {
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.hover-lift {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 48px -12px rgba(124, 58, 237, 0.18);
+}
+
+.card-lavender {
+  background-color: #f5f3ff;
+  border: 1px solid #e0d7ff;
+}
+
+.card-blue {
+  background-color: #eff6ff;
+  border: 1px solid #dbeafe;
+}
+
+.card-cream {
+  background-color: #fffbeb;
+  border: 1px solid #fef3c7;
+}
+
+.card-mint {
+  background-color: #f0fdf4;
+  border: 1px solid #dcfce7;
+}
+
 .text-gradient {
   background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
   -webkit-background-clip: text;
@@ -17,11 +86,3 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/* Clean Brand Content Cards */
-.card-lavender { background-color: #f5f3ff; border: 1px solid #e0d7ff; }
-.card-blue { background-color: #eff6ff; border: 1px solid #dbeafe; }
-.card-cream { background-color: #fffbeb; border: 1px solid #fef3c7; }
-.card-mint { background-color: #f0fdf4; border: 1px solid #dcfce7; }
-.card-violet { background-color: #faf5ff; border: 1px solid #f3e8ff; }
-.card-teal { background-color: #f0fdfa; border: 1px solid #ccfbf1; }

@@ -28,9 +28,9 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-white text-gray-900 antialiased">
+    <div className="min-h-screen flex flex-col bg-white text-gray-900 px-8 sm:px-12 max-w-7xl mx-auto">
       <Navbar currentView={view} setView={setView} />
-      <main className="flex-grow w-full mx-auto">
+      <main className="flex-grow">
         {renderContent()}
       </main>
       <Footer />
