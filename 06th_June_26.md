@@ -166,4 +166,29 @@ npm install
 
 # Step 2: Fire up your brand-new local server engine
 npm run dev
+```
+# Phase 4.2 — Page Entry Resolution
 
+## Prompt 4.3 — Creating the Root HTML Entry Point
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Automatically generates the root `index.html` entry point that connects Vite to your React `src/main.jsx` or `src/App.jsx` entry points.
+
+### AI Prompt
+```text
+Please look at our root directory (`AI-YM-PORTFOLIO`). Vite requires a root entry file to display our app on localhost.
+
+Create an `index.html` file exactly in the root folder with this content:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yvonne Martinez - AI Operations Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+Note: If our entry script is named `/src/index.jsx` or `/src/App.jsx` instead of `/src/main.jsx`, please automatically adjust the script src path inside this file to match whichever file initializes our React DOM render.
