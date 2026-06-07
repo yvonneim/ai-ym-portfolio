@@ -291,8 +291,6 @@ Scan the file to locate any dynamic gradient utilities using `to-white` (for exa
 git add .
 git commit -m "Fix unknown to-white utility class to resolve Tailwind v4 compilation crash"
 
-# Phase 4.5 — Tailwind v4 CSS Layer Fix
-
 ## Prompt 4.6 — Injecting Standard Tailwind v4 Directives
 * **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
 * **Intent:** Overwrites `src/index.css` to inject the official Tailwind v4 `@import "tailwindcss";` directive and configures clean utility components without compilation crashes.
