@@ -335,3 +335,175 @@ Replace the contents of `src/index.css` with this exact structure:
 # Repository Sync Checkpoint
 git add .
 git commit -m "Completely clean src/index.css and import Tailwind v4 modules natively to clear font-sans crash"
+
+# Phase 5 — Core UI Theme & Layout Realignment
+
+## Prompt 5.1 — Implementing Pristine Whites, Lilacs, and Isolated Routing
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Strips all blue elements, keeps the landing page completely clean, and configures the beautiful pastel-toned project hub.
+
+### AI Prompt
+```text
+We want to completely update our application to match a high-end minimalist tech aesthetic: beautiful crisp whites, deep charcoal text, and soft lilac/pastel tokens. Please rewrite our core layout files to fix old path conflicts and clean up the design layout.
+
+1. Overwrite `src/App.jsx` with this exact state router:
+import React, { useState } from 'react'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+import PortfolioHome from './components/sections/PortfolioHome'
+import ForwardMovesHome from './components/sections/ForwardMovesHome'
+import CardDetailView from './components/sections/CardDetailView'
+
+export default function App() {
+  const [view, setView] = useState('home')
+
+  const renderContent = () => {
+    switch (view) {
+      case 'home':
+        return <PortfolioHome setView="{setView}"/>
+      case 'forward-moves':
+        return <ForwardMovesHome setView="{setView}"/>
+      case 'comparison':
+      case 'reskilling':
+      case 'careers':
+      case 'ai-career-scout':
+      case 'resume-prep':
+      case 'glossary':
+        return <CardDetailView setView="{setView}" type="{view}"/>
+      default:
+        return <PortfolioHome setView="{setView}"/>
+    }
+  }
+
+  return (
+    <div class="min-h-screen flex flex-col bg-white text-gray-900 antialiased">
+      <Navbar currentView="{view}" setView="{setView}"/>
+      <main class="flex-grow w-full mx-auto">
+        {renderContent()}
+      </main>
+      <Footer/>
+    </div>
+  )
+}
+
+2. Overwrite `src/components/layout/Navbar.jsx`:
+import React from 'react'
+
+export default function Navbar({ currentView, setView }) {
+  const isHome = currentView === 'home'
+
+  return (
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-50 px-6 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-2 cursor-pointer" onClick={() => setView('home')}>
+          {!isHome && <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-sm">F.</div>}
+          <span class="font-bold text-gray-900 tracking-tight text-lg">
+            {isHome ? 'AITogetherNow' : 'Forward Moves'}
+          </span>
+        </div>
+        <nav class="flex items-center gap-6 text-sm font-medium text-gray-600">
+          {isHome ? (
+            <>
+              <button onClick={() => setView('forward-moves')} class="text-purple-600 hover:text-purple-700 font-bold transition-colors cursor-pointer">FORWARD MOVES AI</button>
+              <button class="hover:text-gray-900 transition-colors cursor-pointer">CONTACT</button>
+            </>
+          ) : (
+            <div class="flex flex-wrap items-center gap-4 text-xs font-bold uppercase tracking-wider">
+              <button onClick={() => setView('home')} class="hover:text-purple-600 cursor-pointer">🏡 HOME</button>
+              <button onClick={() => setView('forward-moves')} class="text-purple-600 cursor-pointer">DASHBOARD HUB</button>
+              <button onClick={() => setView('comparison')} class="hover:text-purple-600 cursor-pointer">COMPARISON</button>
+              <button onClick={() => setView('reskilling')} class="hover:text-purple-600 cursor-pointer">RESKILLING</button>
+              <button onClick={() => setView('careers')} class="hover:text-purple-600 cursor-pointer">CAREERS</button>
+              <button onClick={() => setView('ai-career-scout')} class="hover:text-purple-600 cursor-pointer">AI CAREER SCOUT</button>
+              <button onClick={() => setView('resume-prep')} class="hover:text-purple-600 cursor-pointer">RESUME PREP</button>
+              <button onClick={() => setView('glossary')} class="hover:text-purple-600 cursor-pointer">GLOSSARY</button>
+            </div>
+          )}
+        </nav>
+      </div>
+    </header>
+  )
+}
+
+3. Overwrite `src/components/sections/PortfolioHome.jsx` (Pure Minimalist Landing):
+import React from 'react'
+
+export default function PortfolioHome({ setView }) {
+  return (
+    <div class="max-w-4xl mx-auto text-center py-20 px-6">
+      <div class="inline-flex items-center gap-2 bg-purple-50 border border-purple-100 text-purple-700 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-8 shadow-sm">
+        Enterprise AI Operations & Infrastructure
+      </div>
+      <h2 class="text-5xl md:text-6xl font-black text-gray-900 tracking-tight max-w-4xl mx-auto mb-6 leading-tight">
+        Orchestrating Enterprise <br />
+        <span class="text-gray-900">AI Implementation.</span>
+      </h2>
+      <p class="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed mb-10">
+        Hi, I'm Yvonne. I leverage over a decade of enterprise systems analysis to architect, deploy, and scale advanced generative AI applications. I specialize in model integration, secure data pipeline orchestration, and end-to-end technical enablement.
+      </p>
+      <div class="flex justify-center mb-16">
+        <button onClick={() => setView('forward-moves')} class="bg-purple-600 hover:bg-purple-500 text-white font-semibold text-sm tracking-wide px-8 py-4 rounded-xl shadow-md transition-all hover:-translate-y-0.5 cursor-pointer">
+          EXPLORE FORWARD MOVES AI →
+        </button>
+      </div>
+      <div class="max-w-md mx-auto bg-gray-50 border border-gray-100 rounded-2xl p-4 flex items-center gap-4">
+        <button class="w-10 h-10 bg-purple-600 hover:bg-purple-500 rounded-full flex items-center justify-center text-white transition-all cursor-pointer shadow-sm">
+          <svg class="w-4 h-4 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+        <div class="flex-grow text-left">
+          <div class="text-[10px] font-bold tracking-wider text-gray-400 uppercase">Audio Overview • 0:25</div>
+          <div class="h-1 bg-gray-200 rounded-full mt-2 relative w-full"><div class="absolute left-0 top-0 h-full w-1/4 bg-purple-500 rounded-full"></div></div>
+        </div>
+        <div class="text-[10px] font-mono font-bold text-gray-400 border border-gray-200 px-1.5 py-0.5 rounded">1x</div>
+      </div>
+    </div>
+  )
+}
+
+4. Overwrite `src/components/sections/ForwardMovesHome.jsx` (Project Dashboard):
+import React from 'react'
+
+export default function ForwardMovesHome({ setView }) {
+  const cards = [
+    { type: 'comparison', title: 'Comparison Matrix', desc: 'Analyze key differences between legacy roles and AI career vectors side-by-side.', badge: 'COMING SOON', style: 'bg-indigo-50/50 border-indigo-100 text-indigo-700' },
+    { type: 'ai-career-scout', title: 'AI Career Scout', desc: 'Consult with our real-time assistant regarding target metrics, cluster velocities, or upcoming pivots.', badge: 'COMING SOON', style: 'bg-amber-50/50 border-amber-100 text-amber-700' },
+    { type: 'resume-prep', title: 'Resume Prep', desc: 'Anonymize professional trajectory rows securely and cross-evaluate matching algorithmic profiles.', badge: 'COMING SOON', style: 'bg-emerald-50/50 border-emerald-100 text-emerald-700' },
+    { type: 'reskilling', title: 'Reskilling Portal', desc: 'Access curated technical learning modules, programs, and development sandboxes.', badge: null, style: 'bg-purple-50/50 border-purple-100 text-purple-700' },
+    { type: 'careers', title: 'Careers', desc: 'Track live macro employment tracking datasets and macro regional hiring shifts.', badge: null, style: 'bg-blue-50/50 border-blue-100 text-blue-700' },
+    { type: 'glossary', title: 'Glossary System', desc: 'Break down interface architecture jargon, infrastructure tags, and technical syntax definition data.', badge: null, style: 'bg-fuchsia-50/50 border-fuchsia-100 text-fuchsia-700' },
+  ]
+
+  return (
+    <div class="w-full">
+      <div class="w-full bg-amber-50 border-b border-amber-100 px-6 py-2 text-center text-xs font-medium text-amber-800">
+        Sample Disclaimer: "Forward Moves AI is currently in its community-testing phase. To protect your privacy, please remove personal contact information from your resume before uploading."
+      </div>
+      <div class="max-w-6xl mx-auto px-6 py-12">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <div class="text-[10px] font-bold tracking-widest text-purple-600 uppercase mb-2">• Forward Moves USA</div>
+          <h2 class="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-3">
+            Step Into Your <span class="text-purple-600">AI-Driven Future.</span>
+          </h2>
+          <p class="text-gray-500 text-sm mb-6">Your bridge to a more fulfilling career. We connect your unique talents to the opportunities in the AI workforce.</p>
+          <div class="max-w-xs mx-auto bg-gray-50 rounded-xl p-2 border border-gray-100 mb-6 flex items-center justify-center gap-2"><span class="text-xs">🔊 Audio Player Interface Mock</span></div>
+          <button class="bg-gray-900 hover:bg-gray-800 text-white text-xs font-bold px-6 py-3 rounded-lg shadow-sm">Get Started →</button>
+        </div>
+        <div class="text-center mb-8">
+          <div class="text-xl mb-1">🧭</div>
+          <h3 class="font-bold text-gray-900 text-xl">Explore What's Inside</h3>
+          <p class="text-gray-400 text-xs mt-0.5">Select a path to begin your journey.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {cards.map(c => (
+            <div key={c.type} onClick={() => setView(c.type)} class={`${c.style} border rounded-2xl p-6 transition-all hover:-translate-y-1 hover:shadow-sm cursor-pointer relative`}>
+              {c.badge && <span class="absolute top-4 right-4 bg-gray-200/60 text-gray-500 text-[9px] font-bold px-2 py-0.5 rounded-full">{c.badge}</span>}
+              <h4 class="font-bold text-gray-900 text-base mb-1.5">{c.title}</h4>
+              <p class="text-gray-500 text-xs leading-relaxed">{c.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+

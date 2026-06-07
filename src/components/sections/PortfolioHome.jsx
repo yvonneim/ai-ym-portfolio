@@ -1,71 +1,43 @@
-import React from 'react';
+import React from 'react'
 
-const PortfolioHome = ({ onExplore }) => {
-  const highlights = [
-    {
-      title: 'Enterprise AI Strategy',
-      description: 'A disciplined approach to scaling AI adoption across operations, infrastructure, and governance.',
-    },
-    {
-      title: 'Platform-Ready Execution',
-      description: 'Premium implementation frameworks built for reliability, compliance, and enterprise velocity.',
-    },
-    {
-      title: 'AI Infrastructure Orchestration',
-      description: 'Designing resilient, secure AI systems that are easy to operate and evolve over time.',
-    },
-  ];
-
+export default function PortfolioHome({ setView }) {
   return (
-    <section className="portfolio-home section-padding">
-      <div className="container-lg portfolio-home-shell">
-        <div className="portfolio-hero-panel">
-          <span className="section-pill">ENTERPRISE AI OPERATIONS & INFRASTRUCTURE</span>
-          <h1 className="portfolio-hero-title">Orchestrating Enterprise AI Implementation.</h1>
-          <p className="portfolio-hero-copy">
-            Deliver a clean, premium experience for advanced AI programs. Forward Moves bridges strategy,
-            operations, and engineering with executive-ready design and a technology-first execution model.
-          </p>
-
-          <div className="portfolio-actions">
-            <button className="btn-primary hero-cta" onClick={onExplore}>
-              EXPLORE FORWARD MOVES AI →
-            </button>
-            <a className="btn-secondary hero-secondary" href="#contact">
-              Contact the team
-            </a>
+    <div className="max-w-4xl mx-auto text-center py-20 px-6">
+      <div className="inline-flex items-center gap-2 bg-purple-50 border border-purple-100 text-purple-700 px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-8 shadow-sm">
+        Enterprise AI Operations & Infrastructure
+      </div>
+      <h2 className="text-5xl md:text-6xl font-black text-gray-900 tracking-tight max-w-4xl mx-auto mb-6 leading-tight">
+        Orchestrating Enterprise <br />
+        <span className="text-gray-900">AI Implementation.</span>
+      </h2>
+      <p className="text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed mb-10">
+        Hi, I'm Yvonne. I leverage over a decade of enterprise systems analysis to architect, deploy, and scale advanced generative AI applications. I specialize in model integration, secure data pipeline orchestration, and end-to-end technical enablement.
+      </p>
+      <div className="flex justify-center mb-16">
+        <button
+          type="button"
+          onClick={() => setView('forward-moves')}
+          className="bg-purple-600 hover:bg-purple-500 text-white font-semibold text-sm tracking-wide px-8 py-4 rounded-xl shadow-md transition-all hover:-translate-y-0.5 cursor-pointer"
+        >
+          EXPLORE FORWARD MOVES AI →
+        </button>
+      </div>
+      <div className="max-w-md mx-auto bg-gray-50 border border-gray-100 rounded-2xl p-4 flex items-center gap-4">
+        <button type="button" className="w-10 h-10 bg-purple-600 hover:bg-purple-500 rounded-full flex items-center justify-center text-white transition-all cursor-pointer shadow-sm">
+          <svg className="w-4 h-4 fill-current ml-0.5" viewBox="0 0 24 24">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </button>
+        <div className="flex-grow text-left">
+          <div className="text-[10px] font-bold tracking-wider text-gray-400 uppercase">Audio Overview • 0:25</div>
+          <div className="h-1 bg-gray-200 rounded-full mt-2 relative w-full">
+            <div className="absolute left-0 top-0 h-full w-1/4 bg-purple-500 rounded-full" />
           </div>
         </div>
-
-        <div className="portfolio-grid">
-          {highlights.map((item) => (
-            <article key={item.title} className="portfolio-stat-card">
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
-            </article>
-          ))}
+        <div className="text-[10px] font-mono font-bold text-gray-400 border border-gray-200 px-1.5 py-0.5 rounded">
+          1x
         </div>
       </div>
-
-      <section id="contact" className="contact-section">
-        <div className="container-lg contact-panel">
-          <div className="contact-card">
-            <div>
-              <p className="section-pill">GET IN TOUCH</p>
-              <h2>Scheduled briefings and AI plan reviews</h2>
-              <p>
-                Connect directly with the operations team to review platform strategy, implementation
-                readiness, and enterprise alignment.
-              </p>
-            </div>
-            <a className="btn-primary" href="mailto:hello@example.com">
-              hello@example.com
-            </a>
-          </div>
-        </div>
-      </section>
-    </section>
-  );
-};
-
-export default PortfolioHome;
+    </div>
+  )
+}
