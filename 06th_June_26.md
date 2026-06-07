@@ -16,7 +16,7 @@ git init
 git add .
 git commit -m "Initial commit: Empty project architecture and workspace files"
 
-# Prompt 1.3 — Populating Boilerplate JSX Code
+# Prompt 1.2 — Populating Boilerplate JSX Code
 Where to paste: Open your VS Code AI Composer panel (Ctrl + I or Cmd + I on Mac). Ensure the Composer is set to Project or Agent mode so it can edit multiple files simultaneously.
 
 Intent: Automatically populates your empty components with highly responsive semantic layouts and hooks them directly into your main app entry point.
@@ -167,8 +167,6 @@ npm install
 # Step 2: Fire up your brand-new local server engine
 npm run dev
 ```
-# Phase 4.1 — Page Entry Resolution
-
 ## Prompt 4.2 — Creating the Root HTML Entry Point
 * **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
 * **Intent:** Automatically generates the root `index.html` entry point that connects Vite to your React `src/main.jsx` or `src/App.jsx` entry points.
@@ -196,8 +194,6 @@ Note: If our entry script is named `/src/index.jsx` or `/src/App.jsx` instead of
 # Repository Sync Checkpoint
 git add .
 git commit -m "Create root index.html entry point for Vite dev server parsing"
-
-# Phase 4.2 — React Dom Rendering Anchor
 
 ## Prompt 4.3 — Creating the Main DOM Mount Script
 * **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
