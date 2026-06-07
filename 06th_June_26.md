@@ -114,3 +114,56 @@ npm run dev
 # Repository Sync Checkpoint
 git add .
 git commit -m "Implement 6-section product grid routing, drop old dark styles, and build dynamic navbar tabs"
+
+# Phase 4 — Configuration Engine & Dependency Setup
+
+## Prompt 4.1 — Dropping the Node & Project Configuration Files
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Automatically generates the missing root `package.json` and `vite.config.js` so your system can install packages and boot up the real local preview server.
+
+### AI Prompt
+```text
+Please look at our root directory (`AI-YM-PORTFOLIO`). We need to drop in the formal project configuration files so we can run the real application.
+
+1. Create a `package.json` file exactly in the root folder with this content:
+{
+  "name": "ai-ym-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.0.0"
+  }
+}
+
+2. Create a `vite.config.js` file exactly in the root folder with this content:
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
+```
+# Terminal Operations: Booting the Nodes
+``` powershell
+# Step 1: Install all your React & Tailwind dependencies
+npm install
+
+# Step 2: Fire up your brand-new local server engine
+npm run dev
+
