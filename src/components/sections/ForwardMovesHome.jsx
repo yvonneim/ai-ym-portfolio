@@ -7,34 +7,34 @@ export default function ForwardMovesHome({ setView }) {
       title: 'Skill Studio',
       desc: 'AI certifications and technical training across 9 partner portals.',
       icon: '⚡',
-      className: 'bg-purple-50/60 border-purple-100 hover:bg-purple-100/60',
+      className: 'bg-[#F5F3FF] border border-[#E0D7FF] text-purple-700',
     },
     {
       type: 'careers',
       title: 'Careers',
       desc: 'Mission-driven opportunities across Health, Climate, FinTech & more.',
       icon: '🌍',
-      className: 'bg-blue-50/60 border-blue-100 hover:bg-blue-100/60',
+      className: 'bg-[#EFF6FF] border border-[#DBEAFE] text-blue-700',
     },
     {
       type: 'community',
       title: 'Community',
       desc: 'Networking, mentorship, and the alumni collective.',
       icon: '🤝',
-      className: 'bg-orange-50/60 border-orange-100 hover:bg-orange-100/60',
+      className: 'bg-[#FFFBEB] border border-[#FEF3C7] text-amber-700',
     },
     {
       type: 'interviewing',
       title: 'Interviewing',
       desc: 'Interview prep, frameworks, and behavioral excellence.',
       icon: '🎯',
-      className: 'bg-emerald-50/60 border-emerald-100 hover:bg-emerald-100/60',
+      className: 'bg-[#F0FDF4] border border-[#DCFCE7] text-emerald-700',
     },
   ]
 
   return (
-    <div className="w-full bg-[#FAFBFD] min-h-screen pb-24 py-6 px-4 md:px-8 space-y-12">
-      <div className="w-full bg-[#FFFDF6] border-b border-[#FBECC5] px-6 py-2.5 text-center text-[11px] font-normal text-[#D97706] tracking-wide">
+    <div className="w-full max-w-7xl mx-auto p-24 md:p-32 space-y-10">
+      <div className="w-full bg-[#FFFDF6] border-b border-[#FBECC5] px-6 py-2.5 text-center text-[11px] font-normal text-[#D97706] tracking-wide rounded-full">
         Sample Disclaimer: <span className="font-light text-[#78350F]">"Forward Moves AI is currently in its community-testing phase. To protect your privacy, please remove personal contact information from your resume before uploading."</span>
       </div>
 
@@ -73,12 +73,12 @@ export default function ForwardMovesHome({ setView }) {
           <p className="text-gray-400 text-xs mt-1 font-light">Select a path to begin your journey.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {cards.map(card => (
             <div
               key={card.type}
               onClick={() => setView(card.type)}
-              className={`${card.className} rounded-3xl p-8 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-100/40 cursor-pointer relative flex flex-col justify-between group`}
+              className={`${card.className} rounded-3xl p-8 hover-lift transition-all duration-200 cursor-pointer relative flex flex-col justify-between group`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
@@ -86,10 +86,8 @@ export default function ForwardMovesHome({ setView }) {
                     {card.icon}
                   </div>
                 </div>
-                <h4 className="font-bold text-gray-900 text-xl mb-2 tracking-tight group-hover:text-purple-600 transition-colors">
-                  {card.title}
-                </h4>
-                <p className="text-gray-500 text-sm leading-relaxed font-light">
+                <h4 className="font-bold text-2xl mb-3 tracking-tight">{card.title}</h4>
+                <p className="text-gray-600 text-sm leading-relaxed font-light">
                   {card.desc}
                 </p>
               </div>

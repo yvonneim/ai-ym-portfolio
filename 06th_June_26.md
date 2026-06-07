@@ -675,3 +675,205 @@ Implement these exact layout specs:
 git add .
 git commit -m "Configure pixel-perfect minimalist layout for PortfolioHome matching image_76387e.png layout"
 
+# Phase 5.3 — Edge Padding & Pastel Theme Restoration
+
+## Prompt 5.5 — Injecting Layout Margins and Re-Compiling Pastel Tokens
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Fixes the zero-margin layout squash, injects proper vertical breathing room between buttons, and re-maps the beautiful lilac and pastel tints cleanly.
+
+### AI Prompt
+```text
+Please open `src/App.jsx`, `src/components/sections/PortfolioHome.jsx`, and `src/components/sections/ForwardMovesHome.jsx`. Our pages are completely broken: everything is crashing right against the outer left and right edges of the browser screen with zero margin, and our beautiful pastel tints have disappeared.
+
+Please fix this layout with these exact code implementations:
+
+1. Fix Global Application Container Wrap (`src/App.jsx`):
+   - Ensure the outer wrapping layout container has consistent horizontal padding and max-widths so text can never touch the screen edge: `min-h-screen flex flex-col bg-white text-gray-900 px-8 sm:px-12 max-w-7xl mx-auto`.
+
+2. Repair Spacing and Elements in the Main Landing Page (`src/components/sections/PortfolioHome.jsx`):
+   - Wrap the hero elements in a deep vertical stack layout (`flex flex-col items-center justify-center space-y-10 text-center py-20`).
+   - Give the "EXPLORE FORWARD MOVES AI" button separate, absolute margins (`my-6`) so it never collides or sits right on top of the audio player container text track.
+
+3. Repair Layout Margins and Pastel Tints in Dashboard (`src/components/sections/ForwardMovesHome.jsx`):
+   - Ensure the outer dashboard layer applies generous structural bounding padding (`w-full py-6 px-4 md:px-8 space-y-12`).
+   - Add specific separation spacing (`space-y-6`) inside the main header container card so the audio track player and the "Get Started" button never mash together.
+   - Re-enable our custom beautiful light pastel card classes by assigning clear, explicit styling properties to the 6 matrix containers:
+     * Comparison Matrix Card: Use a soft light indigo pastel (`bg-[#F0F2FE] border border-[#DDDFFF]`)
+     * AI Career Scout Card: Use a soft light warm amber/cream pastel (`bg-[#FFFBEB] border border-[#FEF3C7]`)
+     * Resume Prep Card: Use a soft light mint pastel (`bg-[#F0FDF4] border border-[#DCFCE7]`)
+     * Reskilling Portal Card: Use a gorgeous soft lilac/lavender (`bg-[#F5F3FF] border border-[#E0D7FF]`)
+     * Careers Card: Use a crisp light sky pastel (`bg-[#EFF6FF] border border-[#DBEAFE]`)
+     * Glossary System Card: Use a beautiful light fuchsia pastel (`bg-[#FDF4FF] border border-[#F5D0FE]`)
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Restore beautiful pastel color themes and fix edge-to-edge layout margin crashes"
+
+# Phase 5.4 — Premium Violet & Airy Pastel Token Realignment
+
+## Prompt 5.6 — Injecting Curated Color Blocks from Image References
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Completely maps the premium violet gradient and soft card glow parameters from `image_75cb4c.jpg` and `image_75cb2b.png` straight into our global CSS definitions.
+
+### AI Prompt
+```text
+Please rewrite our global CSS rules and update our main layout views to implement the premium, high-end color themes shown in `image_75cb4c.jpg` and `image_75cb2b.png`. Remove any remaining flat colors or harsh generic borders, replacing them with these exact design assets:
+
+1. Update Style Variables (`src/index.css`):
+   - Background Canvas: Create an elegant, ultra-light background gradient that incorporates a soft, glowing hint of violet (`bg-gradient-to-tr from-[#FFFFFF] via-[#FBFBFE] to-[#F5F3FF]`).
+   - Define `.text-infinite-violet`: Implement the exact gorgeous text gradient from image_75cb4c.jpg for emphasized header items (`background: linear-gradient(135deg, #7C3AED 0%, #6366F1 50%, #A855F7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;`).
+
+2. Re-Skin Dashboard Grid Cards (`src/components/sections/ForwardMovesHome.jsx`):
+   - Refactor the 6 grid containers to utilize these exact custom pastel background tints and soft border values to match the spacious layout of image_75cb2b.png:
+     * Reskilling Portal (Skill Studio): Soft airy lavender (`bg-[#F6F5FE] border border-[#E9E6FD]`)
+     * Careers Dashboard: Soft airy sky pastel (`bg-[#F3F8FF] border border-[#E0EEFF]`)
+     * AI Career Scout (Community): Soft warm peach/cream (`bg-[#FFFBF4] border border-[#FFF3E0]`)
+     * Resume Prep (Interviewing): Soft pastel mint/teal (`bg-[#F2FDF9] border border-[#DFFCEF]`)
+     * Comparison Matrix: Soft lavender variant (`bg-[#F8F7FF] border border-[#EDE9FE]`)
+     * Glossary System: Soft pastel orchid (`bg-[#FAFAFF] border border-[#F1E9FE]`)
+   - Add clean internal padding blocks (`p-8`) and gentle hover transformations to all cards so they remain elegant and scannable.
+
+3. Synchronize Main Home Page Hero Text (`src/components/sections/PortfolioHome.jsx`):
+   - Apply our new `.text-infinite-violet` class directly onto the emphasized text row ("AI Implementation.") so it glows beautifully against the clean white portfolio header.
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Apply premium violet text gradient and beautiful airy pastel card canvas layers"
+
+# Phase 5.5 — Core Brand Assets & Live Content Synthesis
+
+## Prompt 5.7 — Synchronizing Production Theme Variables and Content Grid Arrays
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Syncs global font kits, configures custom Tailwind rules, patches page margins, and fully populates the authentic portfolio resource metrics.
+
+### AI Prompt
+```text
+We want to align our local React files with our verified production markup architecture, design assets, and functional dataset links. Please update our global styling sheets and views to execute this structural synthesis flawlessly.
+
+1. Overwrite our Global Style Rules (`src/index.css`):
+   - Add the explicit Google Font imports for 'Playfair Display' and 'DM Sans' right at the top of the file.
+   - Configure our modern Tailwind theme properties to utilize these typography family extensions, custom keyframes, and animations:
+     * `@import "tailwindcss";`
+     * Set up our typography shortcuts inside the root theme layout configuration block:
+       --font-sans: "DM Sans", sans-serif;
+       --font-serif: "Playfair Display", serif;
+   - Embed our custom structural glass utility filters, mesh hero layer rules, and liftoff hover transition classes:
+     .hero-mesh {
+       background: radial-gradient(ellipse 80% 60% at 70% 20%, rgba(167, 139, 250, 0.18) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 10% 80%, rgba(196, 181, 253, 0.14) 0%, transparent 55%), #FAFABA;
+     }
+     .glass {
+       background: rgba(255, 255, 255, 0.72);
+       backdrop-filter: blur(18px);
+       -webkit-backdrop-filter: blur(18px);
+       border: 1px solid rgba(228, 228, 231, 0.6);
+     }
+     .card-shadow {
+       box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+     }
+     .hover-lift {
+       transition: transform 0.22s ease, box-shadow 0.22s ease;
+     }
+     .hover-lift:hover {
+       transform: translateY(-3px);
+       box-shadow: 0 20px 48px -12px rgba(124, 58, 237, 0.18);
+     }
+
+2. Re-Skin and Spacing Update for the Project Dashboard View (`src/components/sections/ForwardMovesHome.jsx`):
+   - Ensure the main content blocks utilize the premium `.hero-mesh` background token class with ample padding limits (`max-w-6xl mx-auto px-6 py-16`) so items never crash into the screen edge.
+   - Refactor the card matrix loop to map directly onto these four elegant brand tool variants verbatim with their correct text details:
+     * Card 1: 'Skill Studio' (Icon: '⚡', Background: 'bg-purple-50/60 border-purple-100 hover:bg-purple-100/60') -> Description text: "AI certifications and technical training across 9 partner portals."
+     * Card 2: 'Careers' (Icon: '🌍', Background: 'bg-blue-50/60 border-blue-100 hover:bg-blue-100/60') -> Description text: "Mission-driven opportunities across Health, Climate, FinTech & more."
+     * Card 3: 'Community' (Icon: '🤝', Background: 'bg-orange-50/60 border-orange-100 hover:bg-orange-100/60') -> Description text: "Networking, mentorship, and the alumni collective."
+     * Card 4: 'Interviewing' (Icon: '🎯', Background: 'bg-emerald-50/60 border-emerald-100 hover:bg-emerald-100/60') -> Description text: "Interview prep, frameworks, and behavioral excellence."
+   - Ensure clicking the cards cleanly routes deeper into their respective content views or details rows.
+
+3. Refine Minimalist Title Text on the Main Landing View (`src/components/sections/PortfolioHome.jsx`):
+   - Wrap our main title text using our clean premium serif font family (`font-serif font-normal`) and match the stylized phrase color emphasis:
+     "Fuel your infinite growth." (Render "infinite growth." as italicized text colored with our signature violet tone: `italic text-purple-600 font-normal`).
+
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Synchronize structural font kits, custom animations, mesh headers, and complete card link parameters"
+
+# Phase 6 — High-End Aesthetic Automation (Vibe Coding Edition)
+
+## Prompt 6.1 — Injecting Executive Spacing Framework and Custom Pastel Datasets
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Automates your single-page setup using a luxury 1-inch padding framework, imports custom typography layers, and wires your premium pastel tool matrix dynamically with zero overlapping text.
+
+### AI Prompt
+```text
+We are vibe coding our master portfolio deployment. Please open our application setup scripts (`src/App.jsx`, `src/components/sections/PortfolioHome.jsx`, and `src/components/sections/ForwardMovesHome.jsx`). We need to completely rewrite these layout layers to enforce a premium, executive aesthetic with expansive whitespace margins and elegant pastel cards. 
+
+Please execute these design parameters flawlessly:
+
+1. Luxury 1-Inch Border Framework (Padding & Clearance):
+   - Wrap both `PortfolioHome.jsx` and `ForwardMovesHome.jsx` root elements in an extensive padding boundary (`p-24 md:p-32 w-full max-w-7xl mx-auto`). This guarantees at least 1-2 inches of pure breathing room so text never touches the edge of the page workspace.
+   - Enforce distinct vertical layout stacks (`space-y-10` or generous bottom margins like `mb-12`) across your header, descriptive paragraphs, CTA buttons, and audio player blocks so elements never overlap or collide.
+
+2. Typography Sheet & Asset Sync:
+   - Ensure the 'Playfair Display' and 'DM Sans' Google Fonts are pulled in cleanly.
+   - Map your layout headers to utilize the premium serif font syntax (`font-serif font-normal tracking-tight`).
+   - The main title on our landing page must read exactly: "Fuel your infinite growth." Make sure "infinite growth." is fully italicized and styled with our beautiful violet accent text color (`italic text-purple-600 font-normal`).
+
+3. Porting the Interactive 4-Card Portal Grid:
+   - Inside `ForwardMovesHome.jsx`, dynamically map the card collection layout to output these four specific core modules with their authentic text parameters and custom pastel background shades:
+     * Card 1: 'Skill Studio' (Icon: '⚡', Background: 'bg-[#F5F3FF] border border-[#E0D7FF] text-purple-700') -> Description text: "AI certifications and technical training across 9 partner portals."
+     * Card 2: 'Careers' (Icon: '🌍', Background: 'bg-[#EFF6FF] border border-[#DBEAFE] text-blue-700') -> Description text: "Mission-driven opportunities across Health, Climate, FinTech & more."
+     * Card 3: 'Community' (Icon: '🤝', Background: 'bg-[#FFFBEB] border border-[#FEF3C7] text-amber-700') -> Description text: "Networking, mentorship, and the alumni collective."
+     * Card 4: 'Interviewing' (Icon: '🎯', Background: 'bg-[#F0FDF4] border border-[#DCFCE7] text-emerald-700') -> Description text: "Interview prep, frameworks, and behavioral excellence."
+   - Set up comfortable internal padding blocks (`p-8`) and clean lifting transformations (`hover-lift`) on the card grid so they layout beautifully.
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Successfully run Phase 6 vibe coding layout automation patch"
+
+# Phase 6.3 — Global Margin Override Implementation
+
+## Prompt 6.4 — Enforcing 1-Inch Page Frame Spacing Core
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Clears old restricted parent containers in `App.jsx` and injects an unconstrained layout wrap that forces text away from the screen edge.
+
+### AI Prompt
+```text
+Please open `src/App.jsx`. We need to fix the margin issue permanently by changing the global parent wrapper that sits around our home landing page and project hub page. 
+
+Completely replace the contents of `src/App.jsx` with this exact structure, which guarantees a minimum 1-inch luxury layout padding frame across all screen viewports:
+
+import React, { useState } from 'react'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+import PortfolioHome from './components/sections/PortfolioHome'
+import ForwardMovesHome from './components/sections/ForwardMovesHome'
+
+export default function App() {
+  const [view, setView] = useState('home')
+
+  const renderContent = () => {
+    switch (view) {
+      case 'home':
+        return <PortfolioHome setView="{setView}"/>
+      case 'forward-moves':
+        return <ForwardMovesHome setView="{setView}"/>
+      default:
+        return <PortfolioHome setView="{setView}"/>
+    }
+  }
+
+  return (
+    <div className="min-h-screen flex flex-col bg-[#fafafa] text-zinc-900 antialiased">
+      
+      <Navbar currentView="{view}" setView="{setView}"/>
+      
+      
+      <main className="flex-grow w-full max-w-7xl mx-auto px-16 md:px-24 py-16 box-border">
+        {renderContent()}
+      </main>
+      
+      
+      <Footer currentView="{view}" setView="{setView}"/>
+    </div>
+  )
+}
+
