@@ -3,32 +3,46 @@ import React from 'react'
 export default function ForwardMovesHome({ setView }) {
   const cards = [
     {
-      type: 'skill-studio',
+      type: 'reskilling-portal',
       title: 'Skill Studio',
       desc: 'AI certifications and technical training across 9 partner portals.',
       icon: '⚡',
-      className: 'bg-purple-50/60 border-purple-100 hover:bg-purple-100/60',
+      className: 'bg-[#F6F5FE] border border-[#E9E6FD] hover:bg-[#F4F2FE]',
     },
     {
       type: 'careers',
       title: 'Careers',
       desc: 'Mission-driven opportunities across Health, Climate, FinTech & more.',
       icon: '🌍',
-      className: 'bg-blue-50/60 border-blue-100 hover:bg-blue-100/60',
+      className: 'bg-[#F3F8FF] border border-[#E0EEFF] hover:bg-[#EFF5FF]',
     },
     {
       type: 'community',
-      title: 'Community',
+      title: 'AI Career Scout',
       desc: 'Networking, mentorship, and the alumni collective.',
       icon: '🤝',
-      className: 'bg-orange-50/60 border-orange-100 hover:bg-orange-100/60',
+      className: 'bg-[#FFFBF4] border border-[#FFF3E0] hover:bg-[#FFF6E8]',
     },
     {
-      type: 'interviewing',
-      title: 'Interviewing',
+      type: 'resume-prep',
+      title: 'Resume Prep',
       desc: 'Interview prep, frameworks, and behavioral excellence.',
       icon: '🎯',
-      className: 'bg-emerald-50/60 border-emerald-100 hover:bg-emerald-100/60',
+      className: 'bg-[#F2FDF9] border border-[#DFFCEF] hover:bg-[#EDFFF2]',
+    },
+    {
+      type: 'comparison',
+      title: 'Comparison Matrix',
+      desc: 'Analyze key differences between legacy roles and AI career vectors side-by-side.',
+      icon: '⚖️',
+      className: 'bg-[#F8F7FF] border border-[#EDE9FE] hover:bg-[#F6F4FF]',
+    },
+    {
+      type: 'glossary',
+      title: 'Glossary System',
+      desc: 'Break down interface architecture jargon, infrastructure tags, and technical syntax definition data.',
+      icon: '📁',
+      className: 'bg-[#FAFAFF] border border-[#F1E9FE] hover:bg-[#F7F4FF]',
     },
   ]
 
@@ -78,7 +92,7 @@ export default function ForwardMovesHome({ setView }) {
             <div
               key={card.type}
               onClick={() => setView(card.type)}
-              className={`${card.className} rounded-3xl p-6 transition-all duration-200 hover:-translate-y-1 hover:shadow-md hover:shadow-gray-200/40 cursor-pointer relative flex flex-col justify-between group`}
+              className={`${card.className} rounded-3xl p-8 transition-all duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-100/40 cursor-pointer relative flex flex-col justify-between group`}
             >
               <div>
                 <div className="flex items-center justify-between mb-4">

@@ -8,7 +8,7 @@ export default function PortfolioHome({ setView }) {
       </div>
 
       <h2 className="text-5xl md:text-6xl font-serif font-normal text-[#111827] tracking-tight text-center max-w-4xl leading-tight">
-        Fuel your <span className="italic text-purple-600 font-normal">infinite growth.</span>
+        Orchestrating Enterprise <span className="text-infinite-violet">AI Implementation.</span>
       </h2>
 
       <p className="text-[#6B7280] max-w-2xl text-center leading-relaxed">

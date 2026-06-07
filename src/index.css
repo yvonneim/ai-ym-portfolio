@@ -15,7 +15,7 @@
 
 html {
   min-height: 100%;
-  background: radial-gradient(circle at center, rgba(124, 58, 237, 0.08) 0%, transparent 42%), #F9F9FB;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FBFBFE 50%, #F5F3FF 100%);
 }
 
 body {
@@ -29,6 +29,12 @@ input,
 textarea,
 select {
   font: inherit;
+}
+
+.text-infinite-violet {
+  background: linear-gradient(135deg, #7C3AED 0%, #6366F1 50%, #A855F7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-mesh {
@@ -53,36 +59,4 @@ select {
 .hover-lift:hover {
   transform: translateY(-3px);
   box-shadow: 0 20px 48px -12px rgba(124, 58, 237, 0.18);
-}
-
-.card-lavender {
-  background-color: #f5f3ff;
-  border: 1px solid #e0d7ff;
-}
-
-.card-blue {
-  background-color: #eff6ff;
-  border: 1px solid #dbeafe;
-}
-
-.card-cream {
-  background-color: #fffbeb;
-  border: 1px solid #fef3c7;
-}
-
-.card-mint {
-  background-color: #f0fdf4;
-  border: 1px solid #dcfce7;
-}
-
-.text-gradient {
-  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-royal-gradient {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
