@@ -23,7 +23,7 @@ export default function Navbar({ currentView, setView }) {
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-3 cursor-pointer" onClick={() => { setView('home'); setIsOpen(false) }}>
+        <div className="flex items-center gap-3 cursor-pointer select-none" onClick={() => { setView('home'); setIsOpen(false) }}>
           {isHome && <span className="w-2.5 h-2.5 rounded-full bg-[#3B82F6]" />}
           <span className="font-bold text-gray-900 tracking-tight text-lg">Yvonne Martinez</span>
         </div>
@@ -33,19 +33,19 @@ export default function Navbar({ currentView, setView }) {
           {isHome ? (
             <button
               type="button"
-              onClick={() => handleNavClick('forward-moves')}
-              className="text-purple-600 hover:text-purple-700 font-bold transition-colors cursor-pointer"
+              onClick={() => { setView('forward-moves'); setIsOpen(false); }}
+              className="text-purple-600 hover:text-purple-700 font-bold transition-colors cursor-pointer select-none"
             >
               FORWARD MOVES AI
             </button>
           ) : (
             <div className="flex flex-wrap items-center gap-4 text-xs font-bold uppercase tracking-wider">
-              {links.map(l => (
+                {links.map(l => (
                 <button
                   key={l.key}
                   type="button"
                   onClick={() => handleNavClick(l.key)}
-                  className={`hover:text-purple-600 cursor-pointer ${l.key === 'forward-moves' ? 'text-purple-600' : ''}`}
+                  className={`hover:text-purple-600 cursor-pointer select-none ${l.key === 'forward-moves' ? 'text-purple-600' : ''}`}
                 >
                   {l.label}
                 </button>
@@ -59,7 +59,7 @@ export default function Navbar({ currentView, setView }) {
           <button
             aria-label="Open menu"
             onClick={() => setIsOpen(true)}
-            className="p-2 rounded-md hover:bg-gray-100"
+            className="p-2 rounded-md hover:bg-gray-100 cursor-pointer select-none"
           >
             <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -72,7 +72,7 @@ export default function Navbar({ currentView, setView }) {
       {isOpen && (
         <div className="fixed inset-0 z-50 flex">
           {/* Backdrop */}
-          <button aria-label="Close menu" onClick={() => setIsOpen(false)} className="fixed inset-0 bg-black/40" />
+          <button aria-label="Close menu" onClick={() => setIsOpen(false)} className="fixed inset-0 bg-black/40 cursor-pointer select-none" />
 
           {/* Panel */}
           <aside className="ml-auto w-72 sm:w-96 h-full bg-white shadow-2xl p-6 overflow-y-auto">
@@ -81,7 +81,7 @@ export default function Navbar({ currentView, setView }) {
                 <span className="w-2.5 h-2.5 rounded-full bg-[#3B82F6]" />
                 <span className="font-bold text-gray-900">Yvonne Martinez</span>
               </div>
-              <button onClick={() => setIsOpen(false)} aria-label="Close drawer" className="p-2 rounded-md hover:bg-gray-100">
+              <button onClick={() => setIsOpen(false)} aria-label="Close drawer" className="p-2 rounded-md hover:bg-gray-100 cursor-pointer select-none">
                 <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
@@ -92,8 +92,8 @@ export default function Navbar({ currentView, setView }) {
             {isHome ? (
               <nav className="flex flex-col gap-4 text-sm">
                 <button
-                  onClick={() => handleNavClick('forward-moves')}
-                  className="text-left py-3 px-2 rounded-md hover:bg-gray-50 font-semibold"
+                  onClick={() => { setView('forward-moves'); setIsOpen(false); }}
+                  className="text-left py-3 px-2 rounded-md hover:bg-gray-50 font-semibold cursor-pointer select-none"
                 >
                   FORWARD MOVES AI
                 </button>
@@ -104,7 +104,7 @@ export default function Navbar({ currentView, setView }) {
                   <button
                     key={l.key}
                     onClick={() => handleNavClick(l.key)}
-                    className="text-left py-3 px-2 rounded-md hover:bg-gray-50 font-semibold"
+                    className="text-left py-3 px-2 rounded-md hover:bg-gray-50 font-semibold cursor-pointer select-none"
                   >
                     {l.label}
                   </button>

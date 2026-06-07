@@ -1016,3 +1016,36 @@ This ensures that the instant a user taps the text link, the system switches our
 ## Repository Sync Checkpoint
 git add .
 git commit -m "Hook up click event listeners inside Navbar menu strings to unlock active routing transitions"
+
+# Phase 6.9 — Absolute Prop State Pipeline Sync
+
+## Prompt 6.10 — Locking Down Navbar and App.jsx Communication
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Synchronizes both `App.jsx` and `Navbar.jsx` simultaneously to guarantee the `setView` function prop drops cleanly into the navigation click listeners.
+
+### AI Prompt
+```text
+Please open `src/App.jsx` and `src/components/layout/Navbar.jsx` simultaneously. Our side menu mobile links are currently static and frozen because the parent state functions are not passing down cleanly as component props.
+
+Let's overwrite both files to establish an airtight React communication bridge:
+
+1. Update the Component Wrapper inside `src/App.jsx`:
+   - Ensure the Navbar instance explicitly declares BOTH state tracking attributes like this:
+     <Navbar currentView={view} setView={setView} />
+
+2. Overwrite the Interactive Core inside `src/components/layout/Navbar.jsx`:
+   - Ensure the component explicitly accepts the parameters at the top declaration row:
+     export default function Navbar({ currentView, setView }) { ... }
+   
+   - Update BOTH the horizontal desktop menu button and the mobile cell phone drawer overlay link text to run this exact combined operation hook:
+     onClick={() => {
+       setView('forward-moves');
+       setIsOpen(false);
+     }}
+
+   - Add standard pointer styling (`cursor-pointer select-none`) to the clickable link wrapper tags so the browser knows they are active structural links.
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Lock down airtight App and Navbar prop states to unlock responsive mobile drawer routing links"
+
