@@ -30,6 +30,13 @@ export default function Navbar({ currentView, setView }) {
               Home
             </button>
           )}
+          
+          <button
+            onClick={() => setView('skill-studio')}
+            className="text-xs font-bold uppercase tracking-widest text-zinc-600 hover:text-purple-600 transition-colors cursor-pointer bg-transparent border-none p-0"
+          >
+            SKILL STUDIO
+          </button>
         </div>
 
         <button 
@@ -60,6 +67,15 @@ export default function Navbar({ currentView, setView }) {
               className="w-full text-left font-sans font-bold text-base tracking-wide text-zinc-800 hover:text-purple-600 py-3 border-b border-zinc-50 cursor-pointer block bg-transparent"
             >
               FORWARD MOVES AI
+            </button>
+            <button
+              onClick={() => {
+                setView('skill-studio');
+                setIsOpen(false);
+              }}
+              className="w-full text-left font-sans font-bold text-base tracking-wide text-zinc-800 hover:text-purple-600 py-3 border-b border-zinc-50 cursor-pointer block bg-transparent"
+            >
+              SKILL STUDIO
             </button>
           </div>
         </div>
