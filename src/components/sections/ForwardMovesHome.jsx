@@ -33,12 +33,12 @@ export default function ForwardMovesHome({ setView }) {
   ]
 
   return (
-    <div className="w-full max-w-7xl mx-auto p-24 md:p-32 space-y-10">
-      <div className="w-full bg-[#FFFDF6] border-b border-[#FBECC5] px-6 py-2.5 text-center text-[11px] font-normal text-[#D97706] tracking-wide rounded-full">
+    <div className="w-full bg-[#fafafa] min-h-screen py-12 px-6 md:px-12">
+      <div className="w-full bg-[#FFFDF6] border-b border-[#FBECC5] px-6 py-2.5 text-center text-[11px] font-normal text-[#D97706] tracking-wide">
         Sample Disclaimer: <span className="font-light text-[#78350F]">"Forward Moves AI is currently in its community-testing phase. To protect your privacy, please remove personal contact information from your resume before uploading."</span>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6 py-16 hero-mesh rounded-[2rem]">
+      <div className="max-w-6xl mx-auto w-full space-y-12 px-6 py-16 hero-mesh rounded-[2rem]">
         <div className="bg-white border border-gray-100 rounded-3xl p-10 md:p-14 shadow-sm shadow-gray-100/40 space-y-6">
           <div className="inline-flex items-center gap-1.5 text-[10px] font-bold tracking-widest text-purple-600 uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-purple-500" />

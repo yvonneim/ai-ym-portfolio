@@ -876,4 +876,86 @@ export default function App() {
     </div>
   )
 }
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Force root 1-inch wrapper limits inside App.jsx to unlock wide layout margins"
 
+# Phase 6.4 — Individual Page Layout Optimization
+
+## Prompt 6.5 — Separating Viewport Frameworks and Unsquishing the Dashboard
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Clears the aggressive global padding from `App.jsx` and applies individual, native whitespace properties directly to the home page and dashboard views respectively.
+
+### AI Prompt
+```text
+Our project dashboard page layout is completely squished and needs serious structural cleanup. The global padding inside `App.jsx` is choking it. Let's fix this by moving layout containment logic inside the individual page components where they belong.
+
+Please execute these changes across our layout files:
+
+1. Update Global Outer Frame (`src/App.jsx`):
+   - Change the `<main>` element to be completely unconstrained: `<main className="flex-grow w-full">`. 
+   - This ensures the home page and the dashboard can control their own spacious margins individually.
+
+2. Maintain Main Page Spacing (`src/components/sections/PortfolioHome.jsx`):
+   - Ensure the home landing elements remain perfectly framed by keeping its custom container spacing intact: `className="w-full max-w-5xl mx-auto px-16 md:px-24 py-16 text-center flex flex-col items-center justify-center bg-white"`.
+
+3. Unsquish and Expand Dashboard Hub (`src/components/sections/ForwardMovesHome.jsx`):
+   - Change the root wrapper of this dashboard page to a wide, open grid layout canvas: `className="w-full bg-[#fafafa] min-h-screen py-12 px-6 md:px-12"`. This gives the cards, headers, and navigation room to breathe without clamping them into a tight center container.
+   - For the main internal text area and header container card layout blocks, utilize `className="max-w-6xl mx-auto w-full space-y-12"`. This keeps everything lined up perfectly with an elegant widescreen presentation.
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Force root 1-inch wrapper limits inside App.jsx to unlock wide layout margins"
+
+# Phase 6.4 — Individual Page Layout Optimization
+
+## Prompt 6.5 — Separating Viewport Frameworks and Unsquishing the Dashboard
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Clears the aggressive global padding from `App.jsx` and applies individual, native whitespace properties directly to the home page and dashboard views respectively.
+
+### AI Prompt
+```text
+Our project dashboard page layout is completely squished and needs serious structural cleanup. The global padding inside `App.jsx` is choking it. Let's fix this by moving layout containment logic inside the individual page components where they belong.
+
+Please execute these changes across our layout files:
+
+1. Update Global Outer Frame (`src/App.jsx`):
+   - Change the `<main>` element to be completely unconstrained: `<main className="flex-grow w-full">`. 
+   - This ensures the home page and the dashboard can control their own spacious margins individually.
+
+2. Maintain Main Page Spacing (`src/components/sections/PortfolioHome.jsx`):
+   - Ensure the home landing elements remain perfectly framed by keeping its custom container spacing intact: `className="w-full max-w-5xl mx-auto px-16 md:px-24 py-16 text-center flex flex-col items-center justify-center bg-white"`.
+
+3. Unsquish and Expand Dashboard Hub (`src/components/sections/ForwardMovesHome.jsx`):
+   - Change the root wrapper of this dashboard page to a wide, open grid layout canvas: `className="w-full bg-[#fafafa] min-h-screen py-12 px-6 md:px-12"`. This gives the cards, headers, and navigation room to breathe without clamping them into a tight center container.
+   - For the main internal text area and header container card layout blocks, utilize `className="max-w-6xl mx-auto w-full space-y-12"`. This keeps everything lined up perfectly with an elegant widescreen presentation.
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Optimize viewport layout containment, unsquish the dashboard page, and lock in elegant spacing"
+
+# Phase 6.5 — Mobile Hamburger Menu Integration
+
+## Prompt 6.6 — Injecting Side-Drawer Toggle State into Navbar
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Upgrades `Navbar.jsx` with an interactive state to dynamically open and close a full-height slide-out mobile menu panel when the user taps the three lines on small screens.
+
+### AI Prompt
+```text
+Please open `src/components/layout/Navbar.jsx`. We need to implement a fully functional, highly responsive mobile hamburger menu drawer specifically for cell phones and small browser viewports.
+
+Modify the component structure to follow this interactive React state design pattern:
+
+1. Add Toggle State Tracking:
+   - Import `useState` at the top of the file and initialize a visibility tracker: `const [isOpen, setIsOpen] = useState(false)`
+
+2. Configure Desktop vs Mobile Navigation Breaks:
+   - On large screens (desktop), keep the horizontal tab list layout visible exactly as it is now by utilizing Tailwind's `hidden md:flex` utility rules.
+   - On small screens (mobile/cell phones), hide that long row and display an interactive hamburger button containing the three stacked lines (`hidden max-md:block` or `md:hidden`). Clicking this button must toggle `setIsOpen(!isOpen)`.
+
+3. Render the Expandable Slide-Out Overlay Side Menu Drawer:
+   - When `isOpen` evaluates to true, render a clean, high-end slide-out vertical container overlay panel mimicking our design specifications:
+     * Include a prominent "X" close icon button at the top right corner that safely reverts `setIsOpen(false)`.
+     * Display the full link menu array stacked vertically in a generous spacing format with clear typography sizing: "🏡 HOME", "DASHBOARD HUB", "COMPARISON", "RESKILLING", "CAREERS", "AI CAREER SCOUT", "RESUME PREP", "GLOSSARY".
+     * Tapping any of these navigation link items must cleanly update our central layout view state AND auto-close the drawer via `setIsOpen(false)`.
