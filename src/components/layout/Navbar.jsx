@@ -1,119 +1,69 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 export default function Navbar({ currentView, setView }) {
-  const isHome = currentView === 'home'
-  const [isOpen, setIsOpen] = useState(false)
-
-  const links = [
-    { key: 'home', label: '🏡 HOME' },
-    { key: 'forward-moves', label: 'DASHBOARD HUB' },
-    { key: 'comparison', label: 'COMPARISON' },
-    { key: 'reskilling', label: 'RESKILLING' },
-    { key: 'careers', label: 'CAREERS' },
-    { key: 'ai-career-scout', label: 'AI CAREER SCOUT' },
-    { key: 'resume-prep', label: 'RESUME PREP' },
-    { key: 'glossary', label: 'GLOSSARY' },
-  ]
-
-  const handleNavClick = (key) => {
-    setView(key === 'home' ? 'home' : key)
-    setIsOpen(false)
-  }
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b border-gray-100 sticky top-0 z-50 px-6 py-4">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-3 cursor-pointer select-none" onClick={() => { setView('home'); setIsOpen(false) }}>
-          {isHome && <span className="w-2.5 h-2.5 rounded-full bg-[#3B82F6]" />}
-          <span className="font-bold text-gray-900 tracking-tight text-lg">Yvonne Martinez</span>
+    <nav className="sticky top-0 z-[200] bg-white/90 backdrop-blur-md border-b border-zinc-100">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <button 
+          onClick={() => { setView('home'); setIsOpen(false); }} 
+          className="flex items-center gap-2 font-sans font-bold text-zinc-900 cursor-pointer text-base bg-transparent border-none p-0"
+        >
+          <span className="w-2 h-2 rounded-full bg-purple-600"></span>
+          Yvonne Martinez
+        </button>
+
+        <div className="hidden md:flex items-center gap-6">
+          {currentView === 'home' ? (
+            <button 
+              onClick={() => setView('forward-moves')}
+              className="text-xs font-bold uppercase tracking-widest text-zinc-600 hover:text-purple-600 transition-colors cursor-pointer bg-transparent border-none p-0"
+            >
+              Forward Moves AI
+            </button>
+          ) : (
+            <button 
+              onClick={() => setView('home')}
+              className="text-xs font-bold uppercase tracking-widest text-zinc-600 hover:text-purple-600 transition-colors cursor-pointer bg-transparent border-none p-0"
+            >
+              Home
+            </button>
+          )}
         </div>
 
-        {/* Desktop nav - hidden on small screens */}
-        <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
-          {isHome ? (
+        <button 
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden p-2 text-zinc-900 cursor-pointer bg-transparent border-none"
+          aria-label="Toggle Menu"
+        >
+          {isOpen ? (
+            <span className="text-2xl font-light block w-6 text-center">✕</span>
+          ) : (
+            <div className="w-6 h-5 flex flex-col justify-between items-end">
+              <span className="w-full h-0.5 bg-zinc-900 block rounded"></span>
+              <span className="w-4/5 h-0.5 bg-zinc-900 block rounded"></span>
+              <span className="w-full h-0.5 bg-zinc-900 block rounded"></span>
+            </div>
+          )}
+        </button>
+      </div>
+
+      {isOpen && (
+        <div className="absolute top-16 left-0 w-full bg-white border-b border-zinc-200 shadow-xl z-[200] md:hidden">
+          <div className="flex flex-col p-8 space-y-6">
             <button
-              type="button"
-              onClick={() => { setView('forward-moves'); setIsOpen(false); }}
-              className="text-purple-600 hover:text-purple-700 font-bold transition-colors cursor-pointer select-none"
+              onClick={() => {
+                setView('forward-moves');
+                setIsOpen(false);
+              }}
+              className="w-full text-left font-sans font-bold text-base tracking-wide text-zinc-800 hover:text-purple-600 py-3 border-b border-zinc-50 cursor-pointer block bg-transparent"
             >
               FORWARD MOVES AI
             </button>
-          ) : (
-            <div className="flex flex-wrap items-center gap-4 text-xs font-bold uppercase tracking-wider">
-                {links.map(l => (
-                <button
-                  key={l.key}
-                  type="button"
-                  onClick={() => handleNavClick(l.key)}
-                  className={`hover:text-purple-600 cursor-pointer select-none ${l.key === 'forward-moves' ? 'text-purple-600' : ''}`}
-                >
-                  {l.label}
-                </button>
-              ))}
-            </div>
-          )}
-        </nav>
-
-        {/* Mobile controls */}
-        <div className="md:hidden flex items-center">
-          <button
-            aria-label="Open menu"
-            onClick={() => setIsOpen(true)}
-            className="p-2 rounded-md hover:bg-gray-100 cursor-pointer select-none"
-          >
-            <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile slide-out drawer overlay */}
-      {isOpen && (
-        <div className="fixed inset-0 z-50 flex">
-          {/* Backdrop */}
-          <button aria-label="Close menu" onClick={() => setIsOpen(false)} className="fixed inset-0 bg-black/40 cursor-pointer select-none" />
-
-          {/* Panel */}
-          <aside className="ml-auto w-72 sm:w-96 h-full bg-white shadow-2xl p-6 overflow-y-auto">
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center gap-3">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#3B82F6]" />
-                <span className="font-bold text-gray-900">Yvonne Martinez</span>
-              </div>
-              <button onClick={() => setIsOpen(false)} aria-label="Close drawer" className="p-2 rounded-md hover:bg-gray-100 cursor-pointer select-none">
-                <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-
-            {/* If on home, show only the Forward Moves action; otherwise show full nav */}
-            {isHome ? (
-              <nav className="flex flex-col gap-4 text-sm">
-                <button
-                  onClick={() => { setView('forward-moves'); setIsOpen(false); }}
-                  className="text-left py-3 px-2 rounded-md hover:bg-gray-50 font-semibold cursor-pointer select-none"
-                >
-                  FORWARD MOVES AI
-                </button>
-              </nav>
-            ) : (
-              <nav className="flex flex-col gap-4 text-sm">
-                {links.map(l => (
-                  <button
-                    key={l.key}
-                    onClick={() => handleNavClick(l.key)}
-                    className="text-left py-3 px-2 rounded-md hover:bg-gray-50 font-semibold cursor-pointer select-none"
-                  >
-                    {l.label}
-                  </button>
-                ))}
-              </nav>
-            )}
-          </aside>
+          </div>
         </div>
       )}
-    </header>
-  )
+    </nav>
+  );
 }

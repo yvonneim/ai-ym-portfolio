@@ -1049,3 +1049,217 @@ Let's overwrite both files to establish an airtight React communication bridge:
 git add .
 git commit -m "Lock down airtight App and Navbar prop states to unlock responsive mobile drawer routing links"
 
+# Phase 6.10 — Manual Navbar Event Binding
+
+## Prompt 6.11 — Overwriting Navbar with Explicit Button Elements
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Strips out abstract loops or array mappings in `Navbar.jsx` and implements raw, direct React `<button>` tags with hardcoded `onClick` events.
+
+### AI Prompt
+```text
+Please completely rewrite `src/components/layout/Navbar.jsx` with a clean, un-mapped button layout to ensure the navigation clicks work perfectly on cell phones.
+
+Use this exact, clean component code:
+
+import React, { useState } from 'react'
+
+export default function Navbar({ currentView, setView }) {
+  const [isOpen, setIsOpen] = useState(false)
+
+  return (
+    <nav className="relative z-[150] bg-white border-b border-zinc-100">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        
+        
+        <button 
+          onClick={() => { setView('home'); setIsOpen(false); }} 
+          className="flex items-center gap-2 font-sans font-bold text-zinc-900 cursor-pointer text-base bg-transparent border-none p-0"
+        >
+          <span className="w-2 h-2 rounded-full bg-purple-600"></span>
+          Yvonne Martinez
+        </button>
+
+        
+        <div className="hidden md:flex items-center gap-6">
+          {currentView === 'home' ? (
+            <button 
+              onClick={() => setView('forward-moves')}
+              className="text-xs font-bold uppercase tracking-widest text-zinc-600 hover:text-purple-600 transition-colors cursor-pointer"
+            >
+              Forward Moves AI
+            </button>
+          ) : (
+            <button 
+              onClick={() => setView('home')}
+              className="text-xs font-bold uppercase tracking-widest text-zinc-600 hover:text-purple-600 transition-colors cursor-pointer"
+            >
+              🏡 Home
+            </button>
+          )}
+        </div>
+
+        
+        <button 
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden p-2 text-zinc-900 cursor-pointer bg-transparent border-none"
+          aria-label="Toggle Menu"
+        >
+          {isOpen ? (
+            <span className="text-2xl font-light block w-6 text-center">✕</span>
+          ) : (
+            <div className="w-6 h-5 flex flex-col justify-between items-end">
+              <span className="w-full h-0.5 bg-zinc-900 block rounded"></span>
+              <span className="w-4/5 h-0.5 bg-zinc-900 block rounded"></span>
+              <span className="w-full h-0.5 bg-zinc-900 block rounded"></span>
+            </div>
+          )}
+        </button>
+      </div>
+
+      {/* Full Screen Slide-Out Mobile Overlay Menu Panel */}
+      {isOpen && (
+        <div className="absolute top-16 left-0 w-full bg-white border-b border-zinc-200 shadow-xl z-[200] md:hidden animate-fadeIn">
+          <div className="flex flex-col p-8 space-y-6">
+            
+            
+            <button
+              onClick={() => {
+                setView('forward-moves');
+                setIsOpen(false);
+              }}
+              className="w-full text-left font-sans font-bold text-base tracking-wide text-zinc-800 hover:text-purple-600 py-3 border-b border-zinc-50 cursor-pointer block bg-transparent"
+            >
+              FORWARD MOVES AI
+            </button>
+
+          </div>
+        </div>
+      )}
+    </nav>
+  )
+}
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Completely rebuild Navbar with explicit HTML button handlers to ensure mobile routing events execute"
+
+
+# Phase 6.11 — Compiler Syntax Error Resolution
+
+## Prompt 6.12 — Cleaning Up Hanging Tags in Navbar.jsx
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Completely clears out the syntax error from image_73fd6e.png and delivers a clean, fully functional compiled navigation component.
+
+### AI Prompt
+```text
+Please completely replace the content of `src/components/layout/Navbar.jsx` to resolve the unexpected token compiler error. Ensure every single HTML tag and JavaScript bracket matches perfectly.
+
+Use this clean, verified code:
+
+import React, { useState } from 'react';
+
+export default function Navbar({ currentView, setView }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className="relative z-[150] bg-white border-b border-zinc-100">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        
+        
+        <button 
+          onClick={() => { setView('home'); setIsOpen(false); }} 
+          className="flex items-center gap-2 font-sans font-bold text-zinc-900 cursor-pointer text-base bg-transparent border-none p-0"
+        >
+          <span className="w-2 h-2 rounded-full bg-purple-600"></span>
+          Yvonne Martinez
+        </button>
+
+        
+        <div className="hidden md:flex items-center gap-6">
+          {currentView === 'home' ? (
+            <button 
+              onClick={() => setView('forward-moves')}
+              className="text-xs font-bold uppercase tracking-widest text-zinc-600 hover:text-purple-600 transition-colors cursor-pointer bg-transparent border-none p-0"
+            >
+              Forward Moves AI
+            </button>
+          ) : (
+            <button 
+              onClick={() => setView('home')}
+              className="text-xs font-bold uppercase tracking-widest text-zinc-600 hover:text-purple-600 transition-colors cursor-pointer bg-transparent border-none p-0"
+            >
+              Home
+            </button>
+          )}
+        </div>
+
+        
+        <button 
+          onClick={() => setIsOpen(!isOpen)}
+          className="md:hidden p-2 text-zinc-900 cursor-pointer bg-transparent border-none"
+          aria-label="Toggle Menu"
+        >
+          {isOpen ? (
+            <span className="text-2xl font-light block w-6 text-center">✕</span>
+          ) : (
+            <div className="w-6 h-5 flex flex-col justify-between items-end">
+              <span className="w-full h-0.5 bg-zinc-900 block rounded"></span>
+              <span className="w-4/5 h-0.5 bg-zinc-900 block rounded"></span>
+              <span className="w-full h-0.5 bg-zinc-900 block rounded"></span>
+            </div>
+          )}
+        </button>
+      </div>
+
+      
+      {isOpen && (
+        <div className="absolute top-16 left-0 w-full bg-white border-b border-zinc-200 shadow-xl z-[200] md:hidden">
+          <div className="flex flex-col p-8 space-y-6">
+            <button
+              onClick={() => {
+                setView('forward-moves');
+                setIsOpen(false);
+              }}
+              className="w-full text-left font-sans font-bold text-base tracking-wide text-zinc-800 hover:text-purple-600 py-3 border-b border-zinc-50 cursor-pointer block bg-transparent"
+            >
+              FORWARD MOVES AI
+            </button>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
+}
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Resolve token compiler crash and restore responsive click events inside Navbar.jsx"
+
+# Phase 6.12 — Sticky Menu Fixing & Background Color Purification
+
+## Prompt 6.13 — Enforcing Sticky Headers and Restoring the 4 Core Cards
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Fixes the disappearing mobile header, strips out all unauthorized yellow background fills, and updates the card grid to display the exact 4 primary categories.
+
+### AI Prompt
+```text
+Please open `src/components/layout/Navbar.jsx` and `src/components/sections/ForwardMovesHome.jsx`. We have serious layout bugs to patch: the top menu vanishes on scroll, a random yellow background fill has leaked into the dashboard section, and the cards are still tracking old categories.
+
+Please apply these exact code updates:
+
+1. Force Permanent Sticky Navbar (`src/components/layout/Navbar.jsx`):
+   - Ensure the outer navigation wrapper forces a fixed position that stays pinned during scrolling across all viewports, especially cell phones: `className="sticky top-0 z-[200] bg-white/90 backdrop-blur-md border-b border-zinc-100"`.
+
+2. Purge Yellow Background & Sync the 4 Categories (`src/components/sections/ForwardMovesHome.jsx`):
+   - Locate and completely remove the random yellow container layer class (`bg-[#FAFABA]` or any yellow/amber utilities). The entire page background canvas must remain clean: `className="w-full bg-[#FAFAFA] min-h-screen py-12 px-6 md:px-12"`.
+   - Update the card grid loop to display exactly the 4 main categories from our official directory code block layout, utilizing our premium custom pastel shades:
+     * Card 1: 'Skill Studio' (Icon: '⚡', Style: 'bg-purple-50/60 border-purple-100 text-purple-700') -> Desc: "AI certifications and technical training across 9 partner portals."
+     * Card 2: 'Careers' (Icon: '🌍', Style: 'bg-blue-50/60 border-blue-100 text-blue-700') -> Desc: "Mission-driven opportunities across Health, Climate, FinTech & more."
+     * Card 3: 'Community' (Icon: '🤝', Style: 'bg-orange-50/60 border-orange-100 text-orange-700') -> Desc: "Networking, mentorship, and the alumni collective."
+     * Card 4: 'Interviewing' (Icon: '🎯', Style: 'bg-emerald-50/60 border-emerald-100 text-emerald-700') -> Desc: "Interview prep, frameworks, and behavioral excellence."
+   - Adjust the grid display format to stack perfectly on mobile and side-by-side on desktop layouts: `className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto w-full mt-12"`.
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Fix sticky navbar scroll tracking, delete yellow backdrop anomaly, and reset card grid to 4 core modules"
+   
