@@ -31,25 +31,20 @@ export default function Navbar({ currentView, setView }) {
         {/* Desktop nav - hidden on small screens */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
           {isHome ? (
-            <>
-              <button
-                type="button"
-                onClick={() => setView('forward-moves')}
-                className="text-purple-600 hover:text-purple-700 font-bold transition-colors cursor-pointer"
-              >
-                FORWARD MOVES AI
-              </button>
-              <button type="button" className="hover:text-gray-900 transition-colors cursor-pointer">
-                CONTACT
-              </button>
-            </>
+            <button
+              type="button"
+              onClick={() => handleNavClick('forward-moves')}
+              className="text-purple-600 hover:text-purple-700 font-bold transition-colors cursor-pointer"
+            >
+              FORWARD MOVES AI
+            </button>
           ) : (
             <div className="flex flex-wrap items-center gap-4 text-xs font-bold uppercase tracking-wider">
               {links.map(l => (
                 <button
                   key={l.key}
                   type="button"
-                  onClick={() => setView(l.key === 'home' ? 'home' : l.key)}
+                  onClick={() => handleNavClick(l.key)}
                   className={`hover:text-purple-600 cursor-pointer ${l.key === 'forward-moves' ? 'text-purple-600' : ''}`}
                 >
                   {l.label}
@@ -93,17 +88,29 @@ export default function Navbar({ currentView, setView }) {
               </button>
             </div>
 
-            <nav className="flex flex-col gap-4 text-sm">
-              {links.map(l => (
+            {/* If on home, show only the Forward Moves action; otherwise show full nav */}
+            {isHome ? (
+              <nav className="flex flex-col gap-4 text-sm">
                 <button
-                  key={l.key}
-                  onClick={() => handleNavClick(l.key)}
+                  onClick={() => handleNavClick('forward-moves')}
                   className="text-left py-3 px-2 rounded-md hover:bg-gray-50 font-semibold"
                 >
-                  {l.label}
+                  FORWARD MOVES AI
                 </button>
-              ))}
-            </nav>
+              </nav>
+            ) : (
+              <nav className="flex flex-col gap-4 text-sm">
+                {links.map(l => (
+                  <button
+                    key={l.key}
+                    onClick={() => handleNavClick(l.key)}
+                    className="text-left py-3 px-2 rounded-md hover:bg-gray-50 font-semibold"
+                  >
+                    {l.label}
+                  </button>
+                ))}
+              </nav>
+            )}
           </aside>
         </div>
       )}

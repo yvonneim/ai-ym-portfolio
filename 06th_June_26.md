@@ -990,3 +990,29 @@ When the central application state view is set to 'home' (the main personal port
 git add .
 git commit -m "Isolate navigation menus to display Forward Moves AI as the sole link on the main landing view"
 
+# Phase 6.8 — Side Menu Routing Interactivity Fix
+
+## Prompt 6.9 — Mapping Click Listeners to View States in Navbar Components
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Modifies the navigation layout array logic inside `Navbar.jsx` to explicitly invoke `setView('forward-moves')` and `setIsOpen(false)` upon interaction.
+
+### AI Prompt
+```text
+Please open `src/components/layout/Navbar.jsx`. Currently, when a user clicks on the "FORWARD MOVES AI" option inside our horizontal menu or our mobile slide-out drawer, nothing happens because the click handler is missing.
+
+Let's activate the routing hook. Ensure that both the desktop menu button and the mobile menu drawer button are updated with this exact interactive click wrapper:
+
+onClick={() => {
+  setView('forward-moves');
+  setIsOpen(false);
+}}
+
+Make sure this state transition functions perfectly for:
+1. The desktop horizontal navigation link layout container.
+2. The interactive text item stacked inside our cell phone menu drawer overlay panel.
+
+This ensures that the instant a user taps the text link, the system switches our main page context to our project view, clears the grey screen layer, and closes the mobile side drawer panel smoothly!
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Hook up click event listeners inside Navbar menu strings to unlock active routing transitions"
