@@ -963,3 +963,30 @@ Modify the component structure to follow this interactive React state design pat
 ## Repository Sync Checkpoint
 git add .
 git commit -m "Implement responsive hamburger toggle button state and mobile overlay side menu drawer"
+
+# Phase 6.7 — Root Navigation Link Isolation
+
+## Prompt 6.8 — Stripping Hub Links from Main View Mobile Drawer and Desktop Bars
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Modifies the conditional rendering loops inside `Navbar.jsx` so that the main landing view isolates "Forward Moves AI" as the sole interactive option across desktop and cell phone menus.
+
+### AI Prompt
+```text
+Please open `src/components/layout/Navbar.jsx`. We need to refine our navigation routing logic to match our isolated entry-hub strategy. 
+
+When the central application state view is set to 'home' (the main personal portfolio landing page), the navigation menu must contain ONLY ONE target item across all screen sizes. Please implement these specific updates:
+
+1. Desktop Navigation Limit (`md:flex` view):
+   - Clear out any leftover links like "CONTACT" or submenu pieces while on the home view. Render exactly one link button reading: "FORWARD MOVES AI".
+
+2. Mobile Hamburger Drawer Limit (`isOpen` overlay panel):
+   - Modify the mobile menu drawer code so that if a user clicks the three lines while on the home landing page, the panel does not display the long grid of internal sub-platform links (COMPARISON, RESKILLING, CAREERS, AI CAREER SCOUT, etc.).
+   - Instead, the drawer panel on the home view must display ONLY ONE single link action stacked nicely below the logo header text block: "FORWARD MOVES AI". Clicking this option must cleanly shift our state to 'forward-moves' and automatically close the panel (`setIsOpen(false)`).
+
+3. Maintain Dashboard Full Expansion:
+   - Ensure that when the active view state is 'forward-moves' or any deeper internal project view layer, the full utility selection remains completely intact in both desktop bars and mobile drawer toggles so users can navigate the project tools freely.
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Isolate navigation menus to display Forward Moves AI as the sole link on the main landing view"
+
