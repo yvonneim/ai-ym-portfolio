@@ -6,15 +6,9 @@ export default function Navbar({ currentView, setView }) {
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-2 cursor-pointer" onClick={() => setView('home')}>
-          {!isHome && (
-            <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-sm">
-              F.
-            </div>
-          )}
-          <span className="font-bold text-gray-900 tracking-tight text-lg">
-            {isHome ? 'AITogetherNow' : 'Forward Moves'}
-          </span>
+        <div className="flex items-center gap-3 cursor-pointer" onClick={() => setView('home')}>
+          {isHome && <span className="w-2.5 h-2.5 rounded-full bg-[#3B82F6]" />}
+          <span className="font-bold text-gray-900 tracking-tight text-lg">Yvonne Martinez</span>
         </div>
         <nav className="flex items-center gap-6 text-sm font-medium text-gray-600">
           {isHome ? (

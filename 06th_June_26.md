@@ -638,3 +638,40 @@ export default function ForwardMovesHome({ setView }) {
     </div>
   )
 }
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Execute spacious visual dashboard layout update matching image_763b8d.png structure"
+
+# Phase 5.3 — Pixel-Perfect Minimalist Portfolio Realignment
+
+## Prompt 5.4 — Matching Minimalist Layout Spacing from Home Reference
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Rewrites `PortfolioHome.jsx` and refines our layout constraints to match the clean presentation shown in `image_76387e.png`.
+
+### AI Prompt
+```text
+Please rewrite `src/components/sections/PortfolioHome.jsx` and refine our dynamic navbar tracking layout to perfectly replicate the minimalist design shown in `image_76387e.png`. 
+
+Implement these exact layout specs:
+
+1. Update the Main Portfolio Home UI (`src/components/sections/PortfolioHome.jsx`):
+   - Wrap everything in an ultra-clean layout flow with open vertical breathing room (`min-h-[80vh] flex flex-col justify-center items-center py-20 px-6`).
+   - The top pill element must read exactly: "• ENTERPRISE AI OPERATIONS & INFRASTRUCTURE" inside a light-blue accent theme (`bg-[#EEF2FF] text-[#3B82F6]`).
+   - The main header text must be exactly: "Orchestrating Enterprise AI Implementation." Make sure "AI Implementation." uses your vibrant royal blue tone (`text-[#1D4ED8]`) while everything else stays deep charcoal.
+   - The paragraph content should stay light gray, airy, and centered (`text-[#6B7280] max-w-2xl text-center leading-relaxed mb-10`).
+   - Center the crisp black action button below: "EXPLORE FORWARD MOVES AI →" (`bg-[#030712] hover:bg-[#111827] text-white text-xs font-bold tracking-wider px-8 py-4 rounded-xl shadow-sm`).
+   - Implement the exact spacious custom audio player track container shown underneath the button layout.
+
+2. Update the Footer Component Layout (`src/components/layout/Footer.jsx`):
+   - Make it a single, edge-to-edge row that sits nicely at the bottom of the viewport with a tiny font size (`text-[11px] text-[#9CA3AF] px-12 py-6 border-t border-gray-50 bg-white flex items-center justify-between`).
+   - Bottom Left Text: "© 2026 Yvonne Martinez. Hosted via Firebase Infrastructure."
+   - Bottom Right Links: "Explore Platform    Get in Touch"
+
+3. Update Left Identity Brand Text (`src/components/layout/Navbar.jsx`):
+   - When the active state view is 'home', the top-left element must render a subtle blue circle dot alongside the text logo: "Yvonne Martinez".
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Configure pixel-perfect minimalist layout for PortfolioHome matching image_76387e.png layout"
+
