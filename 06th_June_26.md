@@ -1,6 +1,6 @@
 # Phase 1 — Project Initialization & Structure
 
-## Prompt 1.2 — Building the Architecture Scaffold
+## Prompt 1.1 — Building the Architecture Scaffold
 * **Where to paste:** Run the terminal commands inside VS Code first, then give the text prompt to your AI.
 * **Intent:** Automatically builds a clean directory layout and creates the starting boilerplate files.
 
@@ -167,9 +167,9 @@ npm install
 # Step 2: Fire up your brand-new local server engine
 npm run dev
 ```
-# Phase 4.2 — Page Entry Resolution
+# Phase 4.1 — Page Entry Resolution
 
-## Prompt 4.3 — Creating the Root HTML Entry Point
+## Prompt 4.2 — Creating the Root HTML Entry Point
 * **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
 * **Intent:** Automatically generates the root `index.html` entry point that connects Vite to your React `src/main.jsx` or `src/App.jsx` entry points.
 
@@ -192,3 +192,156 @@ Create an `index.html` file exactly in the root folder with this content:
 </html>
 
 Note: If our entry script is named `/src/index.jsx` or `/src/App.jsx` instead of `/src/main.jsx`, please automatically adjust the script src path inside this file to match whichever file initializes our React DOM render.
+```
+# Repository Sync Checkpoint
+git add .
+git commit -m "Create root index.html entry point for Vite dev server parsing"
+
+# Phase 4.2 — React Dom Rendering Anchor
+
+## Prompt 4.3 — Creating the Main DOM Mount Script
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Automatically generates the missing `src/main.jsx` orchestration file to formally mount React 19 onto our index template container.
+
+### AI Prompt
+```text
+Please look at our `src/` directory. We are missing the standard entry point execution file. 
+
+Create a new file at `src/main.jsx` to anchor our React 19 app to our HTML tree layout. Use this exact source code structure:
+
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './App.jsx'
+import './index.css'
+
+const container = document.getElementById('root')
+const root = createRoot(container)
+root.render(
+  <React.StrictMode>
+    <App/>
+  </React.StrictMode>
+)
+```
+# Repository Sync Checkpoint
+git add .
+git commit -m "Deploy src/main.jsx DOM mounting layer to render React tree layout structure"
+
+# Phase 4.3 — Core Application Routing Blueprint
+
+## Prompt 4.4 — Synchronizing App.jsx with State Routing
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Completely rewrites `src/App.jsx` to eliminate rendering silence, hook up the state engine, and pull in the clean light-themed page views.
+
+### AI Prompt
+```text
+Please open `src/App.jsx`. We need to completely rewrite it to manage our two main platform views ('portfolio' and 'forward-moves') along with our 6 specific inner target sub-views. Remove all leftover dark backgrounds or old CSS rules, and ensure the paths to our components match exactly.
+
+Use this verified script architecture for `src/App.jsx`:
+
+import React, { useState } from 'react'
+import Navbar from './components/layout/Navbar'
+import Footer from './components/layout/Footer'
+import PortfolioHome from './components/sections/PortfolioHome'
+import ForwardMovesHome from './components/sections/ForwardMovesHome'
+import CardDetailView from './components/sections/CardDetailView'
+import './App.css'
+
+export default function App() {
+  const [view, setView] = useState('portfolio')
+
+  // Render the correct layout view container text matching the user state selection
+  const renderContent = () => {
+    switch (view) {
+      case 'portfolio':
+        return <PortfolioHome setView="{setView}"/>
+      case 'forward-moves':
+        return <ForwardMovesHome setView="{setView}"/>
+      case 'reskilling':
+      case 'careers':
+      case 'ai-career-scout':
+      case 'resume-prep':
+      case 'glossary':
+      case 'comparison':
+        return <CardDetailView setView="{setView}" type="{view}"/>
+      default:
+        return <PortfolioHome setView="{setView}"/>
+    }
+  }
+
+  return (
+    <div class="min-h-screen flex flex-col bg-[#F9F9FB] text-[#111827] antialiased">
+      <Navbar currentView="{view}" setView="{setView}"/>
+      <main class="flex-grow max-w-7xl w-full mx-auto px-6 py-12">
+        {renderContent()}
+      </main>
+      <Footer/>
+    </div>
+  )
+}
+```
+# Repository Sync Checkpoint
+git add .
+git commit -m "Completely rebuild src/App.jsx state engine logic to resolve blank display page"
+
+# Phase 4.4 — Style Engine Bug Mitigation
+
+## Prompt 4.5 — Purging Unknown Gradient Utility Classes
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Scans `src/index.css` to locate and fix the broken `to-white` utility token crash, substituting it with clean, compliant Tailwind CSS v4 layout properties.
+
+### AI Prompt
+```text
+Please open `src/index.css`. The Tailwind CSS v4 compiler is throwing a compilation error because of an unknown utility class (`to-white`). 
+
+Scan the file to locate any dynamic gradient utilities using `to-white` (for example, look inside our custom `.text-gradient` or `.text-royal-gradient` definition rule blocks). Change any broken `to-white` references to a standard valid layout property or explicitly use color values (like `to-transparent` or matching background values) so that the `@tailwindcss/vite` generation plugin compiles successfully without crashing.
+```
+# Repository Sync Checkpoint
+git add .
+git commit -m "Fix unknown to-white utility class to resolve Tailwind v4 compilation crash"
+
+# Phase 4.5 — Tailwind v4 CSS Layer Fix
+
+## Prompt 4.6 — Injecting Standard Tailwind v4 Directives
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Overwrites `src/index.css` to inject the official Tailwind v4 `@import "tailwindcss";` directive and configures clean utility components without compilation crashes.
+
+### AI Prompt
+```text
+Please open `src/index.css`. We need to rewrite it completely to fix the Tailwind v4 build crash regarding 'font-sans'. 
+
+Ensure that the top of the file explicitly imports Tailwind CSS using the new modern v4 syntax, and configure our custom color tokens and utility classes inside native CSS layers so the compiler reads them perfectly. 
+
+Replace the contents of `src/index.css` with this exact structure:
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #1e40af;
+  --color-brand-purple: #7c3aed;
+}
+
+/* Custom Base Utilities */
+.text-gradient {
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-royal-gradient {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Clean Brand Content Cards */
+.card-lavender { background-color: #f5f3ff; border: 1px solid #e0d7ff; }
+.card-blue { background-color: #eff6ff; border: 1px solid #dbeafe; }
+.card-cream { background-color: #fffbeb; border: 1px solid #fef3c7; }
+.card-mint { background-color: #f0fdf4; border: 1px solid #dcfce7; }
+.card-violet { background-color: #faf5ff; border: 1px solid #f3e8ff; }
+.card-teal { background-color: #f0fdfa; border: 1px solid #ccfbf1; }
+
+```
+# Repository Sync Checkpoint
+git add .
+git commit -m "Completely clean src/index.css and import Tailwind v4 modules natively to clear font-sans crash"
