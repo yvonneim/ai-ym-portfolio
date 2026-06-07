@@ -31,12 +31,6 @@ select {
   font: inherit;
 }
 
-.text-infinite-violet {
-  background: linear-gradient(135deg, #7C3AED 0%, #6366F1 50%, #A855F7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .hero-mesh {
   background: radial-gradient(ellipse 80% 60% at 70% 20%, rgba(167, 139, 250, 0.18) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 10% 80%, rgba(196, 181, 253, 0.14) 0%, transparent 55%), #FAFABA;
 }
@@ -59,4 +53,10 @@ select {
 .hover-lift:hover {
   transform: translateY(-3px);
   box-shadow: 0 20px 48px -12px rgba(124, 58, 237, 0.18);
+}
+
+.text-infinite-violet {
+  background: linear-gradient(135deg, #7C3AED 0%, #6366F1 50%, #A855F7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
