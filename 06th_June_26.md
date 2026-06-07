@@ -1369,3 +1369,6 @@ export default function ForwardMovesHome({ setView }) {
     </div>
   );
 }
+## Repository Sync Checkpoint
+git add .
+git commit -m "Hardcode authentic 6-card grid with active Skill Studio interactive entry point"
