@@ -506,4 +506,33 @@ export default function ForwardMovesHome({ setView }) {
     </div>
   )
 }
+```
+## Repository Sync Checkpoint
+git add .
+git commit -m "Execute targeted color sweep, establish proper home routing context, and deploy aesthetic pastel cards"
 
+
+# Phase 5.1 — Layout Margins & Footer Cleanup
+
+## Prompt 5.2 — Restructuring Component Spacing and Purging Corporate Footer
+* **Where to paste:** Your VS Code AI Composer panel (`Ctrl + I`) in Agent/Project mode.
+* **Intent:** Fixes the squeezed elements and broken layout tracking, completely removes the heavy multi-column footer layout, and adds proper vertical breathing room.
+
+### AI Prompt
+```text
+Please fix the broken margins and overlapping layout spacing visible in our layout views across `src/components/layout/Footer.jsx`, `src/components/sections/PortfolioHome.jsx`, and `src/components/sections/ForwardMovesHome.jsx`. 
+
+Please execute these exact structural updates:
+
+1. Completely Overwrite `src/components/layout/Footer.jsx`:
+   - Delete the multi-column layout links, the platform categories, and the bright blue circular social media icons completely.
+   - Replace it with a single, simple, ultra-clean centermaligned line of text with plenty of vertical padding:
+     "© 2026 Forward Moves AI. All rights reserved."
+
+2. Fix Overlapping and Margins on the Main Page (`src/components/sections/PortfolioHome.jsx`):
+   - Wrap the main sections inside a clean, vertical layout stack using flexbox and proper spacing (`flex flex-col items-center space-y-8 text-center max-w-4xl mx-auto px-6 py-16`).
+   - Give the main button block and the audio player clear separation so they never overlap or collide, using native Tailwind spacing classes.
+
+3. Fix Layout Margins on the Project Dashboard (`src/components/sections/ForwardMovesHome.jsx`):
+   - Ensure the upper content section elements (the disclaimer, the hero title, the audio player mockup container, and the "Get Started" button) are cleanly stacked with distinct margins (`space-y-6`).
+   - Add clean padding blocks above and below our "Explore What's Inside" section headers and expand the grid container gap structure (`gap-8`) so the pastel cards look spacious and beautiful.

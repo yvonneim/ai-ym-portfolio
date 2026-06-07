@@ -52,25 +52,27 @@ export default function ForwardMovesHome({ setView }) {
         Sample Disclaimer: "Forward Moves AI is currently in its community-testing phase. To protect your privacy, please remove personal contact information from your resume before uploading."
       </div>
       <div className="max-w-6xl mx-auto px-6 py-12">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="text-[10px] font-bold tracking-widest text-purple-600 uppercase mb-2">• Forward Moves USA</div>
-          <h2 className="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-3">
+        <div className="space-y-6 text-center max-w-2xl mx-auto mb-12">
+          <div className="text-[10px] font-bold tracking-widest text-purple-600 uppercase">• Forward Moves USA</div>
+          <h2 className="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">
             Step Into Your <span className="text-purple-600">AI-Driven Future.</span>
           </h2>
-          <p className="text-gray-500 text-sm mb-6">Your bridge to a more fulfilling career. We connect your unique talents to the opportunities in the AI workforce.</p>
-          <div className="max-w-xs mx-auto bg-gray-50 rounded-xl p-2 border border-gray-100 mb-6 flex items-center justify-center gap-2">
+          <p className="text-gray-500 text-sm">
+            Your bridge to a more fulfilling career. We connect your unique talents to the opportunities in the AI workforce.
+          </p>
+          <div className="max-w-xs mx-auto bg-gray-50 rounded-xl p-2 border border-gray-100 flex items-center justify-center gap-2">
             <span className="text-xs">🔊 Audio Player Interface Mock</span>
           </div>
           <button className="bg-gray-900 hover:bg-gray-800 text-white text-xs font-bold px-6 py-3 rounded-lg shadow-sm">
             Get Started →
           </button>
         </div>
-        <div className="text-center mb-8">
+        <div className="py-10 text-center">
           <div className="text-xl mb-1">🧭</div>
           <h3 className="font-bold text-gray-900 text-xl">Explore What's Inside</h3>
           <p className="text-gray-400 text-xs mt-0.5">Select a path to begin your journey.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {cards.map((c) => (
             <div
               key={c.type}
