@@ -1,0 +1,38 @@
+# AI-YM-PORTFOLIO/.gitignore
+
+# ── SECRET KEY PROTECTION ──
+# Absolutely block all local environment files containing private API credentials
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.secret
+
+# ── DEPENDENCY EXCLUSIONS ──
+# Block massive local package caches from bloating your repository
+node_modules/
+jspm_packages/
+.npm/
+.pnpm-store/
+
+# ── BUILD OUTPUTS ──
+# Block the local compiled production distribution folders
+dist/
+dist-ssr/
+build/
+out/
+.vtex-cache
+
+# ── SYSTEM & IDE RESIDUALS ──
+# Block background operating system and editor configuration files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

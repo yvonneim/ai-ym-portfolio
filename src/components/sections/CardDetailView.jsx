@@ -2,145 +2,145 @@ import React from 'react';
 
 const detailPages = {
   reskilling: {
-    category: 'Reskilling Portal',
-    title: 'Accelerate team readiness with structured AI reskilling.',
+    category: '--- Select your courses.',
+    title: 'Skill Studio',
     description:
-      'Centralize learning pathways, project-based skill upgrades, and measurable role transitions for operational teams.',
+      'A calm executive environment for guided learning pathways, curated modules, and practical role growth.',
     blocks: [
       {
-        title: 'Skill Journey Mapping',
+        title: 'Focused Learning Tracks',
         points: [
-          'Define capability sets for AI enablement.',
-          'Align technical and business skill trajectories.',
-          'Measure progress through practical milestones.',
+          'Curated course sequences aligned to modern AI workflows.',
+          'Practical modules designed for efficient upskilling.',
+          'Clear milestones for professional capability growth.',
         ],
       },
       {
-        title: 'Curriculum Playbooks',
+        title: 'Course Navigation',
         points: [
-          'Deliver enterprise-grade learning frameworks.',
-          'Support hands-on labs, case studies, and real-world operations.',
-          'Keep adoption momentum across teams and roles.',
+          'Rapidly access core lessons from partner platforms.',
+          'Maintain progress with a clean, distraction-free layout.',
+          'Filter by role, tool, and priority skill set.',
         ],
       },
     ],
   },
   careers: {
-    category: 'Careers Tracking',
-    title: 'Monitor career progress for AI, data, and technology roles.',
+    category: '--- Career opportunities.',
+    title: 'Careers',
     description:
-      'A unified tracking dashboard for skills, promotions, and internal mobility aligned to AI business outcomes.',
+      'A refined dashboard to review mission-driven employer pathways, target roles, and hiring momentum.',
     blocks: [
       {
-        title: 'Role Readiness Signals',
+        title: 'Opportunity Signals',
         points: [
-          'Capture skill gaps, project experience, and stakeholder feedback.',
-          'Surface candidates for emerging AI leadership roles.',
-          'Filter by capability, tenure, and strategic alignment.',
+          'Track live hiring trends across verticals.',
+          'Match skills to emerging roles with confidence.',
+          'Visualize workforce demand with elegant clarity.',
         ],
       },
       {
-        title: 'People-First Insights',
+        title: 'Talent Intelligence',
         points: [
-          'Spotlight high-potential team members.',
-          'Visualize mobility pathways and career readiness.',
-          'Embed durable talent conversations into operational planning.',
+          'Surface high-priority career channels.',
+          'Compare pathways across industries succinctly.',
+          'Preserve a single source of truth for role strategy.',
         ],
       },
     ],
   },
   scout: {
-    category: 'AI Career Scout',
-    title: 'Discover the right AI career paths for modern enterprise professionals.',
+    category: '--- Intelligent career discovery.',
+    title: 'AI Career Scout',
     description:
-      'Intelligent career scouting for AI talent, matching role themes with experience signals and future-proof job outcomes.',
+      'A light, focused experience for evaluating role fit and career direction in modern AI organizations.',
     blocks: [
       {
-        title: 'Guided Career Matches',
+        title: 'Curated Matches',
         points: [
-          'Recommend target roles based on skill clusters.',
-          'Align candidate strengths with AI operating models.',
-          'Convert discovery into tangible career steps.',
+          'Recommend opportunities based on skill alignment.',
+          'Provide clear guidance across career pathways.',
+          'Make decisions with concise, contextual insight.',
         ],
       },
       {
-        title: 'Opportunity Intelligence',
+        title: 'Opportunity Clarity',
         points: [
-          'Highlight top internal and external career paths.',
-          'Compare career options with readiness signals.',
-          'Track momentum across hiring and internal placement.',
+          'Surface relevant roles with minimal noise.',
+          'Compare options through consistent criteria.',
+          'Advance with confidence in your next career move.',
         ],
       },
     ],
   },
   resume: {
-    category: 'Resume Prep',
-    title: 'Polish career narratives for AI and infrastructure leadership roles.',
+    category: '--- Refine your profile.',
+    title: 'Resume Prep',
     description:
-      'Create compelling resumes, project summaries, and executive-facing profiles that present AI work in business terms.',
+      'An executive polish toolkit for concise, professional career narratives tailored to AI and technology leadership.',
     blocks: [
       {
-        title: 'Narrative Design',
+        title: 'Narrative Precision',
         points: [
-          'Frame achievements with strategic impact.',
-          'Align experience to AI operating excellence.',
-          'Use clean, professional language for enterprise audiences.',
+          'Frame achievements with clarity and impact.',
+          'Present experience in streamlined enterprise language.',
+          'Maintain a modern, minimal format for hiring managers.',
         ],
       },
       {
-        title: 'Resume Toolkit',
+        title: 'Profile Toolkit',
         points: [
-          'Offer role-specific resume formats.',
-          'Provide bullet-focused achievement statements.',
-          'Support portfolio-ready project summaries.',
+          'Access role-specific resume structures.',
+          'Build a concise summary of outcomes and skills.',
+          'Keep your professional materials clean and compelling.',
         ],
       },
     ],
   },
   glossary: {
-    category: 'Glossary System',
-    title: 'Standardize AI and infrastructure vocabulary across the platform.',
+    category: '--- AI terminology.',
+    title: 'Glossary',
     description:
-      'A shared glossary for decision makers, engineers, and operations teams to reduce ambiguity and accelerate collaboration.',
+      'A refined term library that keeps technical language consistent, precise, and easy to reference across teams.',
     blocks: [
       {
-        title: 'Terms & Definitions',
+        title: 'Core Definitions',
         points: [
-          'Define the key concepts used across AI programs.',
-          'Keep definitions consistent across teams.',
-          'Support shared decision-making with common language.',
+          'Clarify key concepts with simple, authoritative language.',
+          'Reduce ambiguity across collaboration and execution.',
+          'Preserve a consistent vocabulary for every stakeholder.',
         ],
       },
       {
-        title: 'Stakeholder Alignment',
+        title: 'Shared Context',
         points: [
-          'Create a single source of truth for terminology.',
-          'Reduce translation work between technical and business groups.',
-          'Enable cross-functional clarity for every launch.',
+          'Align teams with a single source of technical truth.',
+          'Enable faster, safer decision-making through shared terms.',
+          'Keep communication focused and intentional.',
         ],
       },
     ],
   },
   comparison: {
-    category: 'Comparison Matrix',
-    title: 'Compare capabilities, tools, and operating models with confidence.',
+    category: '--- Precise evaluation.',
+    title: 'Comparison Matrix',
     description:
-      'A precise comparison layer for AI platforms, vendor decisions, and internal capability scoring.',
+      'A streamlined comparison canvas for assessing tools, platforms, and operating models with quiet confidence.',
     blocks: [
       {
-        title: 'Side-by-Side Evaluation',
+        title: 'Side-by-Side Clarity',
         points: [
-          'Compare features, readiness, and operational fit.',
-          'Score options by business, security, and scalability.',
-          'Make faster, more repeatable decisions.',
+          'Compare features and readiness in a clean format.',
+          'Measure options against consistent criteria.',
+          'Choose with reduced noise and increased certainty.',
         ],
       },
       {
-        title: 'Decision Support',
+        title: 'Decision Framework',
         points: [
-          'Surface the strongest option for each use case.',
-          'Reduce risk with repeatable evaluation criteria.',
-          'Turn matrix output into actionable recommendations.',
+          'Evaluate tradeoffs with straightforward context.',
+          'Keep comparisons light and focused.',
+          'Turn insight into decisive next steps.',
         ],
       },
     ],
@@ -148,25 +148,35 @@ const detailPages = {
 };
 
 const CardDetailView = ({ type, onBack }) => {
-  const page = detailPages[type] || detailPages.dashboard;
+  const page = detailPages[type] || detailPages.reskilling;
 
   return (
-    <section className="detail-view section-padding">
-      <div className="container-lg">
-        <div className="detail-hero">
-          <button type="button" className="btn-tertiary detail-back" onClick={onBack}>
+    <section className="w-full min-h-screen bg-[#FAFAFA] py-16 px-6 md:px-12">
+      <div className="max-w-6xl mx-auto space-y-10">
+        <div className="bg-white border border-zinc-200 rounded-[28px] p-10 shadow-sm">
+          <button
+            type="button"
+            onClick={onBack}
+            className="text-xs uppercase tracking-[0.3em] text-zinc-500 hover:text-zinc-900 transition-colors"
+          >
             ← Return to dashboard
           </button>
-          <span className="section-pill">{page.category}</span>
-          <h1>{page.title}</h1>
-          <p className="detail-description">{page.description}</p>
+          <div className="mt-8 space-y-4">
+            <p className="text-[11px] uppercase tracking-[0.4em] text-zinc-400">{page.category}</p>
+            <h1 className="font-serif text-4xl md:text-5xl text-zinc-900 tracking-tight leading-tight">
+              {page.title}
+            </h1>
+            <p className="max-w-3xl text-sm leading-7 text-zinc-600">
+              {page.description}
+            </p>
+          </div>
         </div>
 
-        <div className="detail-grid">
+        <div className="grid gap-6 md:grid-cols-2">
           {page.blocks.map((block) => (
-            <article key={block.title} className="detail-card">
-              <h2>{block.title}</h2>
-              <ul>
+            <article key={block.title} className="bg-white border border-zinc-200 rounded-3xl p-8 shadow-sm">
+              <h2 className="text-lg font-semibold text-zinc-900 mb-4">{block.title}</h2>
+              <ul className="space-y-3 text-sm text-zinc-600 list-disc list-inside">
                 {block.points.map((point) => (
                   <li key={point}>{point}</li>
                 ))}
@@ -175,8 +185,12 @@ const CardDetailView = ({ type, onBack }) => {
           ))}
         </div>
 
-        <div className="detail-actions">
-          <button className="btn-primary" type="button" onClick={onBack}>
+        <div className="flex justify-end">
+          <button
+            type="button"
+            onClick={onBack}
+            className="rounded-full border border-zinc-200 bg-white px-6 py-3 text-sm font-semibold text-zinc-900 transition hover:bg-zinc-50"
+          >
             Back to Dashboard Hub
           </button>
         </div>
