@@ -8,6 +8,10 @@
     ],
     "rewrites": [
       {
+        "source": "/ai-career-scout/**",
+        "destination": "https://ai-career-scout-ym.web.app"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
