@@ -1,6 +1,6 @@
 # Yvonne Martinez — Enterprise AI Operations Playbook
 An enterprise-grade AI portfolio tracking repository, configuration blueprint, and operations playbook designed for orchestrating premium, high-performance client interface solutions.
-🎯 What is this Project About? (Layman's Terms)
+## 🎯 What is this Project About? (Layman's Terms)
 Imagine wanting to transition into a career in Artificial Intelligence but feeling overwhelmed by complicated jargon, not knowing which skills are actually in demand, or struggling to find credible, free courses.
 This project is a digital career launchpad (called Forward Moves AI, part of Yvonne Martinez's portfolio platform). It is a clean, hyper-fast, mobile-friendly website designed to guide individuals step-by-step into the modern AI workforce.
 Instead of searching the web aimlessly, users arrive at a unified Dashboard Hub that offers four core, high-impact career transition tools:
