@@ -150,10 +150,10 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
 ## Architectural Diagrams
 
 ### Client-Side State & Browser History Engine
-![User Interacts with UI Trigger](./interactsWithUI.png)
+![User Interacts with UI Trigger](./public/assets/interactsWithUI.png)
 
 ### Secured Enterprise Proxy Architecture
-![Secured Enterprise Proxy Architecture](./secured-proxy-architecture.png)
+![Secured Enterprise Proxy Architecture](./public/assets/secured-proxy-architecture.png)
 
 ### Prerequisites & Requirements
 Ensure your system environment matches these target parameters before initializing setup:  
