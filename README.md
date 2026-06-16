@@ -85,26 +85,27 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
   - [Phase 3 — Multi-View Architecture \& Dynamic Product Sub-Pages](#phase-3--multi-view-architecture--dynamic-product-sub-pages)
     - [Prompt 3.1 — Building Interactive Light-Themed Navigation and Content Views](#prompt-31--building-interactive-light-themed-navigation-and-content-views)
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-2)
+    - [Repository Sync Checkpoint](#repository-sync-checkpoint-2)
   - [Phase 4 — Configuration Engine \& Dependency Setup](#phase-4--configuration-engine--dependency-setup)
     - [Prompt 4.1 — Dropping the Node \& Project Configuration Files](#prompt-41--dropping-the-node--project-configuration-files)
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-3)
     - [Prompt 4.2 — Creating the Root HTML Entry Point](#prompt-42--creating-the-root-html-entry-point)
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-4)
   - [Prompt 4.3 — Creating the Main DOM Mount Script](#prompt-43--creating-the-main-dom-mount-script)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-5)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-5)
   - [Prompt 4.4 — App.jsx Orchestration Engine](#prompt-44--appjsx-orchestration-engine)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-6)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-6)
   - [Prompt 4.5 — Purging Unknown Gradient Utility Classes](#prompt-45--purging-unknown-gradient-utility-classes)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-7)
     - [Prompt 4.6 — Injecting Standard Tailwind v4 Directives](#prompt-46--injecting-standard-tailwind-v4-directives)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-8)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-2)
+  - [Repository Sync Checkpoint](#repository-sync-checkpoint-3)
   - [Phase 5 — Core UI Theme \& Layout Realignment](#phase-5--core-ui-theme--layout-realignment)
     - [Prompt 5.1 — Custom Sticky Navigation Header \& Logo Optimization](#prompt-51--custom-sticky-navigation-header--logo-optimization)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-9)
   - [Prompt 5.2 — Restructuring Component Spacing and Activating the Footer](#prompt-52--restructuring-component-spacing-and-activating-the-footer)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-10)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-3)
+  - [Repository Sync Checkpoint](#repository-sync-checkpoint-4)
   - [Phase 6 — Core Root Overrides \& Tab Icon Fixes](#phase-6--core-root-overrides--tab-icon-fixes)
     - [Prompt 6.1 — Direct Inline SVG Escaped Favicon Integration](#prompt-61--direct-inline-svg-escaped-favicon-integration)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-11)
@@ -117,7 +118,7 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-14)
   - [Prompt 7.4 — Glossary System Integration](#prompt-74--glossary-system-integration)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-15)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-4)
+  - [Repository Sync Checkpoint](#repository-sync-checkpoint-5)
   - [Phase 8 — Environmental Security Architecture](#phase-8--environmental-security-architecture)
     - [Prompt 8.1 — Activating the Master Git Exclusions File](#prompt-81--activating-the-master-git-exclusions-file)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-16)
@@ -126,7 +127,7 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
 - [── SECRET KEY PROTECTION ──](#-secret-key-protection-)
 - [── DEPENDENCY EXCLUSIONS ──](#-dependency-exclusions-)
 - [── BUILD OUTPUTS ──](#-build-outputs-)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-5)
+  - [Repository Sync Checkpoint](#repository-sync-checkpoint-6)
   - [Phase 9 — Production Compilation \& Edge Cloud Deployments](#phase-9--production-compilation--edge-cloud-deployments)
     - [Prompt 9.1 — Running the Master Compression Pipelines](#prompt-91--running-the-master-compression-pipelines)
 - [Step A: Package compilation tree structure assets](#step-a-package-compilation-tree-structure-assets)
@@ -286,7 +287,6 @@ Open a PowerShell tab inside your terminal window
 ### Prompt 1.2 — Populating Boilerplate JSX Code
 
 * **Execution Location:** VS Code AI Composer panel (Ctrl + I / Cmd + I) set to Project or Agent mode running Gemini Code Assist.  
-
 * **Intent:** Generates basic functional structures and mounts them to the root entry point.  
 
   ### 🤖 AI Composer System Prompt:
@@ -349,8 +349,8 @@ Open a PowerShell tab inside your terminal window
 
 ## Phase 3 — Multi-View Architecture & Dynamic Product Sub-Pages   
 ### Prompt 3.1 — Building Interactive Light-Themed Navigation and Content Views
-  * **Execution Location:** VS Code AI Composer panel (Ctrl + I) in Agent/Project mode via Gemini Code Assist.  
-  * **Intent:** Constructs a single-page view structure utilizing dynamic rendering to clean up design components.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) in Agent/Project mode via Gemini Code Assist.  
+* **Intent:** Constructs a single-page view structure utilizing dynamic rendering to clean up design components.  
 
   ### 🤖 AI Composer System Prompt:
   * **Plaintext**
@@ -379,8 +379,8 @@ Open a PowerShell tab inside your terminal window
        - When on the portfolio view, display only: "FORWARD MOVES AI" and "CONTACT".
        - When inside any Forward Moves platform view, render the full navigation selection verbatim: "🏡 HOME", "DASHBOARD HUB", "SKILL STUDIO", "CAREERS", "AI CAREER SCOUT", "GLOSSARY". Clicking "🏡 HOME" must seamlessly return the state back to the portfolio home view.
     ```
-    ### Repository Sync Checkpoint
-    * **PowerShell**
+  ### Repository Sync Checkpoint
+  * **PowerShell**
       ```
       git add .
       ```
@@ -396,9 +396,9 @@ Open a PowerShell tab inside your terminal window
   ### 🤖 AI Composer System Prompt:
   * **Plaintext**
     ```
-        Please look at our root directory (AI-YM-PORTFOLIO). We need to drop in the formal project configuration files so we can run the real application.
+    Please look at our root directory (AI-YM-PORTFOLIO). We need to drop in the formal project configuration files so we can run the real application.
 
-        1. Create a package.json file exactly in the root folder with this content:
+    1. Create a package.json file exactly in the root folder with this content:
         {
           "name": "ai-ym-portfolio",
           "private": true,
@@ -423,7 +423,7 @@ Open a PowerShell tab inside your terminal window
           }
         }
 
-        2. Create a vite.config.js file exactly in the root folder with this content:
+    2. Create a vite.config.js file exactly in the root folder with this content:
         import { defineConfig } from 'vite'
         import react from '@vitejs/plugin-react'
         import tailwindcss from '@tailwindcss/vite'
@@ -431,130 +431,135 @@ Open a PowerShell tab inside your terminal window
         export default defineConfig({
           plugins: [react(), tailwindcss()],
         })
-        ```
+    ```
 
 ### Prompt 4.2 — Creating the Root HTML Entry Point  
-
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  Intent: Generates index.html referencing Vite runtime mounting patterns.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  
+* **Intent:** Generates index.html referencing Vite runtime mounting patterns.  
 
   ### 🤖 AI Composer System Prompt:
   * **Plaintext**
     ```
-Please look at our root directory (AI-YM-PORTFOLIO). Vite requires a root entry file to display our app on localhost.
+    Please look at our root directory (AI-YM-PORTFOLIO). Vite requires a root entry file to display our app on localhost.
 
-Create an index.html file exactly in the root folder with this content:
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yvonne Martinez - AI Operations Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+    Create an index.html file exactly in the root folder with this content:
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yvonne Martinez - AI Operations Portfolio</title>
+      </head>
+      <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+      </body>
+    </html>
+    ```
 
 ## Prompt 4.3 — Creating the Main DOM Mount Script
 
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  
-* ** Intent: Generates mounting instructions matching React 19 standards.  
- 
-### 🤖 AI Composer System Prompt
-Please look at our src/ directory. We are missing the standard entry point execution file. 
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  
+* **Intent:** Generates mounting instructions matching React 19 standards.  
 
-Create a new file at src/main.jsx to anchor our React 19 app to our HTML tree layout. Use this exact source code structure:
 
-import React from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    Please look at our src/ directory. We are missing the standard entry point execution file. 
 
-const container = document.getElementById('root')
-const root = createRoot(container)
-root.render(
-  <React.StrictMode>
-    <App/>
-  </React.StrictMode>
-)
+    Create a new file at src/main.jsx to anchor our React 19 app to our HTML tree layout. Use this exact source code structure:
 
+    import React from 'react'
+    import { createRoot } from 'react-dom/client'
+    import App from './App.jsx'
+    import './index.css'
+
+    const container = document.getElementById('root')
+    const root = createRoot(container)
+    root.render(
+      <React.StrictMode>
+        <App/>
+      </React.StrictMode>
+    )
+    ```
 ## Prompt 4.4 — App.jsx Orchestration Engine   
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) in Agent/Project mode.  
+* **Intent:** Completely rewrites application entrypoint scripts to manage layout states seamlessly.  
 
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) in Agent/Project mode.  
-* ** Intent: Completely rewrites application entrypoint scripts to manage layout states seamlessly.  
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    Please open src/App.jsx. We need to completely rewrite it to manage our 4 production platform views using an advanced client-side state routing mechanism combined with the native browser History API to solve the back button trap. Remove all legacy dark backgrounds or old placeholder variables, and ensure container pathways match our sections perfectly.
 
-### 🤖 AI Composer System Prompt
-Please open src/App.jsx. We need to completely rewrite it to manage our 4 production platform views using an advanced client-side state routing mechanism combined with the native browser History API to solve the back button trap. Remove all legacy dark backgrounds or old placeholder variables, and ensure container pathways match our sections perfectly.
+    Configure src/App.jsx with this verified, complete architecture:
 
-Configure src/App.jsx with this verified, complete architecture:
+    import React, { useState, useEffect } from 'react';
+    import Navbar from './components/layout/Navbar';
+    import Footer from './components/layout/Footer';
+    import PortfolioHome from './components/sections/PortfolioHome';
+    import ForwardMovesHome from './components/sections/ForwardMovesHome';
+    import SkillStudioView from './components/sections/SkillStudioView';
+    import CareersView from './components/sections/CareersView';
+    import CareerScoutView from './components/sections/CareerScoutView';
+    import GlossaryView from './components/sections/GlossaryView';
 
-import React, { useState, useEffect } from 'react';
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
-import PortfolioHome from './components/sections/PortfolioHome';
-import ForwardMovesHome from './components/sections/ForwardMovesHome';
-import SkillStudioView from './components/sections/SkillStudioView';
-import CareersView from './components/sections/CareersView';
-import CareerScoutView from './components/sections/CareerScoutView';
-import GlossaryView from './components/sections/GlossaryView';
+    export default function App() {
+      const [view, setView] = useState('home');
 
-export default function App() {
-  const [view, setView] = useState('home');
+      const handleViewChange = (nextView) => {
+        setView(nextView);
+        const urlPath = nextView === 'home' ? '/' : `/${nextView}`;
+        window.history.pushState({ view: nextView }, '', urlPath);
+      };
 
-  const handleViewChange = (nextView) => {
-    setView(nextView);
-    const urlPath = nextView === 'home' ? '/' : `/${nextView}`;
-    window.history.pushState({ view: nextView }, '', urlPath);
-  };
+      useEffect(() => {
+        const handlePopState = (event) => {
+          if (event.state && event.state.view) {
+            setView(event.state.view);
+          } else {
+            setView('home');
+          }
+        };
+        window.addEventListener('popstate', handlePopState);
+        window.history.replaceState({ view: 'home' }, '', window.location.pathname);
+        return () => window.removeEventListener('popstate', handlePopState);
+      }, []);
 
-  useEffect(() => {
-    const handlePopState = (event) => {
-      if (event.state && event.state.view) {
-        setView(event.state.view);
-      } else {
-        setView('home');
-      }
-    };
-    window.addEventListener('popstate', handlePopState);
-    window.history.replaceState({ view: 'home' }, '', window.location.pathname);
-    return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
+      const renderContent = () => {
+        switch (view) {
+          case 'home':
+            return <PortfolioHome setView={handleViewChange} />;
+          case 'forward-moves':
+            return <ForwardMovesHome setView={handleViewChange} />;
+          case 'skill-studio':
+            return <SkillStudioView setView={handleViewChange} />;
+          case 'careers':
+            return <CareersView setView={handleViewChange} />;
+          case 'career-scout':
+            return <CareerScoutView setView={handleViewChange} />;
+          case 'glossary':
+            return <GlossaryView setView={handleViewChange} />;
+          default:
+            return <PortfolioHome setView={handleViewChange} />;
+        }
+      };
 
-  const renderContent = () => {
-    switch (view) {
-      case 'home':
-        return <PortfolioHome setView={handleViewChange} />;
-      case 'forward-moves':
-        return <ForwardMovesHome setView={handleViewChange} />;
-      case 'skill-studio':
-        return <SkillStudioView setView={handleViewChange} />;
-      case 'careers':
-        return <CareersView setView={handleViewChange} />;
-      case 'career-scout':
-        return <CareerScoutView setView={handleViewChange} />;
-      case 'glossary':
-        return <GlossaryView setView={handleViewChange} />;
-      default:
-        return <PortfolioHome setView={handleViewChange} />;
+      return (
+        <div className="min-h-screen flex flex-col bg-[#fafafa] text-zinc-900 antialiased">
+          <Navbar currentView={view} setView={handleViewChange} />
+          <main className="flex-grow w-full max-w-7xl mx-auto px-6 md:px-12 pt-24 pb-16 box-border">
+            {renderContent()}
+          </main>
+          <Footer currentView={view} setView={handleViewChange} />
+        </div>
+      );
     }
-  };
-
-  return (
-    <div className="min-h-screen flex flex-col bg-[#fafafa] text-zinc-900 antialiased">
-      <Navbar currentView={view} setView={handleViewChange} />
-      <main className="flex-grow w-full max-w-7xl mx-auto px-6 md:px-12 pt-24 pb-16 box-border">
-        {renderContent()}
-      </main>
-      <Footer currentView={view} setView={handleViewChange} />
-    </div>
-  );
-}
+    ```
 
 ## Prompt 4.5 — Purging Unknown Gradient Utility Classes   
-
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.
-* ** Intent: Identifies and replaces broken to-white syntax layouts inside global stylesheets.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.
+* **Intent:** Identifies and replaces broken to-white syntax layouts inside global stylesheets.  
  
 ### 🤖 AI Composer System Prompt
 Please open src/index.css. The Tailwind CSS v4 compiler is throwing a compilation error because of an unknown utility class (to-white). 
