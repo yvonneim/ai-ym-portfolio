@@ -64,6 +64,7 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Prerequisites \& Requirements](#prerequisites--requirements)
   - [Installation Instructions](#installation-instructions)
     - [Terminal Step 1: Clone the Repository](#terminal-step-1-clone-the-repository)
+    - [💡 Username Note:](#-username-note)
     - [Terminal Step 1a: reminder to change folder](#terminal-step-1a-reminder-to-change-folder)
     - [Terminal Step 1b: Open the Project Folder inside VS Code](#terminal-step-1b-open-the-project-folder-inside-vs-code)
     - [Terminal Step 2: Install Package Dependencies](#terminal-step-2-install-package-dependencies)
@@ -170,16 +171,19 @@ Ensure your system environment matches these target parameters before initializi
 Follow these steps to deploy and structure your local workspace sandbox:  
 
 ### Terminal Step 1: Clone the Repository
-* ** Bash
+* Bash
 ```bash
 git clone [https://github.com/your-username/ai-ym-portfolio.git](https://github.com/your-username/ai-ym-portfolio.git)
 
-💡 Username Note: If you are a student or developer copying the official project, use yvonneim verbatim. If you have already forked this repository to your personal GitHub profile to save your own code modifications, substitute yvonneim with your personal GitHub username.
-
 ```
+
+### 💡 Username Note:
+* ** If you are a student or developer copying the official project, use yvonneim verbatim. If you have already forked this repository to your personal GitHub profile to save your own code modifications, substitute yvonneim with your personal GitHub username.
+
+
 ### Terminal Step 1a: reminder to change folder
 ⚠️ CRITICAL STEP: You must physically step your terminal session inside the newly downloaded folder before running any package configurations!
-* ** Bash
+* Bash
 ```bash
 cd ai-ym-portfolio
 
@@ -188,7 +192,7 @@ cd ai-ym-portfolio
 To exit the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view:
 
 Via Terminal: Run the execution flag to open the directory path instantly inside a fresh VS Code layout:
-* ** Bash
+* Bash
 ```bash
 code .
 
@@ -197,7 +201,7 @@ code .
 ```
 ### Terminal Step 2: Install Package Dependencies
 Open your integrated VS Code terminal (`Ctrl + ``) and initialize your tracking dependencies:
-* ** Bash
+* Bash
 ```bash
 npm install
 
@@ -205,15 +209,18 @@ npm install
 
 ### Terminal Step 3: Run the Local Development Environment
 Launch the real-time hot-reloading rendering environment engine to test live file updates:
-* ** Bash
+* Bash
 ```bash
 npm run dev
 
-    * ** 💡 Terminal Execution Note: This terminal will stay "locked" as long as the server is running. To stop the server at any time, click into the terminal window and press Ctrl + C.
 ```
+
+###💡 Terminal Execution Note: 
+This terminal will stay "locked" as long as the server is running. To stop the server at any time, click into the terminal window and press Ctrl + C.
+
 ## ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
   * ** This section serves as a quick lookup matrix for future management. Do not execute these concurrently in your active installation terminal row.  Terminal Command: Active Development Sandbox
-      * ** Bash
+      * Bash
       ```bash
       npm run dev
 
@@ -221,7 +228,7 @@ npm run dev
         * ** Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
 
 ### Terminal Step B: Compile Static Optimization Builds
-* ** Bash
+* Bash
 ```bash
 npm run build
 
@@ -229,7 +236,7 @@ npm run build
       * ** Primary Use Case: Compiles, compresses, and minifies your code into strict production static files inside the local /dist folder destination. (Note: Run this command in a second terminal tab or after stopping your development server with Ctrl + C).
   
   ### Terminal Step C: Production Sandbox Simulation Preview
-    * ** Bash
+    * Bash
     npm run preview
 
     * ** Local Port Mapping: http://localhost:4173
