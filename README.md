@@ -96,19 +96,17 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
   - [Prompt 4.4 — App.jsx Orchestration Engine](#prompt-44--appjsx-orchestration-engine)
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-6)
   - [Prompt 4.5 — Purging Unknown Gradient Utility Classes](#prompt-45--purging-unknown-gradient-utility-classes)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-7)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-7)
     - [Prompt 4.6 — Injecting Standard Tailwind v4 Directives](#prompt-46--injecting-standard-tailwind-v4-directives)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-8)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-3)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-8)
   - [Phase 5 — Core UI Theme \& Layout Realignment](#phase-5--core-ui-theme--layout-realignment)
     - [Prompt 5.1 — Custom Sticky Navigation Header \& Logo Optimization](#prompt-51--custom-sticky-navigation-header--logo-optimization)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-9)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-9)
   - [Prompt 5.2 — Restructuring Component Spacing and Activating the Footer](#prompt-52--restructuring-component-spacing-and-activating-the-footer)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-10)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-4)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-10)
   - [Phase 6 — Core Root Overrides \& Tab Icon Fixes](#phase-6--core-root-overrides--tab-icon-fixes)
     - [Prompt 6.1 — Direct Inline SVG Escaped Favicon Integration](#prompt-61--direct-inline-svg-escaped-favicon-integration)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-11)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-11)
   - [Phase 7 — Staging Assets \& Sub-Platform Generations](#phase-7--staging-assets--sub-platform-generations)
     - [Prompt 7.1 — Hardcoding the Streamlined 4-Card Dashboard Matrix Block](#prompt-71--hardcoding-the-streamlined-4-card-dashboard-matrix-block)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-12)
@@ -118,7 +116,7 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-14)
   - [Prompt 7.4 — Glossary System Integration](#prompt-74--glossary-system-integration)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-15)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-5)
+  - [Repository Sync Checkpoint](#repository-sync-checkpoint-3)
   - [Phase 8 — Environmental Security Architecture](#phase-8--environmental-security-architecture)
     - [Prompt 8.1 — Activating the Master Git Exclusions File](#prompt-81--activating-the-master-git-exclusions-file)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-16)
@@ -127,7 +125,7 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
 - [── SECRET KEY PROTECTION ──](#-secret-key-protection-)
 - [── DEPENDENCY EXCLUSIONS ──](#-dependency-exclusions-)
 - [── BUILD OUTPUTS ──](#-build-outputs-)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-6)
+  - [Repository Sync Checkpoint](#repository-sync-checkpoint-4)
   - [Phase 9 — Production Compilation \& Edge Cloud Deployments](#phase-9--production-compilation--edge-cloud-deployments)
     - [Prompt 9.1 — Running the Master Compression Pipelines](#prompt-91--running-the-master-compression-pipelines)
 - [Step A: Package compilation tree structure assets](#step-a-package-compilation-tree-structure-assets)
@@ -560,178 +558,198 @@ Open a PowerShell tab inside your terminal window
 ## Prompt 4.5 — Purging Unknown Gradient Utility Classes   
 * **Execution Location:** VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.
 * **Intent:** Identifies and replaces broken to-white syntax layouts inside global stylesheets.  
- 
-### 🤖 AI Composer System Prompt
-Please open src/index.css. The Tailwind CSS v4 compiler is throwing a compilation error because of an unknown utility class (to-white). 
 
-Scan the file to locate any dynamic gradient utilities using to-white (for example, look inside our custom .text-gradient or .text-royal-gradient definition rule blocks). Change any broken to-white references to a standard valid layout property or explicitly use color values (like to-transparent or matching background values) so that the @tailwindcss/vite generation plugin compiles successfully without crashing.
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    Please open src/index.css. The Tailwind CSS v4 compiler is throwing a compilation error because of an unknown utility class (to-white). 
+
+    Scan the file to locate any dynamic gradient utilities using to-white (for example, look inside our custom .text-gradient or .text-royal-gradient definition rule blocks). Change any broken to-white references to a standard valid layout property or explicitly use color values (like to-transparent or matching background values) so that the @tailwindcss/vite generation plugin compiles successfully without crashing.
+    ```
 
 ### Prompt 4.6 — Injecting Standard Tailwind v4 Directives   
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  
-* ** Intent: Enforces modern @import "tailwindcss"; conventions in src/index.css alongside customized design theme styles.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  
+* **Intent:** Enforces modern @import "tailwindcss"; conventions in src/index.css alongside customized design theme styles.  
 
-### 🤖 AI Composer System Prompt
-Please open src/index.css. We need to rewrite it completely to fix the Tailwind v4 build crash regarding 'font-sans'. Ensure that the top of the file explicitly imports Tailwind CSS using the new modern v4 syntax, and configure our custom color tokens and utility classes inside native CSS layers so the compiler reads them perfectly. 
 
-Replace the contents of src/index.css with this exact structure:
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    Please open src/index.css. We need to rewrite it completely to fix the Tailwind v4 build crash regarding 'font-sans'. Ensure that the top of the file explicitly imports Tailwind CSS using the new modern v4 syntax, and configure our custom color tokens and utility classes inside native CSS layers so the compiler reads them perfectly. 
 
-@import "tailwindcss";
+    Replace the contents of src/index.css with this exact structure:
 
-@theme {
-  --color-brand-blue: #1e40af;
-  --color-brand-purple: #7c3aed;
-}
+    @import "tailwindcss";
 
-/* Custom Base Utilities */
-.text-gradient {
-  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+    @theme {
+      --color-brand-blue: #1e40af;
+      --color-brand-purple: #7c3aed;
+    }
 
-.text-royal-gradient {
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+    /* Custom Base Utilities */
+    .text-gradient {
+      background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-/* Clean Brand Content Cards */
-.card-lavender { background-color: #f5f3ff; border: 1px solid #e0d7ff; }
-.card-blue { background-color: #eff6ff; border: 1px solid #dbeafe; }
-.card-cream { background-color: #fffbeb; border: 1px solid #fef3c7; }
-.card-mint { background-color: #f0fdf4; border: 1px solid #dcfce7; }
-.card-violet { background-color: #faf5ff; border: 1px solid #f3e8ff; }
-.card-teal { background-color: #f0fdfa; border: 1px solid #ccfbf1; }
+    .text-royal-gradient {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-## Repository Sync Checkpoint
-git add .
-git commit -m "Create root index.html entry point for Vite dev server parsing"
+    /* Clean Brand Content Cards */
+    .card-lavender { background-color: #f5f3ff; border: 1px solid #e0d7ff; }
+    .card-blue { background-color: #eff6ff; border: 1px solid #dbeafe; }
+    .card-cream { background-color: #fffbeb; border: 1px solid #fef3c7; }
+    .card-mint { background-color: #f0fdf4; border: 1px solid #dcfce7; }
+    .card-violet { background-color: #faf5ff; border: 1px solid #f3e8ff; }
+    .card-teal { background-color: #f0fdfa; border: 1px solid #ccfbf1; }
+    ```
 
+    ### Repository Sync Checkpoint
+    ```
+    git add .
+    ```
+    ```
+    git commit -m "Create root index.html entry point for Vite dev server parsing"
+    ```
 ## Phase 5 — Core UI Theme & Layout Realignment   
 ### Prompt 5.1 — Custom Sticky Navigation Header & Logo Optimization   
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) in Agent/Project mode via Gemini Code Assist.  
-* ** Intent: Generates responsive sticky navigation with integrated hamburger drawer panels.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) in Agent/Project mode via Gemini Code Assist.  
+* **Intent:** Generates responsive sticky navigation with integrated hamburger drawer panels.  
 
-### 🤖 AI Composer System Prompt
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    Please completely rewrite src/components/layout/Navbar.jsx to manage our exact 4-tool product layout. The navbar container wrapper must stay pinned perfectly to the top of the browser screen under a fixed position context, supporting full mobile responsiveness via an integrated state menu trigger panel.
 
-Please completely rewrite src/components/layout/Navbar.jsx to manage our exact 4-tool product layout. The navbar container wrapper must stay pinned perfectly to the top of the browser screen under a fixed position context, supporting full mobile responsiveness via an integrated state menu trigger panel.
+    Incorporate this exact React component code structure:
 
-Incorporate this exact React component code structure:
+    import React, { useState } from 'react';
 
-import React, { useState } from 'react';
+    export default function Navbar({ currentView, setView }) {
+      const [isOpen, setIsOpen] = useState(false);
 
-export default function Navbar({ currentView, setView }) {
-  const [isOpen, setIsOpen] = useState(false);
+      return (
+        <nav className="fixed top-0 left-0 w-full z-[9999] bg-white/90 backdrop-blur-md border-b border-zinc-100 box-border">
+          <div className="max-w-7xl mx-auto h-20 flex items-center justify-between px-6 md:px-12 w-full">
+            <button 
+              onClick={() => { setView('home'); setIsOpen(false); }} 
+              className="flex items-center gap-3 font-sans font-bold text-zinc-900 cursor-pointer text-base bg-transparent border-none p-0 focus:outline-none select-none"
+            >
+              <div className="w-[38px] h-[38px] bg-[#6c5ce7] text-white rounded-full flex items-center justify-center font-bold text-sm tracking-tight shadow-md shadow-[#6c5ce7]/15 flex-shrink-0">
+                Y
+              </div>
+              <span className="tracking-tight font-extrabold text-zinc-900 text-base">Yvonne Martinez</span>
+            </button>
 
-  return (
-    <nav className="fixed top-0 left-0 w-full z-[9999] bg-white/90 backdrop-blur-md border-b border-zinc-100 box-border">
-      <div className="max-w-7xl mx-auto h-20 flex items-center justify-between px-6 md:px-12 w-full">
-        <button 
-          onClick={() => { setView('home'); setIsOpen(false); }} 
-          className="flex items-center gap-3 font-sans font-bold text-zinc-900 cursor-pointer text-base bg-transparent border-none p-0 focus:outline-none select-none"
-        >
-          <div className="w-[38px] h-[38px] bg-[#6c5ce7] text-white rounded-full flex items-center justify-center font-bold text-sm tracking-tight shadow-md shadow-[#6c5ce7]/15 flex-shrink-0">
-            Y
+            <div className="hidden md:flex items-center gap-8 h-full">
+              {currentView === 'home' ? (
+                <button onClick={() => setView('forward-moves')} className="text-xs font-bold uppercase tracking-widest text-zinc-600 hover:text-purple-600 transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none">Forward Moves AI</button>
+              ) : (
+                <div className="flex items-center gap-8">
+                  <button onClick={() => setView('home')} className="text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none text-zinc-500 hover:text-purple-600">🏡 Home</button>
+                  <button onClick={() => setView('forward-moves')} className={`text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none ${currentView === 'forward-moves' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>Dashboard Hub</button>
+                  <button onClick={() => setView('skill-studio')} className={`text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none ${currentView === 'skill-studio' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>Skill Studio</button>
+                  <button onClick={() => setView('careers')} className={`text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none ${currentView === 'careers' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>Careers</button>
+                  <button onClick={() => setView('career-scout')} className={`text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none ${currentView === 'career-scout' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>AI Career Scout</button>
+                  <button onClick={() => setView('glossary')} className={`text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none ${currentView === 'glossary' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>Glossary</button>
+                </div>
+              )}
+            </div>
+
+            <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-zinc-900 cursor-pointer bg-transparent border-none focus:outline-none flex items-center justify-center">
+              {isOpen ? <span className="text-xl font-light block w-6 text-center">✕</span> : <div className="w-6 h-3.5 flex flex-col justify-between items-end"><span className="w-full h-0.5 bg-zinc-900 block rounded"></span><span className="w-4/5 h-0.5 bg-zinc-900 block rounded"></span><span className="w-full h-0.5 bg-zinc-900 block rounded"></span></div>}
+            </button>
           </div>
-          <span className="tracking-tight font-extrabold text-zinc-900 text-base">Yvonne Martinez</span>
-        </button>
 
-        <div className="hidden md:flex items-center gap-8 h-full">
-          {currentView === 'home' ? (
-            <button onClick={() => setView('forward-moves')} className="text-xs font-bold uppercase tracking-widest text-zinc-600 hover:text-purple-600 transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none">Forward Moves AI</button>
-          ) : (
-            <div className="flex items-center gap-8">
-              <button onClick={() => setView('home')} className="text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none text-zinc-500 hover:text-purple-600">🏡 Home</button>
-              <button onClick={() => setView('forward-moves')} className={`text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none ${currentView === 'forward-moves' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>Dashboard Hub</button>
-              <button onClick={() => setView('skill-studio')} className={`text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none ${currentView === 'skill-studio' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>Skill Studio</button>
-              <button onClick={() => setView('careers')} className={`text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none ${currentView === 'careers' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>Careers</button>
-              <button onClick={() => setView('career-scout')} className={`text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none ${currentView === 'career-scout' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>AI Career Scout</button>
-              <button onClick={() => setView('glossary')} className={`text-xs font-bold uppercase tracking-widest transition-colors cursor-pointer bg-transparent border-none p-0 focus:outline-none ${currentView === 'glossary' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>Glossary</button>
+          {isOpen && (
+            <div className="absolute top-20 left-0 w-full bg-white border-b border-zinc-200 shadow-xl z-[200] md:hidden">
+              <div className="flex flex-col p-8 space-y-5">
+                {currentView === 'home' ? (
+                  <button onClick={() => { setView('forward-moves'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">FORWARD MOVES AI</button>
+                ) : (
+                  <>
+                    <button onClick={() => { setView('home'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-500 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">🏡 Home</button>
+                    <button onClick={() => { setView('forward-moves'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">Dashboard Hub</button>
+                    <button onClick={() => { setView('skill-studio'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">Skill Studio</button>
+                    <button onClick={() => { setView('careers'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">Careers</button>
+                    <button onClick={() => { setView('career-scout'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">AI Career Scout</button>
+                    <button onClick={() => { setView('glossary'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">Glossary</button>
+                  </>
+                )}
+              </div>
             </div>
           )}
-        </div>
-
-        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-zinc-900 cursor-pointer bg-transparent border-none focus:outline-none flex items-center justify-center">
-          {isOpen ? <span className="text-xl font-light block w-6 text-center">✕</span> : <div className="w-6 h-3.5 flex flex-col justify-between items-end"><span className="w-full h-0.5 bg-zinc-900 block rounded"></span><span className="w-4/5 h-0.5 bg-zinc-900 block rounded"></span><span className="w-full h-0.5 bg-zinc-900 block rounded"></span></div>}
-        </button>
-      </div>
-
-      {isOpen && (
-        <div className="absolute top-20 left-0 w-full bg-white border-b border-zinc-200 shadow-xl z-[200] md:hidden">
-          <div className="flex flex-col p-8 space-y-5">
-            {currentView === 'home' ? (
-              <button onClick={() => { setView('forward-moves'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">FORWARD MOVES AI</button>
-            ) : (
-              <>
-                <button onClick={() => { setView('home'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-500 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">🏡 Home</button>
-                <button onClick={() => { setView('forward-moves'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">Dashboard Hub</button>
-                <button onClick={() => { setView('skill-studio'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">Skill Studio</button>
-                <button onClick={() => { setView('careers'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">Careers</button>
-                <button onClick={() => { setView('career-scout'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">AI Career Scout</button>
-                <button onClick={() => { setView('glossary'); setIsOpen(false); }} className="w-full text-left font-sans font-bold text-xs tracking-widest text-zinc-700 hover:text-purple-600 py-2 cursor-pointer block bg-transparent uppercase focus:outline-none">Glossary</button>
-              </>
-            )}
-          </div>
-        </div>
-      )}
-    </nav>
-  );
-}
-
+        </nav>
+      );
+    }
+    ```
 ## Prompt 5.2 — Restructuring Component Spacing and Activating the Footer   
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) in Agent/Project mode via Gemini Code Assist.  
-* ** Intent: Generates responsive footer layouts containing dynamic date generation scripts.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) in Agent/Project mode via Gemini Code Assist.  
+* **Intent:** Generates responsive footer layouts containing dynamic date generation scripts.  
 
-### 🤖 AI Composer System Prompt
-Please rewrite src/components/layout/Footer.jsx to accept our current tracking routing props. We need to turn the static footer layout into a fully active navigation tracker that resets layout windows smoothly back to the top viewport row upon user click.
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    Please rewrite src/components/layout/Footer.jsx to accept our current tracking routing props. We need to turn the static footer layout into a fully active navigation tracker that resets layout windows smoothly back to the top viewport row upon user click.
 
-Use this complete verified structure:
+    Use this complete verified structure:
 
-import React from 'react';
+    import React from 'react';
 
-export default function Footer({ currentView, setView }) {
-  return (
-    <footer className="w-full max-w-7xl mx-auto bg-white border-t border-zinc-100 mt-auto box-border">
-      <div className="px-6 md:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-zinc-400 font-sans tracking-wide">
-        <div className="select-none text-center sm:text-left">© 2026 Yvonne Martinez. Hosted via Firebase Infrastructure.</div>
-        <div className="flex items-center gap-6 justify-center sm:justify-end">
-          <button onClick={() => { setView('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className={`cursor-pointer hover:text-purple-600 transition-colors bg-transparent border-none p-0 font-medium uppercase tracking-wider focus:outline-none ${currentView === 'home' ? 'text-purple-600' : ''}`}>Explore Platform</button>
-          <button onClick={() => { setView('forward-moves'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className={`cursor-pointer hover:text-purple-600 transition-colors bg-transparent border-none p-0 font-medium uppercase tracking-wider focus:outline-none ${currentView === 'forward-moves' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>Dashboard Hub</button>
-          <a href="mailto:yvonne.martinez@aitogethernow.com" className="hover:text-purple-600 transition-colors no-underline font-medium uppercase tracking-wider">Get in Touch</a>
-        </div>
-      </div>
-    </footer>
-  );
-}
-
-## Repository Sync Checkpoint
-git add .
-git commit -m "navigation: complete sticky blur navbar layout overhaul and assign purple Y icon badges"
+    export default function Footer({ currentView, setView }) {
+      return (
+        <footer className="w-full max-w-7xl mx-auto bg-white border-t border-zinc-100 mt-auto box-border">
+          <div className="px-6 md:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-zinc-400 font-sans tracking-wide">
+            <div className="select-none text-center sm:text-left">© 2026 Yvonne Martinez. Hosted via Firebase Infrastructure.</div>
+            <div className="flex items-center gap-6 justify-center sm:justify-end">
+              <button onClick={() => { setView('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className={`cursor-pointer hover:text-purple-600 transition-colors bg-transparent border-none p-0 font-medium uppercase tracking-wider focus:outline-none ${currentView === 'home' ? 'text-purple-600' : ''}`}>Explore Platform</button>
+              <button onClick={() => { setView('forward-moves'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className={`cursor-pointer hover:text-purple-600 transition-colors bg-transparent border-none p-0 font-medium uppercase tracking-wider focus:outline-none ${currentView === 'forward-moves' ? 'text-purple-600' : 'text-zinc-500 hover:text-purple-600'}`}>Dashboard Hub</button>
+              <a href="mailto:yvonne.martinez@aitogethernow.com" className="hover:text-purple-600 transition-colors no-underline font-medium uppercase tracking-wider">Get in Touch</a>
+            </div>
+          </div>
+        </footer>
+      );
+    }
+    ```
+    ## Repository Sync Checkpoint
+    ```
+    git add .
+    ```
+    ```
+    git commit -m "navigation: complete sticky blur navbar layout overhaul and assign purple Y icon badges"
+    ```
 
 ## Phase 6 — Core Root Overrides & Tab Icon Fixes   
 ### Prompt 6.1 — Direct Inline SVG Escaped Favicon Integration
-* ** Execution Location: Root level index.html.  
-* ** Intent: Eradicates default browser tab icons by loading an inline, URL-escaped vector emblem. 
+* **Execution Location:** Root level index.html.  
+* **Intent:** Eradicates default browser tab icons by loading an inline, URL-escaped vector emblem. 
 
-### 🤖 AI Composer System Prompt
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yvonne Martinez - AI Operations Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%236c5ce7'/%3E%3Ctext y='64' x='50' font-family='system-ui,-apple-system,sans-serif' font-size='46' font-weight='900' text-anchor='middle' fill='white'%3EY%3C/text%3E%3C/svg%3E" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
-
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yvonne Martinez - AI Operations Portfolio</title>
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%236c5ce7'/%3E%3Ctext y='64' x='50' font-family='system-ui,-apple-system,sans-serif' font-size='46' font-weight='900' text-anchor='middle' fill='white'%3EY%3C/text%3E%3C/svg%3E" />
+      </head>
+      <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+      </body>
+    </html>
+    ```
 ## Phase 7 — Staging Assets & Sub-Platform Generations
 ### Prompt 7.1 — Hardcoding the Streamlined 4-Card Dashboard Matrix Block   
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) in Agent/Project mode running Gemini Code Assist.  
-* ** Intent: Standardizes card layout vectors inside the product dashboard, matching the live configuration of aitogethernow.com.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) in Agent/Project mode running Gemini Code Assist.  
+* **Intent:** Standardizes card layout vectors inside the product dashboard, matching the live configuration of aitogethernow.com.  
+    ```
 
 ### 🤖 AI Composer System Prompt
 Please overwrite src/components/sections/ForwardMovesHome.jsx. We need to implement our precise, final 4-card workspace matrix, completely removing old template placeholders or structural markers to align perfectly with our operational tools.
