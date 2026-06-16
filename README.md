@@ -69,7 +69,6 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Terminal Step 2: Install Package Dependencies](#terminal-step-2-install-package-dependencies)
     - [Terminal Step 3: Run the Local Development Environment](#terminal-step-3-run-the-local-development-environment)
       - [💡Terminal Execution Note:](#terminal-execution-note)
-      - [⚙️ Quick Reference Scripts (Usage Cheat Sheet)](#️-quick-reference-scripts-usage-cheat-sheet)
     - [Terminal Step B: Compile Static Optimization Builds](#terminal-step-b-compile-static-optimization-builds)
     - [Terminal Step C: Production Sandbox Simulation Preview](#terminal-step-c-production-sandbox-simulation-preview)
   - [Phase 1 — Project Initialization \& Folder Scaffolding](#phase-1--project-initialization--folder-scaffolding)
@@ -185,7 +184,7 @@ Follow these steps to deploy and structure your local workspace sandbox:
     ```
   ### Terminal Step 1b: Open the Project Folder inside VS Code
   * **To exit:** the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view.<br>
-  **Via Terminal:** Run the execution flag to open the directory path instantly inside a fresh VS Code layout:
+  * **Via Terminal:** Run the execution flag to open the directory path instantly inside a fresh VS Code layout:
   * Bash
     ```bash
     code .
@@ -208,14 +207,14 @@ Launch the real-time hot-reloading rendering environment engine to test live fil
 
   * This terminal will stay "locked" as long as the server is running. To stop the server at any time, click into the terminal window and press Ctrl + C.
 
-  #### ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
-  * This section serves as a quick lookup matrix for future management. Do not execute these concurrently in your active installation terminal row.  Terminal Command: Active Development Sandbox
-  * Bash
-    ```bash
-    npm run dev
-    ```
-  * Local Port Mapping: http://localhost:5173 
-  * Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
+    #### ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
+    * This section serves as a quick lookup matrix for future management. Do not execute these concurrently in your active installation terminal row.  Terminal Command: Active Development Sandbox
+    * Bash
+      ```bash
+      npm run dev
+      ```
+    * Local Port Mapping: http://localhost:5173 
+    * Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
 
 ### Terminal Step B: Compile Static Optimization Builds
   * Bash
@@ -276,13 +275,11 @@ Open a PowerShell tab inside your terminal window
 
 2. git add .
   What it does: The dot (.) means "everything." This command takes all the new folders and placeholder files you just created and moves them to the Staging Area.
+     - Why you need it: Think of the staging area like a physical shopping cart. Before you check out, you have to place the items inside the cart. git add . tells Git, "Hey, look at all these new folders I just made; I want you to prepare them for saving."
 
-  - Why you need it: Think of the staging area like a physical shopping cart. Before you check out, you have to place the items inside the cart. git add . tells Git, "Hey, look at all these new folders I just made; I want you to prepare them for saving."
-
-3. git commit -m "Initial commit..."
-  What it does: This takes everything currently sitting in your staging area (your shopping cart) and permanently locks it into your project history as a Commit. The -m stands for "message," which allows you to attach a readable note explaining what changed.
-
-  - Why you need it: This officially purchases the items in your cart. It creates a permanent snapshot of your blank project template. If you make a mistake in a later phase, you can use this snapshot to instantly restore your folders back to this exact clean state.
+1. git commit -m "Initial commit..."
+    What it does: This takes everything currently sitting in your staging area (your shopping cart) and permanently locks it into your project history as a Commit. The -m stands for "message," which allows you to attach a readable note explaining what changed.
+     - Why you need it: This officially purchases the items in your cart. It creates a permanent snapshot of your blank project template. If you make a mistake in a later phase, you can use this snapshot to instantly restore your folders back to this exact clean state.
       
 --- 
 
