@@ -171,26 +171,26 @@ Ensure your system environment matches these target parameters before initializi
 Follow these steps to deploy and structure your local workspace sandbox:  
 
 ### Terminal Step 1: Clone the Repository
-* Bash
-```bash
-git clone [https://github.com/your-username/ai-ym-portfolio.git](https://github.com/your-username/ai-ym-portfolio.git)
-```
+  * Bash
+    ```bash
+    git clone [https://github.com/your-username/ai-ym-portfolio.git](https://github.com/your-username/ai-ym-portfolio.git)
+    ```
   **💡 Username Note:** If you copying the official project, use yvonneim verbatim. If you have already forked this repository to your personal GitHub profile to save your own code modifications, substitute yvonneim with your personal GitHub username.
 
-### Terminal Step 1a: reminder to change folder
+  ### Terminal Step 1a: reminder to change folder
   **⚠️ CRITICAL STEP:** You must physically step your terminal session inside the newly downloaded folder before running any package configurations!
-* Bash
-```bash
-cd ai-ym-portfolio
-```
-### Terminal Step 1b: Open the Project Folder inside VS Code
-**To exit:** the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view.
+  * Bash
+    ```bash
+    cd ai-ym-portfolio
+    ```
+  ### Terminal Step 1b: Open the Project Folder inside VS Code
+  **To exit:** the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view.
   **Via Terminal:** Run the execution flag to open the directory path instantly inside a fresh VS Code layout:
-* Bash
-```bash
-code .
-```
-**Via VS Code GUI:** Navigate to the top options taskbar, click File ➔ Open Folder..., select your local ai-ym-portfolio folder path from your system path tracker, and click Select Folder.
+  * Bash
+    ```bash
+    code .
+    ```
+  **Via VS Code GUI:** Navigate to the top options taskbar, click File ➔ Open Folder..., select your local ai-ym-portfolio folder path from your system path tracker, and click Select Folder.
 
 ### Terminal Step 2: Install Package Dependencies
 Open your integrated VS Code terminal (`Ctrl + ``) and initialize your tracking dependencies:
