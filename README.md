@@ -266,47 +266,51 @@ Open a PowerShell tab inside your terminal window
   git commit -m "Initial commit: Empty project architecture and workspace files"
   ```
 ----
-      🛠️ The Git Commands Explained
-      1. git init
-        What it does: This initializes a brand-new, empty Git repository inside your current folder.
+🛠️ The Git Commands Explained
+1. git init
+  What it does: This initializes a brand-new, empty Git repository inside your current folder.
 
-        Why you need it: It wakes Git up and tells it to start tracking this folder. Behind the scenes, it secretly creates a hidden folder named .git where it will log every single code change you make from this moment forward.
+  Why you need it: It wakes Git up and tells it to start tracking this folder. Behind the scenes, it secretly creates a hidden folder named .git where it will log every single code change you make from this moment forward.
 
-      2. git add .
-        What it does: The dot (.) means "everything." This command takes all the new folders and placeholder files you just created and moves them to the Staging Area.
+2. git add .
+  What it does: The dot (.) means "everything." This command takes all the new folders and placeholder files you just created and moves them to the Staging Area.
 
-        Why you need it: Think of the staging area like a physical shopping cart. Before you check out, you have to place the items inside the cart. git add . tells Git, "Hey, look at all these new folders I just made; I want you to prepare them for saving."
+  Why you need it: Think of the staging area like a physical shopping cart. Before you check out, you have to place the items inside the cart. git add . tells Git, "Hey, look at all these new folders I just made; I want you to prepare them for saving."
 
-      3. git commit -m "Initial commit..."
-        What it does: This takes everything currently sitting in your staging area (your shopping cart) and permanently locks it into your project history as a Commit. The -m stands for "message," which allows you to attach a readable note explaining what changed.
+3. git commit -m "Initial commit..."
+  What it does: This takes everything currently sitting in your staging area (your shopping cart) and permanently locks it into your project history as a Commit. The -m stands for "message," which allows you to attach a readable note explaining what changed.
 
-        Why you need it: This officially purchases the items in your cart. It creates a permanent snapshot of your blank project template. If you make a mistake in a later phase, you can use this snapshot to instantly restore your folders back to this exact clean state.
+  Why you need it: This officially purchases the items in your cart. It creates a permanent snapshot of your blank project template. If you make a mistake in a later phase, you can use this snapshot to instantly restore your folders back to this exact clean state.
       
-      --- 
+--- 
 
-  ### Prompt 1.2 — Populating Boilerplate JSX Code
+### Prompt 1.2 — Populating Boilerplate JSX Code
 
-  * ** Execution Location: VS Code AI Composer panel (Ctrl + I / Cmd + I) set to Project or Agent mode running Gemini Code Assist.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I / Cmd + I) set to Project or Agent mode running Gemini Code Assist.  
 
-  * ** Intent: Generates basic functional structures and mounts them to the root entry point.  
+* **Intent:** Generates basic functional structures and mounts them to the root entry point.  
 
 ### 🤖 AI Composer System Prompt:
-* ** Plaintext
+* **Plaintext**
+```
+  I have initialized our folder architecture and generated empty files for Navbar.jsx, Footer.jsx, and ThemeContext.jsx. 
 
-I have initialized our folder architecture and generated empty files for Navbar.jsx, Footer.jsx, and ThemeContext.jsx. 
+  Please analyze our project workspace and perform the following code generation operations:
+  1. Populate src/context/ThemeContext.jsx with a fully functional React context provider that manages a 'light' vs 'dark' mode string state, persisting the preference inside the browser's localStorage.
+  2. Populate src/components/layout/Navbar.jsx with a modern, responsive navigation container utilizing mobile responsive flex layouts, a simple text logo, a theme toggle button hooked to our theme context, and basic navigation links.
+  3. Populate src/components/layout/Footer.jsx with a clean structural layout displaying a dynamic copyright year script and social link icons.
+  4. Open src/App.jsx, clear its current placeholder code, import our new layout elements, and wrap the layout components cleanly inside our Theme Provider.
 
-Please analyze our project workspace and perform the following code generation operations:
-1. Populate src/context/ThemeContext.jsx with a fully functional React context provider that manages a 'light' vs 'dark' mode string state, persisting the preference inside the browser's localStorage.
-2. Populate src/components/layout/Navbar.jsx with a modern, responsive navigation container utilizing mobile responsive flex layouts, a simple text logo, a theme toggle button hooked to our theme context, and basic navigation links.
-3. Populate src/components/layout/Footer.jsx with a clean structural layout displaying a dynamic copyright year script and social link icons.
-4. Open src/App.jsx, clear its current placeholder code, import our new layout elements, and wrap the layout components cleanly inside our Theme Provider.
-
-Ensure all file imports match our structural directories flawlessly and output complete, production-ready code.
-
+  Ensure all file imports match our structural directories flawlessly and output complete, production-ready code.
+```
 ## Repository Sync Checkpoint
-* ** PowerShell
-git add .
-git commit -m "Complete Phase 1 architecture setup"
+* **PowerShell**
+  ```
+  git add .
+  ```
+  ```
+  git commit -m "Complete Phase 1 architecture setup"
+  ```
 
 ## Phase 2 — Tailwind v4 & Global Styling (Custom Brand Identity)
 ### Prompt 2.1 — Brand Typography and Custom Card Tokens
