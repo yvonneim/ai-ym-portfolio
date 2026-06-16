@@ -171,6 +171,7 @@ Follow these steps to deploy and structure your local workspace sandbox:
 
 ### Terminal Step 1: Clone the Repository
 * ** Bash
+```bash
 git clone [https://github.com/your-username/ai-ym-portfolio.git](https://github.com/your-username/ai-ym-portfolio.git)
 
 💡 Username Note: If you are a student or developer copying the official project, use yvonneim verbatim. If you have already forked this repository to your personal GitHub profile to save your own code modifications, substitute yvonneim with your personal GitHub username.
@@ -178,6 +179,7 @@ git clone [https://github.com/your-username/ai-ym-portfolio.git](https://github.
 ### Terminal Step 1a: reminder to change folder
 ⚠️ CRITICAL STEP: You must physically step your terminal session inside the newly downloaded folder before running any package configurations!
 * ** Bash
+```bash
 cd ai-ym-portfolio
 
 ### Terminal Step 1b: Open the Project Folder inside VS Code
@@ -185,6 +187,7 @@ To exit the "No Folder Opened" blank editor state, load your newly cloned direct
 
 Via Terminal: Run the execution flag to open the directory path instantly inside a fresh VS Code layout:
 * ** Bash
+```bash
 code .
 
 * ** or Via VS Code GUI: Navigate to the top options taskbar, click File ➔ Open Folder..., select your local ai-ym-portfolio folder path from your system path tracker, and click Select Folder.
@@ -192,11 +195,13 @@ code .
 ### Terminal Step 2: Install Package Dependencies
 Open your integrated VS Code terminal (`Ctrl + ``) and initialize your tracking dependencies:
 * ** Bash
+```bash
 npm install
 
 ### Terminal Step 3: Run the Local Development Environment
 Launch the real-time hot-reloading rendering environment engine to test live file updates:
 * ** Bash
+```bash
 npm run dev
 
     * ** 💡 Terminal Execution Note: This terminal will stay "locked" as long as the server is running. To stop the server at any time, click into the terminal window and press Ctrl + C.
@@ -204,6 +209,7 @@ npm run dev
 ## ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
   * ** This section serves as a quick lookup matrix for future management. Do not execute these concurrently in your active installation terminal row.  Terminal Command: Active Development Sandbox
       * ** Bash
+      ```bash
       npm run dev
 
         * ** Local Port Mapping: http://localhost:5173 
@@ -211,6 +217,7 @@ npm run dev
   
   ### Terminal Step B: Compile Static Optimization Builds
       * ** Bash
+      ```bash
       npm run build
 
       * ** Primary Use Case: Compiles, compresses, and minifies your code into strict production static files inside the local /dist folder destination. (Note: Run this command in a second terminal tab or after stopping your development server with Ctrl + C).
