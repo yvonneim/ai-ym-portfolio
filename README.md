@@ -77,11 +77,11 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Terminal Git Initialization steps:](#terminal-git-initialization-steps)
     - [Prompt 1.2 — Populating Boilerplate JSX Code](#prompt-12--populating-boilerplate-jsx-code)
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint)
+    - [Repository Sync Checkpoint](#repository-sync-checkpoint)
   - [Phase 2 — Tailwind v4 \& Global Styling (Custom Brand Identity)](#phase-2--tailwind-v4--global-styling-custom-brand-identity)
     - [Prompt 2.1 — Brand Typography and Custom Card Tokens](#prompt-21--brand-typography-and-custom-card-tokens)
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-1)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-1)
+    - [Repository Sync Checkpoint](#repository-sync-checkpoint-1)
   - [Phase 3 — Multi-View Architecture \& Dynamic Product Sub-Pages](#phase-3--multi-view-architecture--dynamic-product-sub-pages)
     - [Prompt 3.1 — Building Interactive Light-Themed Navigation and Content Views](#prompt-31--building-interactive-light-themed-navigation-and-content-views)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-2)
@@ -303,7 +303,7 @@ Open a PowerShell tab inside your terminal window
 
       Ensure all file imports match our structural directories flawlessly and output complete, production-ready code.
     ```
-  ## Repository Sync Checkpoint
+  ### Repository Sync Checkpoint
   * **PowerShell**
     ```
     git add .
@@ -311,40 +311,42 @@ Open a PowerShell tab inside your terminal window
     ```
     git commit -m "Complete Phase 1 architecture setup"
     ```
+---
 
 ## Phase 2 — Tailwind v4 & Global Styling (Custom Brand Identity)
 ### Prompt 2.1 — Brand Typography and Custom Card Tokens
 * **Execution Location:** VS Code AI Composer / Chat panel (Ctrl + I) leveraging Gemini Code Assist.  
 * **Intent:** Configures the global style entry sheet with customized Tailwind CSS v4 design variables.
 
-### 🤖 AI Composer System Prompt:
-* **Plaintext**
-  ```
-    We are using Tailwind CSS v4, which configures design tokens directly inside the main CSS entry point using CSS variables. 
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+      We are using Tailwind CSS v4, which configures design tokens directly inside the main CSS entry point using CSS variables. 
 
-    Please locate and open src/index.css. Completely rewrite it to implement our premium light-themed tech aesthetic exactly matching these design rules from our brand assets:
+      Please locate and open src/index.css. Completely rewrite it to implement our premium light-themed tech aesthetic exactly matching these design rules from our brand assets:
 
-    1. Global Styles:
-    - Primary Background: Crisp, bright light-grey background gradient (#F9F9FB blending smoothly into white)
-    - Primary Text: Deep charcoal/slate black for headings and body copy to ensure ultra-sharp readability (#111827)
-    - Accent Colors: Set up a signature electric violet/purple gradient token (#7C3AED to #A855F7)
+      1. Global Styles:
+      - Primary Background: Crisp, bright light-grey background gradient (#F9F9FB blending smoothly into white)
+      - Primary Text: Deep charcoal/slate black for headings and body copy to ensure ultra-sharp readability (#111827)
+      - Accent Colors: Set up a signature electric violet/purple gradient token (#7C3AED to #A855F7)
 
-    2. Reusable Card Theme Tokens (Define these as custom classes or CSS variables):
-    - Create a .card-lavender class: Soft lavender background (#F5F3FF) with a subtle border tint.
-    - Create a .card-blue class: Soft sky blue background (#EFF6FF) with a subtle border tint.
-    - Create a .card-cream class: Soft warm peach/cream background (#FFFBEB) with a subtle border tint.
-    - Create a .card-mint class: Soft mint green background (#F0FDF4) with a subtle border tint.
+      2. Reusable Card Theme Tokens (Define these as custom classes or CSS variables):
+      - Create a .card-lavender class: Soft lavender background (#F5F3FF) with a subtle border tint.
+      - Create a .card-blue class: Soft sky blue background (#EFF6FF) with a subtle border tint.
+      - Create a .card-cream class: Soft warm peach/cream background (#FFFBEB) with a subtle border tint.
+      - Create a .card-mint class: Soft mint green background (#F0FDF4) with a subtle border tint.
 
-    Ensure all cards feature smooth hover states (like a gentle shadow or slight lift transition). The styling must respect standard HTML semantics and apply beautifully across our components.
-  ```
-## Repository Sync Checkpoint
-* **PowerShell**
-  ```
-  git add .
-  ```
-  ```
-  git commit -m "Configure customized brand layout, typography, and pastel card utility tokens"
-  ```
+      Ensure all cards feature smooth hover states (like a gentle shadow or slight lift transition). The styling must respect standard HTML semantics and apply beautifully across our components.
+    ```
+  ### Repository Sync Checkpoint
+  * **PowerShell**
+    ```
+    git add .
+    ```
+    ```
+    git commit -m "Configure customized brand layout, typography, and pastel card utility tokens"
+    ```
+---
 
 ## Phase 3 — Multi-View Architecture & Dynamic Product Sub-Pages   
 ### Prompt 3.1 — Building Interactive Light-Themed Navigation and Content Views
