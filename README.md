@@ -292,15 +292,15 @@ Open a PowerShell tab inside your terminal window
   ### 🤖 AI Composer System Prompt:
   * **Plaintext**
     ```
-      I have initialized our folder architecture and generated empty files for Navbar.jsx, Footer.jsx, and ThemeContext.jsx. 
+    I have initialized our folder architecture and generated empty files for Navbar.jsx, Footer.jsx, and ThemeContext.jsx. 
 
-      Please analyze our project workspace and perform the following code generation operations:
-      1. Populate src/context/ThemeContext.jsx with a fully functional React context provider that manages a 'light' vs 'dark' mode string state, persisting the preference inside the browser's localStorage.
-      2. Populate src/components/layout/Navbar.jsx with a modern, responsive navigation container utilizing mobile responsive flex layouts, a simple text logo, a theme toggle button hooked to our theme context, and basic navigation links.
-      3. Populate src/components/layout/Footer.jsx with a clean structural layout displaying a dynamic copyright year script and social link icons.
-      4. Open src/App.jsx, clear its current placeholder code, import our new layout elements, and wrap the layout components cleanly inside our Theme Provider.
+    Please analyze our project workspace and perform the following code generation operations:
+    1. Populate src/context/ThemeContext.jsx with a fully functional React context provider that manages a 'light' vs 'dark' mode string state, persisting the preference inside the browser's localStorage.
+    2. Populate src/components/layout/Navbar.jsx with a modern, responsive navigation container utilizing mobile responsive flex layouts, a simple text logo, a theme toggle button hooked to our theme context, and basic navigation links.
+    3. Populate src/components/layout/Footer.jsx with a clean structural layout displaying a dynamic copyright year script and social link icons.
+    4. Open src/App.jsx, clear its current placeholder code, import our new layout elements, and wrap the layout components cleanly inside our Theme Provider.
 
-      Ensure all file imports match our structural directories flawlessly and output complete, production-ready code.
+    Ensure all file imports match our structural directories flawlessly and output complete, production-ready code.
     ```
   ### Repository Sync Checkpoint
   * **PowerShell**
