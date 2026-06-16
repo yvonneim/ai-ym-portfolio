@@ -257,7 +257,11 @@ Open a PowerShell tab inside your terminal window
   ```
   git init
   ```
+  
+  ```
   git add .
+  ```
+  
   ```
   git commit -m "Initial commit: Empty project architecture and workspace files"
   ```
