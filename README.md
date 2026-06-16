@@ -249,7 +249,9 @@ Open a PowerShell tab inside your terminal window
   ```
 
 * Initialize tracking and scaffold boilerplate file markers
+  ```
   New-Item src/components/layout/Navbar.jsx, src/components/layout/Footer.jsx, src/context/ThemeContext.jsx -Force
+  ```
 
 ### Terminal Git Initialization steps:
 * Stage baseline layout records
