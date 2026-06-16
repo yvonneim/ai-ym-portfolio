@@ -85,7 +85,6 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
   - [Phase 3 — Multi-View Architecture \& Dynamic Product Sub-Pages](#phase-3--multi-view-architecture--dynamic-product-sub-pages)
     - [Prompt 3.1 — Building Interactive Light-Themed Navigation and Content Views](#prompt-31--building-interactive-light-themed-navigation-and-content-views)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-2)
-    - [Repository Sync Checkpoint](#repository-sync-checkpoint-2)
   - [Phase 4 — Configuration Engine \& Dependency Setup](#phase-4--configuration-engine--dependency-setup)
     - [Prompt 4.1 — Dropping the Node \& Project Configuration Files](#prompt-41--dropping-the-node--project-configuration-files)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-3)
@@ -99,13 +98,13 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-7)
     - [Prompt 4.6 — Injecting Standard Tailwind v4 Directives](#prompt-46--injecting-standard-tailwind-v4-directives)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-8)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-3)
+  - [Repository Sync Checkpoint](#repository-sync-checkpoint-2)
   - [Phase 5 — Core UI Theme \& Layout Realignment](#phase-5--core-ui-theme--layout-realignment)
     - [Prompt 5.1 — Custom Sticky Navigation Header \& Logo Optimization](#prompt-51--custom-sticky-navigation-header--logo-optimization)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-9)
   - [Prompt 5.2 — Restructuring Component Spacing and Activating the Footer](#prompt-52--restructuring-component-spacing-and-activating-the-footer)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-10)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-4)
+  - [Repository Sync Checkpoint](#repository-sync-checkpoint-3)
   - [Phase 6 — Core Root Overrides \& Tab Icon Fixes](#phase-6--core-root-overrides--tab-icon-fixes)
     - [Prompt 6.1 — Direct Inline SVG Escaped Favicon Integration](#prompt-61--direct-inline-svg-escaped-favicon-integration)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-11)
@@ -118,7 +117,7 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-14)
   - [Prompt 7.4 — Glossary System Integration](#prompt-74--glossary-system-integration)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-15)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-5)
+  - [Repository Sync Checkpoint](#repository-sync-checkpoint-4)
   - [Phase 8 — Environmental Security Architecture](#phase-8--environmental-security-architecture)
     - [Prompt 8.1 — Activating the Master Git Exclusions File](#prompt-81--activating-the-master-git-exclusions-file)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-16)
@@ -127,7 +126,7 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
 - [── SECRET KEY PROTECTION ──](#-secret-key-protection-)
 - [── DEPENDENCY EXCLUSIONS ──](#-dependency-exclusions-)
 - [── BUILD OUTPUTS ──](#-build-outputs-)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-6)
+  - [Repository Sync Checkpoint](#repository-sync-checkpoint-5)
   - [Phase 9 — Production Compilation \& Edge Cloud Deployments](#phase-9--production-compilation--edge-cloud-deployments)
     - [Prompt 9.1 — Running the Master Compression Pipelines](#prompt-91--running-the-master-compression-pipelines)
 - [Step A: Package compilation tree structure assets](#step-a-package-compilation-tree-structure-assets)
@@ -355,39 +354,39 @@ Open a PowerShell tab inside your terminal window
    
   ### 🤖 AI Composer System Prompt
   * **Plaintext**
-  ```
-    We want to fully scale our React application into a high-end multi-view layout using state management inside src/App.jsx. Ensure that all dark blues, heavy dark backgrounds, or unappealing dark styling blocks are completely removed from the entire application workspace. Every container, background, and text layer must reflect a clean, premium light-themed tech aesthetic (white backgrounds, soft gray transitions, and sharp charcoal text).
-
-    Please configure, structure, and connect the following views:
-
-    1. Main Portfolio Home View (src/components/sections/PortfolioHome.jsx):
-      - Implement the clean white personal portfolio UI with Royal Blue accents as seen on aitogethernow.com.
-      - Set up the main tracking badge: "ENTERPRISE AI OPERATIONS & INFRASTRUCTURE".
-      - Set up the hero title: "Orchestrating Enterprise AI Implementation."
-      - Clicking the primary dark-styled CTA button "EXPLORE FORWARD MOVES AI →" must instantly transition our state to render the Forward Moves sub-platform.
-
-    2. Forward Moves Venture Platform View (src/components/sections/ForwardMovesHome.jsx):
-      - This page acts as the main Dashboard Hub for the product. Set up a bright grid layout presenting 4 active production entry points utilizing our premium pastel color tokens:
-        * Card 1: Skill Studio (Soft lavender style)
-        * Card 2: Careers Tracking (Soft blue style)
-        * Card 3: AI Career Scout (Soft warm peach/cream style)
-        * Card 4: Glossary System (Soft mint green style)
-      - Ensure each card is clickable and dynamically triggers a view change to that specific module. Remove any legacy placeholders or layout traps.
-
-    3. Top Navigation Synchronization (src/components/layout/Navbar.jsx):
-      - Set up const [view, setView] = useState('portfolio') inside src/App.jsx to govern current rendering layout blocks.
-      - The Navbar must change its links dynamically based on the current view.
-      - When on the portfolio view, display only: "FORWARD MOVES AI" and "CONTACT".
-      - When inside any Forward Moves platform view, render the full navigation selection verbatim: "🏡 HOME", "DASHBOARD HUB", "SKILL STUDIO", "CAREERS", "AI CAREER SCOUT", "GLOSSARY". Clicking "🏡 HOME" must seamlessly return the state back to the portfolio home view.
-  ```
-  ### Repository Sync Checkpoint
-  * **PowerShell**
     ```
-    git add .
+      We want to fully scale our React application into a high-end multi-view layout using state management inside src/App.jsx. Ensure that all dark blues, heavy dark backgrounds, or unappealing dark styling blocks are completely removed from the entire application workspace. Every container, background, and text layer must reflect a clean, premium light-themed tech aesthetic (white backgrounds, soft gray transitions, and sharp charcoal text).
+
+      Please configure, structure, and connect the following views:
+
+      1. Main Portfolio Home View (src/components/sections/PortfolioHome.jsx):
+        - Implement the clean white personal portfolio UI with Royal Blue accents as seen on aitogethernow.com.
+        - Set up the main tracking badge: "ENTERPRISE AI OPERATIONS & INFRASTRUCTURE".
+        - Set up the hero title: "Orchestrating Enterprise AI Implementation."
+        - Clicking the primary dark-styled CTA button "EXPLORE FORWARD MOVES AI →" must instantly transition our state to render the Forward Moves sub-platform.
+
+      2. Forward Moves Venture Platform View (src/components/sections/ForwardMovesHome.jsx):
+        - This page acts as the main Dashboard Hub for the product. Set up a bright grid layout presenting 4 active production entry points utilizing our premium pastel color tokens:
+          * Card 1: Skill Studio (Soft lavender style)
+          * Card 2: Careers Tracking (Soft blue style)
+          * Card 3: AI Career Scout (Soft warm peach/cream style)
+          * Card 4: Glossary System (Soft mint green style)
+        - Ensure each card is clickable and dynamically triggers a view change to that specific module. Remove any legacy placeholders or layout traps.
+
+      3. Top Navigation Synchronization (src/components/layout/Navbar.jsx):
+        - Set up const [view, setView] = useState('portfolio') inside src/App.jsx to govern current rendering layout blocks.
+        - The Navbar must change its links dynamically based on the current view.
+        - When on the portfolio view, display only: "FORWARD MOVES AI" and "CONTACT".
+        - When inside any Forward Moves platform view, render the full navigation selection verbatim: "🏡 HOME", "DASHBOARD HUB", "SKILL STUDIO", "CAREERS", "AI CAREER SCOUT", "GLOSSARY". Clicking "🏡 HOME" must seamlessly return the state back to the portfolio home view.
     ```
-    ```
-    git commit -m "Implement 4-section product grid routing, drop old placeholders, and build dynamic navbar tabs"
-    ```
+    ### Repository Sync Checkpoint
+    * **PowerShell**
+      ```
+      git add .
+      ```
+      ```
+      git commit -m "Implement 4-section product grid routing, drop old placeholders, and build dynamic navbar tabs"
+      ```
 
 ## Phase 4 — Configuration Engine & Dependency Setup
 
