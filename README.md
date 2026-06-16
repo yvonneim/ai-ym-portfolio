@@ -235,27 +235,31 @@ npm run build
 ``` 
       * ** Primary Use Case: Compiles, compresses, and minifies your code into strict production static files inside the local /dist folder destination. (Note: Run this command in a second terminal tab or after stopping your development server with Ctrl + C).
   
-  ### Terminal Step C: Production Sandbox Simulation Preview
-    * Bash
+### Terminal Step C: Production Sandbox Simulation Preview
+* Bash
+```bash
     npm run preview
+```
 
-    * ** Local Port Mapping: http://localhost:4173
+* Local Port Mapping: http://localhost:4173
 
-    * ** Primary Use Case: Spins up a lightweight host to view the final compiled results of your /dist folder , ensuring features behave accurately before deploying live onto cloud servers like Firebase
+* Primary Use Case: Spins up a lightweight host to view the final compiled results of your /dist folder , ensuring features behave accurately before deploying live onto cloud servers like Firebase
   
 ## Phase 1 — Project Initialization & Folder Scaffolding   
   
-  ### Prompt 1.1 — Building the Core Directory Scaffold   
+### Prompt 1.1 — Building the Core Directory Scaffold   
     
-  * ** Execution Location: Local System OS Terminal pointed at your target directory root (C:\AI_Portfolio\ai-ym-portfolio).  
+  * Execution Location: Local System OS Terminal pointed at your target directory root (C:\AI_Portfolio\ai-ym-portfolio).  
     
-  * ** Intent: Generates standard folder configurations and initializes baseline git commit records.  
+  * Intent: Generates standard folder configurations and initializes baseline git commit records.  
  
-  ### Terminal Step A: Folder Setup & Repository Initiation
-    Open a PowerShell tab inside your terminal window
-    * ** PowerShell
-      * ** Create folder matrices natively
-      mkdir src/components/layout, src/components/ui, src/components/sections, src/context, src/hooks, src/utils, src/assets -Force
+### Terminal Step A: Folder Setup & Repository Initiation
+Open a PowerShell tab inside your terminal window
+* Create folder matrices natively
+* PowerShell
+```
+mkdir src/components/layout, src/components/ui, src/components/sections, src/context, src/hooks, src/utils, src/assets -Force
+```
 
   * ** Initialize tracking and scaffold boilerplate file markers
   New-Item src/components/layout/Navbar.jsx, src/components/layout/Footer.jsx, src/context/ThemeContext.jsx -Force
