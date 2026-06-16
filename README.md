@@ -350,9 +350,8 @@ Open a PowerShell tab inside your terminal window
 
 ## Phase 3 — Multi-View Architecture & Dynamic Product Sub-Pages   
 ### Prompt 3.1 — Building Interactive Light-Themed Navigation and Content Views
-  * ** Execution Location: VS Code AI Composer panel (Ctrl + I) in Agent/Project mode via Gemini Code Assist.  
-
-  * ** Intent: Constructs a single-page view structure utilizing dynamic rendering to clean up design components.  
+  * **Execution Location:** VS Code AI Composer panel (Ctrl + I) in Agent/Project mode via Gemini Code Assist.  
+  * **Intent:** Constructs a single-page view structure utilizing dynamic rendering to clean up design components.  
    
   ### 🤖 AI Composer System Prompt
   * **Plaintext**
