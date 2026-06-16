@@ -64,15 +64,17 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Prerequisites \& Requirements](#prerequisites--requirements)
   - [Installation Instructions](#installation-instructions)
     - [Terminal Step 1: Clone the Repository](#terminal-step-1-clone-the-repository)
+    - [Terminal Step 1a: reminder to change folder](#terminal-step-1a-reminder-to-change-folder)
+    - [Terminal Step 1b: Open the Project Folder inside VS Code](#terminal-step-1b-open-the-project-folder-inside-vs-code)
     - [Terminal Step 2: Install Package Dependencies](#terminal-step-2-install-package-dependencies)
     - [Terminal Step 3: Run the Local Development Environment](#terminal-step-3-run-the-local-development-environment)
-  - [Usage Examples](#usage-examples)
-    - [Terminal Step A: Launch the Sandboxed Hot-Reload Server](#terminal-step-a-launch-the-sandboxed-hot-reload-server)
+  - [⚙️ Quick Reference Scripts (Usage Cheat Sheet)](#️-quick-reference-scripts-usage-cheat-sheet)
     - [Terminal Step B: Compile Static Optimization Builds](#terminal-step-b-compile-static-optimization-builds)
-    - [Terminal Step C: Preview Compiled Output Locally](#terminal-step-c-preview-compiled-output-locally)
+    - [Terminal Step C: Production Sandbox Simulation Preview](#terminal-step-c-production-sandbox-simulation-preview)
   - [Phase 1 — Project Initialization \& Folder Scaffolding](#phase-1--project-initialization--folder-scaffolding)
     - [Prompt 1.1 — Building the Core Directory Scaffold](#prompt-11--building-the-core-directory-scaffold)
     - [Terminal Step A: Folder Setup \& Repository Initiation](#terminal-step-a-folder-setup--repository-initiation)
+    - [Terminal Git Initialization steps:](#terminal-git-initialization-steps)
     - [Prompt 1.2 — Populating Boilerplate JSX Code](#prompt-12--populating-boilerplate-jsx-code)
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt)
   - [Repository Sync Checkpoint](#repository-sync-checkpoint)
@@ -170,60 +172,104 @@ Follow these steps to deploy and structure your local workspace sandbox:
 ### Terminal Step 1: Clone the Repository
 * ** Bash
 git clone [https://github.com/your-username/ai-ym-portfolio.git](https://github.com/your-username/ai-ym-portfolio.git)
+
+💡 Username Note: If you are a student or developer copying the official project, use yvonneim verbatim. If you have already forked this repository to your personal GitHub profile to save your own code modifications, substitute yvonneim with your personal GitHub username.
+
+### Terminal Step 1a: reminder to change folder
+⚠️ CRITICAL STEP: You must physically step your terminal session inside the newly downloaded folder before running any package configurations!
+* ** Bash
 cd ai-ym-portfolio
 
+### Terminal Step 1b: Open the Project Folder inside VS Code
+To exit the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view:
+
+Via Terminal: Run the execution flag to open the directory path instantly inside a fresh VS Code layout:
+* ** Bash
+code .
+
+* ** or Via VS Code GUI: Navigate to the top options taskbar, click File ➔ Open Folder..., select your local ai-ym-portfolio folder path from your system path tracker, and click Select Folder.
+
 ### Terminal Step 2: Install Package Dependencies
+Open your integrated VS Code terminal (`Ctrl + ``) and initialize your tracking dependencies:
 * ** Bash
 npm install
 
 ### Terminal Step 3: Run the Local Development Environment
+Launch the real-time hot-reloading rendering environment engine to test live file updates:
 * ** Bash
 npm run dev
 
-## Usage Examples
-Quick reference scripts for managing development and production server builds:  
-### Terminal Step A: Launch the Sandboxed Hot-Reload Server
-* ** Bash
-npm run dev
+    * ** 💡 Terminal Execution Note: This terminal will stay "locked" as long as the server is running. To stop the server at any time, click into the terminal window and press Ctrl + C.
 
-  Live test server is hosted at http://localhost:5173.  
+## ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
+  * ** This section serves as a quick lookup matrix for future management. Do not execute these concurrently in your active installation terminal row.  Terminal Command: Active Development Sandbox
+      * ** Bash
+      npm run dev
+
+        * ** Local Port Mapping: http://localhost:5173 
+        * ** Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
   
-### Terminal Step B: Compile Static Optimization Builds
-  * ** Bash
-  npm run build
+  ### Terminal Step B: Compile Static Optimization Builds
+      * ** Bash
+      npm run build
 
-  Compiles static production structures cleanly inside the /dist destination folder.  
+      * ** Primary Use Case: Compiles, compresses, and minifies your code into strict production static files inside the local /dist folder destination. (Note: Run this command in a second terminal tab or after stopping your development server with Ctrl + C).
 
-### Terminal Step C: Preview Compiled Output Locally
-  * ** Bash
-  npm run preview
+  ### Terminal Step C: Production Sandbox Simulation Preview
+    * ** Bash
+    npm run preview
+
+    * ** Local Port Mapping: http://localhost:4173
+
+    * ** Primary Use Case: Spins up a lightweight host to view the final compiled results of your /dist folder , ensuring features behave accurately before deploying live onto cloud servers like Firebase
   
 ## Phase 1 — Project Initialization & Folder Scaffolding   
   
-### Prompt 1.1 — Building the Core Directory Scaffold   
-  
-* ** Execution Location: Local System OS Terminal pointed at your target directory root (C:\AI_Portfolio\ai-ym-portfolio).  
-  
-* ** Intent: Generates standard folder configurations and initializes baseline git commit records.  
+  ### Prompt 1.1 — Building the Core Directory Scaffold   
+    
+  * ** Execution Location: Local System OS Terminal pointed at your target directory root (C:\AI_Portfolio\ai-ym-portfolio).  
+    
+  * ** Intent: Generates standard folder configurations and initializes baseline git commit records.  
  
-### Terminal Step A: Folder Setup & Repository Initiation
-* ** PowerShell
-* ** Create folder matrices natively
-mkdir src/components/layout, src/components/ui, src/components/sections, src/context, src/hooks, src/utils, src/assets -Force
+  ### Terminal Step A: Folder Setup & Repository Initiation
+    Open a PowerShell tab inside your terminal window
+    * ** PowerShell
+      * ** Create folder matrices natively
+      mkdir src/components/layout, src/components/ui, src/components/sections, src/context, src/hooks, src/utils, src/assets -Force
 
-* ** Initialize tracking and scaffold boilerplate file markers
-New-Item src/components/layout/Navbar.jsx, src/components/layout/Footer.jsx, src/context/ThemeContext.jsx -Force
+  * ** Initialize tracking and scaffold boilerplate file markers
+  New-Item src/components/layout/Navbar.jsx, src/components/layout/Footer.jsx, src/context/ThemeContext.jsx -Force
 
-* ** Stage baseline layout records
-git init
-git add .
-git commit -m "Initial commit: Empty project architecture and workspace files"
-  
-### Prompt 1.2 — Populating Boilerplate JSX Code
+  ### Terminal Git Initialization steps:
+  * ** Stage baseline layout records
+  git init
+  git add .
+  git commit -m "Initial commit: Empty project architecture and workspace files"
+    
+      ----
+      🛠️ The Git Commands Explained
+      1. git init
+        What it does: This initializes a brand-new, empty Git repository inside your current folder.
 
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I / Cmd + I) set to Project or Agent mode running Gemini Code Assist.  
+        Why you need it: It wakes Git up and tells it to start tracking this folder. Behind the scenes, it secretly creates a hidden folder named .git where it will log every single code change you make from this moment forward.
 
-* ** Intent: Generates basic functional structures and mounts them to the root entry point.  
+      2. git add .
+        What it does: The dot (.) means "everything." This command takes all the new folders and placeholder files you just created and moves them to the Staging Area.
+
+        Why you need it: Think of the staging area like a physical shopping cart. Before you check out, you have to place the items inside the cart. git add . tells Git, "Hey, look at all these new folders I just made; I want you to prepare them for saving."
+
+      3. git commit -m "Initial commit..."
+        What it does: This takes everything currently sitting in your staging area (your shopping cart) and permanently locks it into your project history as a Commit. The -m stands for "message," which allows you to attach a readable note explaining what changed.
+
+        Why you need it: This officially purchases the items in your cart. It creates a permanent snapshot of your blank project template. If you make a mistake in a later phase, you can use this snapshot to instantly restore your folders back to this exact clean state.
+      
+      --- 
+
+  ### Prompt 1.2 — Populating Boilerplate JSX Code
+
+  * ** Execution Location: VS Code AI Composer panel (Ctrl + I / Cmd + I) set to Project or Agent mode running Gemini Code Assist.  
+
+  * ** Intent: Generates basic functional structures and mounts them to the root entry point.  
 
 ### 🤖 AI Composer System Prompt:
 * ** Plaintext
