@@ -132,7 +132,6 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Prompt 11.1 — Safe Commit Pre-check Execution](#prompt-111--safe-commit-pre-check-execution)
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-17)
     - [Terminal Sync Checkpoint (Final Audit Step):](#terminal-sync-checkpoint-final-audit-step)
-- [Verify nothing is staged that shouldn't be](#verify-nothing-is-staged-that-shouldnt-be)
     - [Run build to ensure code integrity](#run-build-to-ensure-code-integrity)
     - [If build passes, sync to repository](#if-build-passes-sync-to-repository)
   - [Phase 12 — Network \& API Security (CORS)](#phase-12--network--api-security-cors)
@@ -920,15 +919,15 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Bundles active frameworks into highly optimized structures and deploys files straight to Firebase hosting channels.
 
 * **Terminal Action Steps:**
-#### Step A: Package compilation tree structure assets
-```
-npm run build
-```
+  #### Step A: Package compilation tree structure assets
+    ```
+    npm run build
+    ```
 
-#### Step B: Secure upload folder modules out onto custom domain servers
-```
-firebase deploy --only hosting
-```
+  #### Step B: Secure upload folder modules out onto custom domain servers
+    ```
+    firebase deploy --only hosting
+    ```
 
 ## Phase 10 — Memory Engine Rules & Instruction Settings   
 
@@ -959,25 +958,25 @@ firebase deploy --only hosting
 
     Credential Isolation: If any new external services are added, verify they are configured to call through a secured proxy rather than direct client-side requests.
     ```
-### Terminal Sync Checkpoint (Final Audit Step):
+### Terminal Sync Checkpoint (Final Audit Step): 
+Verify nothing is staged that shouldn't be
 * **PowerShell**
-# Verify nothing is staged that shouldn't be
-```
-git status
-```
+  ```
+  git status
+  ```
 
-### Run build to ensure code integrity
-```
-npm run build
-```
+  ### Run build to ensure code integrity
+  ```
+  npm run build
+  ```
 
-### If build passes, sync to repository
-```
-git add .
-```
-```
-git commit -m "Security Audit: Verify environment isolation and clean build compliance"
-```
+  ### If build passes, sync to repository
+  ```
+  git add .
+  ```
+  ```
+  git commit -m "Security Audit: Verify environment isolation and clean build compliance"
+  ```
   
 ## Phase 12 — Network & API Security (CORS)
 1. Understanding the Role of CORSCORS is a browser-level security feature. If your frontend attempts to fetch data from an external server (like a spreadsheet API or backend service), the server must explicitly whitelist your origin.  
@@ -987,6 +986,7 @@ git commit -m "Security Audit: Verify environment isolation and clean build comp
 3. Deep-Dive: Secure AI Orchestration Proxy Engine   To activate the live conversational processing streams inside the AI Career Scout without leaking structural master access codes to the client viewport DOM, this repository standardizes on an enterprise-grade token abstraction pattern.  
 
       * **Plaintext**
+  
       [Client Chat Component (DOM)] ────────────(Asynchronous HTTPS JSON Prompt)───────────► [Firebase Cloud Function]
                                                                                                     │
                                                                                 (Injects Server ENV API Secret Key)
