@@ -159,11 +159,11 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
 ### Prerequisites & Requirements
 Ensure your system environment matches these target parameters before initializing setup:  
 
-* ** Operating System:** Windows 10/11 (PowerShell), macOS (Zsh Terminal), or Linux.  
-* ** Node.js Environment:** Version v18.0.0 or higher (v20.x LTS strongly recommended).  
-* ** Package Manager:** npm (packaged with Node.js) or yarn.  
-* ** Git Setup:** Configured CLI with target remote authorizations.  
-* ** Hosting Command Tools:** Firebase CLI (npm install -g firebase-tools).  
+* **Operating System:** Windows 10/11 (PowerShell), macOS (Zsh Terminal), or Linux.  
+* **Node.js Environment:** Version v18.0.0 or higher (v20.x LTS strongly recommended).  
+* **Package Manager:** npm (packaged with Node.js) or yarn.  
+* **Git Setup:** Configured CLI with target remote authorizations.  
+* **Hosting Command Tools:** Firebase CLI (npm install -g firebase-tools).  
 
 ## Installation Instructions
 Follow these steps to deploy and structure your local workspace sandbox:  
