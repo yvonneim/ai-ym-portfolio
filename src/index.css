@@ -15,12 +15,10 @@
   font-family: var(--font-sans);
 }
 
-/* ── GLOBAL SITE-WIDE TYPOGRAPHY SCALING ── */
+/* ── NATIVE LAYOUT STRUCTURES ── */
 html {
   min-height: 100%;
   background: linear-gradient(135deg, #FFFFFF 0%, #FBFBFE 50%, #F5F3FF 100%);
-  /* Forces a highly legible global base scale across all dashboard modules */
-  font-size: 17px; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -29,16 +27,47 @@ body {
   margin: 0;
   min-height: 100%;
   background: transparent;
-  /* Upgrades macro body reading flow significantly */
-  font-size: 1.05rem; 
-  line-height: 1.625;
 }
 
-button,
-input,
-textarea,
-select {
-  font: inherit;
+/* ── CONTROLLED INTERACTIVE ELEMENT SIZING ── */
+/* This cleanly shrinks all category badges, filters, inputs, and tab elements back to proper scale */
+button, 
+input, 
+textarea, 
+select,
+.filter-badge {
+  font-family: var(--font-sans) !important;
+  font-size: 0.875rem !important; /* Drops filter labels back to a clean, crisp size */
+  font-weight: 500 !important;
+  letter-spacing: 0.025em !important;
+}
+
+/* ── CRITICAL RE-TYPOGRAPHY CONTRAST INTEGRATION ── */
+
+/* 1. Global Navigation Sizing Correction */
+nav button, 
+nav a,
+.nav-link-text {
+  font-size: 0.75rem !important; 
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+}
+
+/* Main h2/h4 Headings retain depth */
+main h2, main h4 {
+  color: #111827 !important;
+}
+
+/* 2. Global Card Content Sizing (Isolated from buttons) */
+.glossary-card-text,
+.card-description-text,
+.content-body-paragraph,
+main p {
+  font-size: 1.05rem !important; /* Readability scale for multi-line description copy */
+  color: #374151 !important;     /* Slate grey contrast */
+  line-height: 1.625 !important;
+  font-weight: 400 !important;
 }
 
 /* Reusable Content Cards from Brand Strategy Assets */
@@ -49,33 +78,16 @@ select {
 .card-violet { background-color: #faf5ff; border: 1px solid #f3e8ff; }
 .card-teal { background-color: #f0fdfa; border: 1px solid #ccfbf1; }
 
-/* ── PREMIUM VISUAL PATTERNS ── */
-.hero-mesh {
-  background: radial-gradient(ellipse 80% 60% at 70% 20%, rgba(167, 139, 250, 0.18) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 10% 80%, rgba(196, 181, 253, 0.14) 0%, transparent 55%), #FAFAFA;
-}
-
-.glass {
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border: 1px solid rgba(228, 228, 231, 0.6);
-}
-
-.card-shadow {
-  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
-}
-
+/* ── SEAMLESS HOVER TRANSITIONS ── */
 .hover-lift {
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover-lift:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 48px -12px rgba(124, 58, 237, 0.18);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(108, 92, 231, 0.12);
 }
 
-.text-infinite-violet {
-  background: linear-gradient(135deg, #7C3AED 0%, #6366F1 50%, #A855F7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.hero-mesh {
+  background: radial-gradient(ellipse 80% 60% at 70% 20%, rgba(167, 139, 250, 0.18) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 10% 80%, rgba(196, 181, 253, 0.14) 0%, transparent 55%), #FAFAFA;
 }

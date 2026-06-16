@@ -75,6 +75,9 @@ An enterprise-grade AI portfolio tracking repository, configuration blueprint, a
   - [Phase 8 — Environmental Security Architecture](#phase-8--environmental-security-architecture)
     - [Prompt 8.1 — Activating the Master Git Exclusions File](#prompt-81--activating-the-master-git-exclusions-file)
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-16)
+    - [Custom Grounding Asset — .gitignore Blueprint Configuration:](#custom-grounding-asset--gitignore-blueprint-configuration)
+    - [AI-YM-PORTFOLIO/.gitignore](#ai-ym-portfoliogitignore)
+    - [Repository Sync Checkpoint](#repository-sync-checkpoint-3)
   - [Phase 9 — Production Compilation \& Edge Cloud Deployments](#phase-9--production-compilation--edge-cloud-deployments)
     - [Prompt 9.1 — Running the Master Compression Pipelines](#prompt-91--running-the-master-compression-pipelines)
   - [Phase 9 — Production Compilation \& Edge Cloud Deployments](#phase-9--production-compilation--edge-cloud-deployments-1)
@@ -100,7 +103,7 @@ An enterprise-grade AI portfolio tracking repository, configuration blueprint, a
 
 ## 🎯 What is this Project About? (Layman's Terms)
 
-Imagine wanting to transition into a career in Artificial Intelligence but feeling overwhelmed by complicated jargon, not knowing which skills are actually in demand, or struggling to find credible, free courses. 
+Imagine wanting to transition into a career in Artificial Intelligence but feeling overwhelmed by jargon, not knowing which skills are actually in demand, or struggling to find credible, free courses.
 
 This project serves as a digital career launchpad called **Forward Moves AI** (a core branch of Yvonne Martinez's unified portfolio platform). It is engineered as a clean, hyper-fast, mobile-friendly environment designed to guide individuals step-by-step into the modern AI workforce. 
 
@@ -114,7 +117,7 @@ Instead of searching the web aimlessly, users arrive at a unified Dashboard Hub 
 
 ## 🛠️ How We Created It (The Vibe Coding Revolution)
 
-Building a single-page website that loads instantly, handles complex chat interfaces, and renders search queries in milliseconds traditionally required years of computer science background. Instead of writing every line of layout syntax and application logic manually, this repository was engineered using a progressive **AI Pair-Programming Framework** known as **Vibe Coding**.
+Building a single-page website that loads instantly, handles complex chat interfaces, and renders search queries in milliseconds traditionally required years of computer science expertise. Instead of writing every line of layout syntax and application logic manually, this repository was engineered using a progressive **AI Pair-Programming Framework** known as **Vibe Coding**.
 
 Here is the exact suite of languages and tools we utilized to create the platform:
 
@@ -260,12 +263,12 @@ Open a PowerShell tab inside your terminal window
 ---
 🛠️ The Git Commands Explained
 1. **git init**<br>
-  What it does: This initializes a brand-new, empty Git repository inside your current folder.
+  Initializes a brand-new, empty Git repository inside your current folder.
 
      - Why you need it: It wakes Git up and tells it to start tracking this folder. Behind the scenes, it secretly creates a hidden folder named .git where it will log every single code change you make from this moment forward.
 
 2. **git add .**<br>
-   What it does: The dot (.) means "everything." This command takes all the new folders and placeholder files you just created and moves them to the Staging Area.
+   The dot (.) means "everything." This command takes all the new folders and placeholder files you just created and moves them to the Staging Area.
      - Why you need it: Think of the staging area like a physical shopping cart. Before you check out, you have to place the items inside the cart. git add . tells Git, "Hey, look at all these new folders I just made; I want you to prepare them for saving."
 
 1. **git commit -m "Initial commit..."**<br>
@@ -873,29 +876,29 @@ Open a PowerShell tab inside your terminal window
     Please look at our root project workspace directory. Generate a brand new .gitignore file exactly at the root level. Ensure it explicitly lists .env, .env.local, and node_modules/ to completely secure our local environment parameters against accidental remote repository tracking.
     ```
 
-    #### Custom Grounding Asset — .gitignore Blueprint Configuration:
-    #### AI-YM-PORTFOLIO/.gitignore
-
+  ### Custom Grounding Asset — .gitignore Blueprint Configuration:
+  ### AI-YM-PORTFOLIO/.gitignore
+        
     #### ── SECRET KEY PROTECTION ──
-    .env
-    .env.local
-    *.secret
+        .env
+        .env.local
+        *.secret
 
     #### ── DEPENDENCY EXCLUSIONS ──
-    node_modules/
-    .npm/
+        node_modules/
+        .npm/
 
     #### ── BUILD OUTPUTS ──
-    dist/
-    build/
-
-    #### Repository Sync Checkpoint
-      ```
-      git add .gitignore
-      ```
-      ```
-      git commit -m "security: deploy root variable gitignore exclusion rules to mask local sandboxes"
-      ```
+        dist/
+        build/
+        
+  ### Repository Sync Checkpoint
+    ```
+    git add .gitignore
+    ```
+    ```
+    git commit -m "security: deploy root variable gitignore exclusion rules to mask local sandboxes"
+    ```
 
 ## Phase 9 — Production Compilation & Edge Cloud Deployments   
 
@@ -922,6 +925,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Bundles active frameworks into highly optimized structures and deploys files straight to Firebase hosting channels.
 
 * **Terminal Action Steps:**
+* **PowerShell:**
   #### Step A: Package compilation tree structure assets
     ```
     npm run build
@@ -967,12 +971,10 @@ Verify nothing is staged that shouldn't be
   ```
   git status
   ```
-
   ### Run build to ensure code integrity
   ```
   npm run build
   ```
-
   ### If build passes, sync to repository
   ```
   git add .
@@ -998,7 +1000,8 @@ Verify nothing is staged that shouldn't be
       * **[ ]** Does the API request include a sensitive API_KEY or AUTH_TOKEN? If yes, move to server-side proxy.  
       * **[ ]** Is the API origin configured to allow your domain (aitogethernow.com) specifically, rather than a wildcard *?
       * **[ ]** Are all sensitive endpoints protected by HTTPS?
-   
+
+---   
 ## 💡 Pro-Tip for your Notes:   
 Since you are using Firebase for hosting, utilize Firebase Cloud Functions as your "Secure Proxy". This allows you to write the backend code that handles the API keys, and your React front-end just calls the function. This effectively makes CORS errors much easier to manage because you control both ends of the connection.  
 
