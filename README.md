@@ -69,7 +69,7 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Terminal Step 2: Install Package Dependencies](#terminal-step-2-install-package-dependencies)
     - [Terminal Step 3: Run the Local Development Environment](#terminal-step-3-run-the-local-development-environment)
     - [💡Terminal Execution Note:](#terminal-execution-note)
-      - [⚙️ Quick Reference Scripts (Usage Cheat Sheet)](#️-quick-reference-scripts-usage-cheat-sheet)
+    - [⚙️ Quick Reference Scripts (Usage Cheat Sheet)](#️-quick-reference-scripts-usage-cheat-sheet)
     - [Terminal Step B: Compile Static Optimization Builds](#terminal-step-b-compile-static-optimization-builds)
     - [Terminal Step C: Production Sandbox Simulation Preview](#terminal-step-c-production-sandbox-simulation-preview)
   - [Phase 1 — Project Initialization \& Folder Scaffolding](#phase-1--project-initialization--folder-scaffolding)
@@ -184,7 +184,7 @@ git clone [https://github.com/your-username/ai-ym-portfolio.git](https://github.
 cd ai-ym-portfolio
 ```
 ### Terminal Step 1b: Open the Project Folder inside VS Code
-  **To exit:** the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view.
+**To exit:** the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view.
   **Via Terminal:** Run the execution flag to open the directory path instantly inside a fresh VS Code layout:
 * Bash
 ```bash
@@ -194,23 +194,22 @@ code .
 
 ### Terminal Step 2: Install Package Dependencies
 Open your integrated VS Code terminal (`Ctrl + ``) and initialize your tracking dependencies:
-* Bash
-```bash
-npm install
-```
+  * Bash
+    ```bash
+    npm install
+    ```
 ### Terminal Step 3: Run the Local Development Environment
 Launch the real-time hot-reloading rendering environment engine to test live file updates:
-* Bash
-```bash
-npm run dev
-
-```
+   * Bash
+    ```bash
+    npm run dev
+    ```
 
 ### 💡Terminal Execution Note: 
 
 This terminal will stay "locked" as long as the server is running. To stop the server at any time, click into the terminal window and press Ctrl + C.
 
-#### ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
+  ### ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
   * This section serves as a quick lookup matrix for future management. Do not execute these concurrently in your active installation terminal row.  Terminal Command: Active Development Sandbox
       * Bash
       ```bash
