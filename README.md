@@ -109,39 +109,32 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-11)
   - [Phase 7 — Staging Assets \& Sub-Platform Generations](#phase-7--staging-assets--sub-platform-generations)
     - [Prompt 7.1 — Hardcoding the Streamlined 4-Card Dashboard Matrix Block](#prompt-71--hardcoding-the-streamlined-4-card-dashboard-matrix-block)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-12)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-12)
     - [Prompt 7.2 — Skill Studio Integration](#prompt-72--skill-studio-integration)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-13)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-13)
     - [Prompt 7.3 — Engineering the Interactive AI Career Scout Component](#prompt-73--engineering-the-interactive-ai-career-scout-component)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-14)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-14)
   - [Prompt 7.4 — Glossary System Integration](#prompt-74--glossary-system-integration)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-15)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-3)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-15)
+    - [Repository Sync Checkpoint](#repository-sync-checkpoint-3)
   - [Phase 8 — Environmental Security Architecture](#phase-8--environmental-security-architecture)
     - [Prompt 8.1 — Activating the Master Git Exclusions File](#prompt-81--activating-the-master-git-exclusions-file)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-16)
-    - [Custom Grounding Asset — .gitignore Blueprint Configuration:](#custom-grounding-asset--gitignore-blueprint-configuration)
-- [AI-YM-PORTFOLIO/.gitignore](#ai-ym-portfoliogitignore)
-- [── SECRET KEY PROTECTION ──](#-secret-key-protection-)
-- [── DEPENDENCY EXCLUSIONS ──](#-dependency-exclusions-)
-- [── BUILD OUTPUTS ──](#-build-outputs-)
-  - [Repository Sync Checkpoint](#repository-sync-checkpoint-4)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-16)
   - [Phase 9 — Production Compilation \& Edge Cloud Deployments](#phase-9--production-compilation--edge-cloud-deployments)
     - [Prompt 9.1 — Running the Master Compression Pipelines](#prompt-91--running-the-master-compression-pipelines)
-- [Step A: Package compilation tree structure assets](#step-a-package-compilation-tree-structure-assets)
-- [Step B: Secure upload folder modules out onto custom domain servers](#step-b-secure-upload-folder-modules-out-onto-custom-domain-servers)
   - [Phase 9 — Production Compilation \& Edge Cloud Deployments](#phase-9--production-compilation--edge-cloud-deployments-1)
     - [Prompt 9.1 — Running the Master Compression Pipelines](#prompt-91--running-the-master-compression-pipelines-1)
-- [Step A: Package compilation tree structure assets](#step-a-package-compilation-tree-structure-assets-1)
-- [Step B: Secure upload folder modules out onto custom domain servers](#step-b-secure-upload-folder-modules-out-onto-custom-domain-servers-1)
+      - [Step A: Package compilation tree structure assets](#step-a-package-compilation-tree-structure-assets)
+      - [Step B: Secure upload folder modules out onto custom domain servers](#step-b-secure-upload-folder-modules-out-onto-custom-domain-servers)
   - [Phase 10 — Memory Engine Rules \& Instruction Settings](#phase-10--memory-engine-rules--instruction-settings)
     - [Global Systemic Behavioral Directives:](#global-systemic-behavioral-directives)
   - [Phase 11 — Environment \& Security Audit Protocol](#phase-11--environment--security-audit-protocol)
     - [Prompt 11.1 — Safe Commit Pre-check Execution](#prompt-111--safe-commit-pre-check-execution)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-17)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-17)
     - [Terminal Sync Checkpoint (Final Audit Step):](#terminal-sync-checkpoint-final-audit-step)
-- [Run build to ensure code integrity](#run-build-to-ensure-code-integrity)
-- [If build passes, sync to repository](#if-build-passes-sync-to-repository)
+- [Verify nothing is staged that shouldn't be](#verify-nothing-is-staged-that-shouldnt-be)
+    - [Run build to ensure code integrity](#run-build-to-ensure-code-integrity)
+    - [If build passes, sync to repository](#if-build-passes-sync-to-repository)
   - [Phase 12 — Network \& API Security (CORS)](#phase-12--network--api-security-cors)
   - [Pro-Tip for your Notes:](#pro-tip-for-your-notes)
 
@@ -231,12 +224,10 @@ Launch the real-time hot-reloading rendering environment engine to test live fil
 
 ---  
 ## Phase 1 — Project Initialization & Folder Scaffolding   
-  
+
 ### Prompt 1.1 — Building the Core Directory Scaffold   
-    
-  * Execution Location: Local System OS Terminal pointed at your target directory root (C:\AI_Portfolio\ai-ym-portfolio).  
-    
-  * Intent: Generates standard folder configurations and initializes baseline git commit records.  
+* **Execution Location:** Local System OS Terminal pointed at your target directory root (C:\AI_Portfolio\ai-ym-portfolio).  
+* **Intent:** Generates standard folder configurations and initializes baseline git commit records.  
  
 ### Terminal Step A: Folder Setup & Repository Initiation
 Open a PowerShell tab inside your terminal window
@@ -245,7 +236,6 @@ Open a PowerShell tab inside your terminal window
   ```
   mkdir src/components/layout, src/components/ui, src/components/sections, src/context, src/hooks, src/utils, src/assets -Force
   ```
-
 * Initialize tracking and scaffold boilerplate file markers
   ```
   New-Item src/components/layout/Navbar.jsx, src/components/layout/Footer.jsx, src/context/ThemeContext.jsx -Force
@@ -311,6 +301,7 @@ Open a PowerShell tab inside your terminal window
 ---
 
 ## Phase 2 — Tailwind v4 & Global Styling (Custom Brand Identity)
+
 ### Prompt 2.1 — Brand Typography and Custom Card Tokens
 * **Execution Location:** VS Code AI Composer / Chat panel (Ctrl + I) leveraging Gemini Code Assist.  
 * **Intent:** Configures the global style entry sheet with customized Tailwind CSS v4 design variables.
@@ -346,6 +337,7 @@ Open a PowerShell tab inside your terminal window
 ---
 
 ## Phase 3 — Multi-View Architecture & Dynamic Product Sub-Pages   
+
 ### Prompt 3.1 — Building Interactive Light-Themed Navigation and Content Views
 * **Execution Location:** VS Code AI Composer panel (Ctrl + I) in Agent/Project mode via Gemini Code Assist.  
 * **Intent:** Constructs a single-page view structure utilizing dynamic rendering to clean up design components.  
@@ -460,7 +452,6 @@ Open a PowerShell tab inside your terminal window
 * **Execution Location:** VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  
 * **Intent:** Generates mounting instructions matching React 19 standards.  
 
-
   ### 🤖 AI Composer System Prompt:
   * **Plaintext**
     ```
@@ -571,7 +562,6 @@ Open a PowerShell tab inside your terminal window
 * **Execution Location:** VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  
 * **Intent:** Enforces modern @import "tailwindcss"; conventions in src/index.css alongside customized design theme styles.  
 
-
   ### 🤖 AI Composer System Prompt:
   * **Plaintext**
     ```
@@ -615,7 +605,8 @@ Open a PowerShell tab inside your terminal window
     ```
     git commit -m "Create root index.html entry point for Vite dev server parsing"
     ```
-## Phase 5 — Core UI Theme & Layout Realignment   
+## Phase 5 — Core UI Theme & Layout Realignment 
+
 ### Prompt 5.1 — Custom Sticky Navigation Header & Logo Optimization   
 * **Execution Location:** VS Code AI Composer panel (Ctrl + I) in Agent/Project mode via Gemini Code Assist.  
 * **Intent:** Generates responsive sticky navigation with integrated hamburger drawer panels.  
@@ -722,8 +713,8 @@ Open a PowerShell tab inside your terminal window
     ```
     git commit -m "navigation: complete sticky blur navbar layout overhaul and assign purple Y icon badges"
     ```
-
 ## Phase 6 — Core Root Overrides & Tab Icon Fixes   
+
 ### Prompt 6.1 — Direct Inline SVG Escaped Favicon Integration
 * **Execution Location:** Root level index.html.  
 * **Intent:** Eradicates default browser tab icons by loading an inline, URL-escaped vector emblem. 
@@ -746,219 +737,256 @@ Open a PowerShell tab inside your terminal window
     </html>
     ```
 ## Phase 7 — Staging Assets & Sub-Platform Generations
+
 ### Prompt 7.1 — Hardcoding the Streamlined 4-Card Dashboard Matrix Block   
 * **Execution Location:** VS Code AI Composer panel (Ctrl + I) in Agent/Project mode running Gemini Code Assist.  
 * **Intent:** Standardizes card layout vectors inside the product dashboard, matching the live configuration of aitogethernow.com.  
+
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
     ```
+    Please overwrite src/components/sections/ForwardMovesHome.jsx. We need to implement our precise, final 4-card workspace matrix, completely removing old template placeholders or structural markers to align perfectly with our operational tools.
 
-### 🤖 AI Composer System Prompt
-Please overwrite src/components/sections/ForwardMovesHome.jsx. We need to implement our precise, final 4-card workspace matrix, completely removing old template placeholders or structural markers to align perfectly with our operational tools.
+    Replace the file with this clean architecture layout:
 
-Replace the file with this clean architecture layout:
+    import React from 'react';
 
-import React from 'react';
-
-export default function ForwardMovesHome({ setView }) {
-  return (
-    <div className="w-full bg-[#FAFAFA] min-h-screen py-16 px-6 md:px-12 flex flex-col items-center">
-      <div className="text-center mb-16 max-w-2xl mx-auto space-y-4">
-        <div className="text-[10px] font-bold tracking-widest text-purple-600 uppercase">• Forward Moves USA</div>
-        <h2 className="font-serif text-4xl md:text-5xl text-gray-900 tracking-tight">Explore What's Inside</h2>
-        <p className="text-gray-500 text-sm font-light">Select an active launchpad vector to manage your workforce pivot.</p>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl w-full mx-auto">
-        {/* Card 1: Skill Studio */}
-        <div 
-          onClick={() => setView('skill-studio')}
-          className="bg-white border border-purple-100 hover:border-purple-300 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-900/5 flex flex-col justify-between min-h-[210px] cursor-pointer group"
-        >
-          <div>
-            <span className="text-2xl block mb-3 group-hover:scale-110 transition-transform origin-left">📖</span>
-            <h4 className="font-sans font-bold text-base text-zinc-900 group-hover:text-purple-600 transition-colors mb-2">Skill Studio</h4>
-            <p className="text-zinc-500 text-xs font-light leading-relaxed">Access curated technical learning modules, adaptive course matrices, and professional training sandboxes.</p>
+    export default function ForwardMovesHome({ setView }) {
+      return (
+        <div className="w-full bg-[#FAFAFA] min-h-screen py-16 px-6 md:px-12 flex flex-col items-center">
+          <div className="text-center mb-16 max-w-2xl mx-auto space-y-4">
+            <div className="text-[10px] font-bold tracking-widest text-purple-600 uppercase">• Forward Moves USA</div>
+            <h2 className="font-serif text-4xl md:text-5xl text-gray-900 tracking-tight">Explore What's Inside</h2>
+            <p className="text-gray-500 text-sm font-light">Select an active launchpad vector to manage your workforce pivot.</p>
           </div>
-          <div className="text-[10px] font-bold uppercase tracking-widest text-purple-600 flex items-center gap-1 mt-4">Open Studio Modules →</div>
-        </div>
 
-        {/* Card 2: Careers */}
-        <div 
-          onClick={() => setView('careers')}
-          className="bg-white border border-blue-100 hover:border-blue-300 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-900/5 flex flex-col justify-between min-h-[210px] cursor-pointer group"
-        >
-          <div>
-            <span className="text-2xl block mb-3 group-hover:scale-110 transition-transform origin-left">📊</span>
-            <h4 className="font-sans font-bold text-base text-zinc-900 group-hover:text-blue-600 transition-colors mb-2">Careers</h4>
-            <p className="text-zinc-500 text-xs font-light leading-relaxed">Track live macro employment analytics, job sector hiring graphs, and emerging role velocity vectors.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl w-full mx-auto">
+            {/* Card 1: Skill Studio */}
+            <div 
+              onClick={() => setView('skill-studio')}
+              className="bg-white border border-purple-100 hover:border-purple-300 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-900/5 flex flex-col justify-between min-h-[210px] cursor-pointer group"
+            >
+              <div>
+                <span className="text-2xl block mb-3 group-hover:scale-110 transition-transform origin-left">📖</span>
+                <h4 className="font-sans font-bold text-base text-zinc-900 group-hover:text-purple-600 transition-colors mb-2">Skill Studio</h4>
+                <p className="text-zinc-500 text-xs font-light leading-relaxed">Access curated technical learning modules, adaptive course matrices, and professional training sandboxes.</p>
+              </div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-purple-600 flex items-center gap-1 mt-4">Open Studio Modules →</div>
+            </div>
+
+            {/* Card 2: Careers */}
+            <div 
+              onClick={() => setView('careers')}
+              className="bg-white border border-blue-100 hover:border-blue-300 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-900/5 flex flex-col justify-between min-h-[210px] cursor-pointer group"
+            >
+              <div>
+                <span className="text-2xl block mb-3 group-hover:scale-110 transition-transform origin-left">📊</span>
+                <h4 className="font-sans font-bold text-base text-zinc-900 group-hover:text-blue-600 transition-colors mb-2">Careers</h4>
+                <p className="text-zinc-500 text-xs font-light leading-relaxed">Track live macro employment analytics, job sector hiring graphs, and emerging role velocity vectors.</p>
+              </div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-blue-600 flex items-center gap-1 mt-4">Open Employment Tracking →</div>
+            </div>
+
+            {/* Card 3: AI Career Scout */}
+            <div 
+              onClick={() => setView('career-scout')}
+              className="bg-white border border-amber-100 hover:border-amber-300 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-amber-900/5 flex flex-col justify-between min-h-[210px] cursor-pointer group"
+            >
+              <div>
+                <span className="text-2xl block mb-3 group-hover:scale-110 transition-transform origin-left">🌐</span>
+                <h4 className="font-sans font-bold text-base text-zinc-900 group-hover:text-amber-600 transition-colors mb-2">AI Career Scout</h4>
+                <p className="text-zinc-500 text-xs font-light leading-relaxed">Consult with our live conversational AI coach to audit domain skill gaps, technical pathways, and career vectors in real-time.</p>
+              </div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-amber-600 flex items-center gap-1 mt-4">Initialize Virtual Coach →</div>
+            </div>
+
+            {/* Card 4: Glossary System */}
+            <div 
+              onClick={() => setView('glossary')}
+              className="bg-white border border-fuchsia-100 hover:border-fuchsia-300 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-fuchsia-900/5 flex flex-col justify-between min-h-[210px] cursor-pointer group"
+            >
+              <div>
+                <span className="text-2xl block mb-3 group-hover:scale-110 transition-transform origin-left">📁</span>
+                <h4 className="font-sans font-bold text-base text-zinc-900 group-hover:text-fuchsia-600 transition-colors mb-2">Glossary System</h4>
+                <p className="text-zinc-500 text-xs font-light leading-relaxed">Break down interface architecture jargon, parameter definitions, and technical structural syntax effortlessly.</p>
+              </div>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-fuchsia-600 flex items-center gap-1 mt-4">Open Reference Matrix →</div>
+            </div>
           </div>
-          <div className="text-[10px] font-bold uppercase tracking-widest text-blue-600 flex items-center gap-1 mt-4">Open Employment Tracking →</div>
         </div>
-
-        {/* Card 3: AI Career Scout */}
-        <div 
-          onClick={() => setView('career-scout')}
-          className="bg-white border border-amber-100 hover:border-amber-300 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-amber-900/5 flex flex-col justify-between min-h-[210px] cursor-pointer group"
-        >
-          <div>
-            <span className="text-2xl block mb-3 group-hover:scale-110 transition-transform origin-left">🌐</span>
-            <h4 className="font-sans font-bold text-base text-zinc-900 group-hover:text-amber-600 transition-colors mb-2">AI Career Scout</h4>
-            <p className="text-zinc-500 text-xs font-light leading-relaxed">Consult with our live conversational AI coach to audit domain skill gaps, technical pathways, and career vectors in real-time.</p>
-          </div>
-          <div className="text-[10px] font-bold uppercase tracking-widest text-amber-600 flex items-center gap-1 mt-4">Initialize Virtual Coach →</div>
-        </div>
-
-        {/* Card 4: Glossary System */}
-        <div 
-          onClick={() => setView('glossary')}
-          className="bg-white border border-fuchsia-100 hover:border-fuchsia-300 rounded-2xl p-7 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-fuchsia-900/5 flex flex-col justify-between min-h-[210px] cursor-pointer group"
-        >
-          <div>
-            <span className="text-2xl block mb-3 group-hover:scale-110 transition-transform origin-left">📁</span>
-            <h4 className="font-sans font-bold text-base text-zinc-900 group-hover:text-fuchsia-600 transition-colors mb-2">Glossary System</h4>
-            <p className="text-zinc-500 text-xs font-light leading-relaxed">Break down interface architecture jargon, parameter definitions, and technical structural syntax effortlessly.</p>
-          </div>
-          <div className="text-[10px] font-bold uppercase tracking-widest text-fuchsia-600 flex items-center gap-1 mt-4">Open Reference Matrix →</div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
+      );
+    }
+    ```
 ### Prompt 7.2 — Skill Studio Integration
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) via Gemini Code Assist.  
-* ** Intent: Deploys a searchable, multi-provider course catalog for the SkillStudioView module.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) via Gemini Code Assist.  
+* **Intent:** Deploys a searchable, multi-provider course catalog for the SkillStudioView module.  
 
-### 🤖 AI Composer System Prompt
-Please create a new file at src/components/sections/SkillStudioView.jsx and populate it with a professional, filterable curriculum workspace. It should feature a dropdown for selecting target learning profiles (e.g., Prompt Architect, AI Data Analyst, AI Systems Developer) and a left sidebar with quick tags to filter modules by provider (e.g., Google, Anthropic, DeepLearning, edX). Implement local state storage to allow developers or users to mark modules as completed via a checkbox toggle.
-
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    Please create a new file at src/components/sections/SkillStudioView.jsx and populate it with a professional, filterable curriculum workspace. It should feature a dropdown for selecting target learning profiles (e.g., Prompt Architect, AI Data Analyst, AI Systems Developer) and a left sidebar with quick tags to filter modules by provider (e.g., Google, Anthropic, DeepLearning, edX). Implement local state storage to allow developers or users to mark modules as completed via a checkbox toggle.
+    ```
 ### Prompt 7.3 — Engineering the Interactive AI Career Scout Component
 
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) via Gemini Code Assist.
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) via Gemini Code Assist.
+* **Intent:** Deploys an advanced chat layout wrapper connected via standard fetch queries to an abstract Firebase functions route to execute zero-exposure API streaming.
 
-* ** Intent: Deploys an advanced chat layout wrapper connected via standard fetch queries to an abstract Firebase functions route to execute zero-exposure API streaming.
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    Please construct the interactive AI Career Scout conversational module by creating a new file at src/components/sections/CareerScoutView.jsx. 
 
-### 🤖 AI Composer System Prompt
-Please construct the interactive AI Career Scout conversational module by creating a new file at src/components/sections/CareerScoutView.jsx. 
-
-The implementation must fulfill these exact criteria:
-1. Establish a premium, message-aligned chat log window using light pastel theme tokens, explicit standard markdown rendering capabilities, and interactive loading skeletons.
-2. Formulate a secure asynchronous network payload pipeline pointing directly to our dedicated Firebase function gateway ('/api/chatScout').
-3. Embed an immutable system prompt context into the transaction payload. This system persona dictates that the underlying model must act with high-level authority as an Enterprise AI Workforce Director—dissecting parameter constraints, prompt patterns, and engineering paths fluently for navigating traditional job market shifts into technical AI spaces.
-
+    The implementation must fulfill these exact criteria:
+    1. Establish a premium, message-aligned chat log window using light pastel theme tokens, explicit standard markdown rendering capabilities, and interactive loading skeletons.
+    2. Formulate a secure asynchronous network payload pipeline pointing directly to our dedicated Firebase function gateway ('/api/chatScout').
+    3. Embed an immutable system prompt context into the transaction payload. This system persona dictates that the underlying model must act with high-level authority as an Enterprise AI Workforce Director—dissecting parameter constraints, prompt patterns, and engineering paths fluently for navigating traditional job market shifts into technical AI spaces.
+    ```
 ## Prompt 7.4 — Glossary System Integration   
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) via Gemini Code Assist.  
-* ** Intent: Builds an interactive terminology card library inside the GlossaryView component.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) via Gemini Code Assist.  
+* **Intent:** Builds an interactive terminology card library inside the GlossaryView component.  
 
-### 🤖 AI Composer System Prompt
-Please create a new file at src/components/sections/GlossaryView.jsx. Build an interactive concept card dictionary containing essential AI definitions (e.g., Generative AI, RAG, Embeddings, Tokens, Agent). Integrate a search field at the top of the card matrix that instantly filters matching vocabulary titles or descriptions as the user types. Apply smooth liftoff transition classes to cards to implement the premium tech aesthetic.
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    Please create a new file at src/components/sections/GlossaryView.jsx. Build an interactive concept card dictionary containing essential AI definitions (e.g., Generative AI, RAG, Embeddings, Tokens, Agent). Integrate a search field at the top of the card matrix that instantly filters matching vocabulary titles or descriptions as the user types. Apply smooth liftoff transition classes to cards to implement the premium tech aesthetic.
+    ```
+  ### Repository Sync Checkpoint
+    ```
+    git add .
+    ```
+    ```
+    git commit -m "dashboard: expand modular tools structure into verified 4 card interactive tracking layout"
+    ```
 
-## Repository Sync Checkpoint
-git add .
-git commit -m "dashboard: expand modular tools structure into verified 4 card interactive tracking layout"
+## Phase 8 — Environmental Security Architecture 
 
-## Phase 8 — Environmental Security Architecture   
 ### Prompt 8.1 — Activating the Master Git Exclusions File   
 
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  
-* ** Intent: Generates extensive .gitignore definitions to block local credential variables from leaking into remote repository logs.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  
+* **Intent:** Generates extensive .gitignore definitions to block local credential variables from leaking into remote repository logs.  
 
-### 🤖 AI Composer System Prompt
-Please look at our root project workspace directory. Generate a brand new .gitignore file exactly at the root level. Ensure it explicitly lists .env, .env.local, and node_modules/ to completely secure our local environment parameters against accidental remote repository tracking.
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    Please look at our root project workspace directory. Generate a brand new .gitignore file exactly at the root level. Ensure it explicitly lists .env, .env.local, and node_modules/ to completely secure our local environment parameters against accidental remote repository tracking.
+    ```
 
-### Custom Grounding Asset — .gitignore Blueprint Configuration:
-# AI-YM-PORTFOLIO/.gitignore
+    ### Custom Grounding Asset — .gitignore Blueprint Configuration:
+    #### AI-YM-PORTFOLIO/.gitignore
 
-# ── SECRET KEY PROTECTION ──
-.env
-.env.local
-*.secret
+    #### ── SECRET KEY PROTECTION ──
+    .env
+    .env.local
+    *.secret
 
-# ── DEPENDENCY EXCLUSIONS ──
-node_modules/
-.npm/
+    #### ── DEPENDENCY EXCLUSIONS ──
+    node_modules/
+    .npm/
 
-# ── BUILD OUTPUTS ──
-dist/
-build/
+    #### ── BUILD OUTPUTS ──
+    dist/
+    build/
 
-## Repository Sync Checkpoint
-git add .gitignore
-git commit -m "security: deploy root variable gitignore exclusion rules to mask local sandboxes"
+    #### Repository Sync Checkpoint
+    ```
+    git add .gitignore
+    ```
+    ```
+    git commit -m "security: deploy root variable gitignore exclusion rules to mask local sandboxes"
+    ```
 
 ## Phase 9 — Production Compilation & Edge Cloud Deployments   
 
 ### Prompt 9.1 — Running the Master Compression Pipelines
-* ** Execution Location: Local System OS Terminal.  
-* ** Intent: Bundles active frameworks into highly optimized structures and deploys files straight to Firebase hosting channels.  
+* **Execution Location:** Local System OS Terminal.  
+* **Intent:** Bundles active frameworks into highly optimized structures and deploys files straight to Firebase hosting channels.  
 
-* ** Terminal Action Steps:
-* ** PowerShell
-# Step A: Package compilation tree structure assets
-npm run build
+* **Terminal Action Steps:**
+* **PowerShell**
+    #### Step A: Package compilation tree structure assets
+    ```
+    npm run build
+    ```
 
-# Step B: Secure upload folder modules out onto custom domain servers
-firebase deploy --only hosting
+    #### Step B: Secure upload folder modules out onto custom domain servers
+    ```
+    firebase deploy --only hosting
+    ```
 
 ## Phase 9 — Production Compilation & Edge Cloud Deployments   
 
 ### Prompt 9.1 — Running the Master Compression Pipelines 
-* ** Execution Location: Local System OS Terminal.  
-* ** Intent: Bundles active frameworks into highly optimized structures and deploys files straight to Firebase hosting channels.
-*   
-* ** Terminal Action Steps:
-# Step A: Package compilation tree structure assets
-npm run build
+* **Execution Location:** Local System OS Terminal.  
+* **Intent:** Bundles active frameworks into highly optimized structures and deploys files straight to Firebase hosting channels.
 
-# Step B: Secure upload folder modules out onto custom domain servers
+* **Terminal Action Steps:**
+#### Step A: Package compilation tree structure assets
+```
+npm run build
+```
+
+#### Step B: Secure upload folder modules out onto custom domain servers
+```
 firebase deploy --only hosting
+```
 
 ## Phase 10 — Memory Engine Rules & Instruction Settings   
 
 ### Global Systemic Behavioral Directives:
 
-* ** Automated Variable Scaffolding: Any subsequent utility integration recommendation will dynamically separate private credentials from client component markup layers.  
+* **Automated Variable Scaffolding:** Any subsequent utility integration recommendation will dynamically separate private credentials from client component markup layers.  
+* **Proactive Repository Audit Warnings:** Installation prompts will automatically feature validation scripts to prevent accidental pushes of configuration files.  
 
-* ** Proactive Repository Audit Warnings: Installation prompts will automatically feature validation scripts to prevent accidental pushes of configuration files.  
-
-* ** Frontend Exposure Warnings: Subpage tools requiring private API tokens will automatically recommend secure backend proxy pipeline designs.  
+* **Frontend Exposure Warnings:** Subpage tools requiring private API tokens will automatically recommend secure backend proxy pipeline designs.  
 
 ## Phase 11 — Environment & Security Audit Protocol   
 ### Prompt 11.1 — Safe Commit Pre-check Execution   
 
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) via Gemini Code Assist.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) via Gemini Code Assist.  
 
-* ** Intent: Initiates a strict safety and compliance review of code assets before git synchronization pipelines execute.  
+* **Intent:** Initiates a strict safety and compliance review of code assets before git synchronization pipelines execute.  
 
-### 🤖 AI Composer System Prompt
-Before committing any new feature or data integration, perform a final safety audit of the workspace.
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+    Before committing any new feature or data integration, perform a final safety audit of the workspace.
 
-Secret Leak Scan: Verify that no API keys, credentials, or .env variables have been inadvertently included in src/ or components/ files.
+    Secret Leak Scan: Verify that no API keys, credentials, or .env variables have been inadvertently included in src/ or components/ files.
 
-Dependency Integrity: Confirm node_modules and .vite caches are correctly ignored by checking .gitignore.
+    Dependency Integrity: Confirm node_modules and .vite caches are correctly ignored by checking .gitignore.
 
-Clean Build: Run npm run build to ensure the compilation logic remains valid and no new "to-white" or undefined utility tokens have been introduced.
+    Clean Build: Run npm run build to ensure the compilation logic remains valid and no new "to-white" or undefined utility tokens have been introduced.
 
-Credential Isolation: If any new external services are added, verify they are configured to call through a secured proxy rather than direct client-side requests.
-
+    Credential Isolation: If any new external services are added, verify they are configured to call through a secured proxy rather than direct client-side requests.
+    ```
 ### Terminal Sync Checkpoint (Final Audit Step):
-PowerShell# Verify nothing is staged that shouldn't be
+* **PowerShell**
+# Verify nothing is staged that shouldn't be
+```
 git status
+```
 
-# Run build to ensure code integrity
+### Run build to ensure code integrity
+```
 npm run build
+```
 
-# If build passes, sync to repository
+### If build passes, sync to repository
+```
 git add .
+```
+```
 git commit -m "Security Audit: Verify environment isolation and clean build compliance"
+```
   
 ## Phase 12 — Network & API Security (CORS)
 1. Understanding the Role of CORSCORS is a browser-level security feature. If your frontend attempts to fetch data from an external server (like a spreadsheet API or backend service), the server must explicitly whitelist your origin.  
 2. Local vs. Production Security   
-   * ** During Development: You might run into "CORS errors" if your API doesn't recognize localhost:5173. Configure your proxy in vite.config.js to route requests through the dev server, which hides the origin from the browser.  
-   * ** In Production: Never disable CORS settings on your server to "make it work". Only allow specific, trusted origins in your backend/API headers.  
+   * **During Development:** You might run into "CORS errors" if your API doesn't recognize localhost:5173. Configure your proxy in vite.config.js to route requests through the dev server, which hides the origin from the browser.  
+   * **In Production:** Never disable CORS settings on your server to "make it work". Only allow specific, trusted origins in your backend/API headers.  
 3. Deep-Dive: Secure AI Orchestration Proxy Engine   To activate the live conversational processing streams inside the AI Career Scout without leaking structural master access codes to the client viewport DOM, this repository standardizes on an enterprise-grade token abstraction pattern.  
 
-      * ** Plaintext
+      * **Plaintext**
       [Client Chat Component (DOM)] ────────────(Asynchronous HTTPS JSON Prompt)───────────► [Firebase Cloud Function]
                                                                                                     │
                                                                                 (Injects Server ENV API Secret Key)
@@ -967,18 +995,18 @@ git commit -m "Security Audit: Verify environment isolation and clean build comp
       [Client Chat Component (DOM)] ◄──────────(Returns Structural Text Stream)─────────── [Google Gemini Pro AI Core Engine]
 
 
-      * ** Client Isolation: The user inputs an inquiries thread into the UI panel. The React layer packages the raw history data structures array and runs an encrypted fetch query calling our isolated cloud directory. Front-facing script inspectors cannot look up keys because no key parameters ever touch client memory blocks.  
-      * ** Serverless Node Decoupling: The request maps into the localized, secure cloud sandbox (Firebase Cloud Functions Proxy running on Google Cloud). The module runs cross-origin request verifications against our specific domain (aitogethernow.com), parses the prompt body, and attaches the private environment string token managed by Google AI Studio.  
-      * ** Model Inference Pipeline: The runtime relays the fully compiled payload packet directly to the underlying model (Google Gemini Pro Inference Engine). The model computes contextually grounded, low-latency text payloads, passing a sanitized data stream block back through the proxy gate into your frontend client stack.
+      * **Client Isolation:** The user inputs an inquiries thread into the UI panel. The React layer packages the raw history data structures array and runs an encrypted fetch query calling our isolated cloud directory. Front-facing script inspectors cannot look up keys because no key parameters ever touch client memory blocks.  
+      * **Serverless Node Decoupling:** The request maps into the localized, secure cloud sandbox (Firebase Cloud Functions Proxy running on Google Cloud). The module runs cross-origin request verifications against our specific domain (aitogethernow.com), parses the prompt body, and attaches the private environment string token managed by Google AI Studio.  
+      * **Model Inference Pipeline:** The runtime relays the fully compiled payload packet directly to the underlying model (Google Gemini Pro Inference Engine). The model computes contextually grounded, low-latency text payloads, passing a sanitized data stream block back through the proxy gate into your frontend client stack.
 4. Audit Checklist for Network Requests:
-      * ** [ ] Does the API request include a sensitive API_KEY or AUTH_TOKEN? If yes, move to server-side proxy.  
-      * ** [ ] Is the API origin configured to allow your domain (aitogethernow.com) specifically, rather than a wildcard *?
-      * ** [ ] Are all sensitive endpoints protected by HTTPS?
+      * **[ ]** Does the API request include a sensitive API_KEY or AUTH_TOKEN? If yes, move to server-side proxy.  
+      * **[ ]** Is the API origin configured to allow your domain (aitogethernow.com) specifically, rather than a wildcard *?
+      * **[ ]** Are all sensitive endpoints protected by HTTPS?
    
 ## Pro-Tip for your Notes:   
 Since you are using Firebase for hosting, utilize Firebase Cloud Functions as your "Secure Proxy". This allows you to write the backend code that handles the API keys, and your React front-end just calls the function. This effectively makes CORS errors much easier to manage because you control both ends of the connection.  
 
-👋 Contributing   
+👋 **Contributing**
 
 We welcome contributions from structural AI developers, systems architects, and technical educators! To contribute:  
 1. Fork the repository to your own account.  
@@ -989,21 +1017,21 @@ We welcome contributions from structural AI developers, systems architects, and 
  
 This project is licensed under the MIT License. You are free to use, modify, and distribute this software for personal and commercial projects. See LICENSE for details.  
 
-💡 Reminders for the Future   
+💡 **Reminders for the Future**
 
-The Sizing System of Markdown Headings   
+* **The Sizing System of Markdown Headings**
 
-Always keep your outline files scannable and logically structured by allocating a single hashtag # exclusively for the document header title block, a secondary double hashtag ## for structural milestones/Phases/Sync points, and a triple hashtag ### for instructional prompts or local terminal tasks.  
+    Always keep your outline files scannable and logically structured by allocating a single hashtag # exclusively for the document header title block, a secondary double hashtag ## for structural milestones/Phases/Sync points, and a triple hashtag ### for instructional prompts or local terminal tasks.  
 
-Handling the Local White-Screen Hot-Reload Crash   
+* **Handling the Local White-Screen Hot-Reload Crash**
 
-If the local preview server throws a gensync compilation error or crashes while editing, kill the process (Ctrl + C), clear the internal cache by running npm r -f node_modules/.vite, and reboot clean via npm run dev.  
+    If the local preview server throws a gensync compilation error or crashes while editing, kill the process (Ctrl + C), clear the internal cache by running npm r -f node_modules/.vite, and reboot clean via npm run dev.  
 
-Forcing Favicon Cache Updates   
+* **Forcing Favicon Cache Updates**
 
-Browsers aggressively save tab icons. If an icon change doesn't show immediately, close all open tabs pointed to the domain, open a fresh Incognito panel, navigate to the site, and press Ctrl + F5 (or Cmd + Shift + R on Mac) to force-evict old images from memory.  
+    Browsers aggressively save tab icons. If an icon change doesn't show immediately, close all open tabs pointed to the domain, open a fresh Incognito panel, navigate to the site, and press Ctrl + F5 (or Cmd + Shift + R on Mac) to force-evict old images from memory.  
 
-Airtight Web App Scaling   
+* **Airtight Web App Scaling**
 
-When adding new subpage tools, always place the core information array inside the structured conditional loops of src/App.jsx and pass down navigation functions explicitly as layout view component props. This maintains your fast, 100% cloud-independent deployment cadence.  
+    When adding new subpage tools, always place the core information array inside the structured conditional loops of src/App.jsx and pass down navigation functions explicitly as layout view component props. This maintains your fast, 100% cloud-independent deployment cadence.  
 
