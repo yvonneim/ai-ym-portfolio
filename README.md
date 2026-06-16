@@ -69,7 +69,7 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Terminal Step 2: Install Package Dependencies](#terminal-step-2-install-package-dependencies)
     - [Terminal Step 3: Run the Local Development Environment](#terminal-step-3-run-the-local-development-environment)
     - [💡Terminal Execution Note:](#terminal-execution-note)
-  - [⚙️ Quick Reference Scripts (Usage Cheat Sheet)](#️-quick-reference-scripts-usage-cheat-sheet)
+      - [⚙️ Quick Reference Scripts (Usage Cheat Sheet)](#️-quick-reference-scripts-usage-cheat-sheet)
     - [Terminal Step B: Compile Static Optimization Builds](#terminal-step-b-compile-static-optimization-builds)
     - [Terminal Step C: Production Sandbox Simulation Preview](#terminal-step-c-production-sandbox-simulation-preview)
   - [Phase 1 — Project Initialization \& Folder Scaffolding](#phase-1--project-initialization--folder-scaffolding)
@@ -210,14 +210,14 @@ npm run dev
 
 This terminal will stay "locked" as long as the server is running. To stop the server at any time, click into the terminal window and press Ctrl + C.
 
-## ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
-  * ** This section serves as a quick lookup matrix for future management. Do not execute these concurrently in your active installation terminal row.  Terminal Command: Active Development Sandbox
+#### ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
+  * This section serves as a quick lookup matrix for future management. Do not execute these concurrently in your active installation terminal row.  Terminal Command: Active Development Sandbox
       * Bash
       ```bash
       npm run dev
       ```
-        * Local Port Mapping: http://localhost:5173 
-        * Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
+      * Local Port Mapping: http://localhost:5173 
+      * Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
 
 ### Terminal Step B: Compile Static Optimization Builds
 * Bash
