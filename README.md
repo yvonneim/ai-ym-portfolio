@@ -87,9 +87,9 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-2)
   - [Phase 4 — Configuration Engine \& Dependency Setup](#phase-4--configuration-engine--dependency-setup)
     - [Prompt 4.1 — Dropping the Node \& Project Configuration Files](#prompt-41--dropping-the-node--project-configuration-files)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-3)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-3)
     - [Prompt 4.2 — Creating the Root HTML Entry Point](#prompt-42--creating-the-root-html-entry-point)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-4)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-4)
   - [Prompt 4.3 — Creating the Main DOM Mount Script](#prompt-43--creating-the-main-dom-mount-script)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-5)
   - [Prompt 4.4 — App.jsx Orchestration Engine](#prompt-44--appjsx-orchestration-engine)
@@ -225,7 +225,7 @@ Launch the real-time hot-reloading rendering environment engine to test live fil
 ### Terminal Step C: Production Sandbox Simulation Preview
   * Bash
     ```bash
-        npm run preview
+    npm run preview
     ```
   * Local Port Mapping: http://localhost:4173
   * Primary Use Case: Spins up a lightweight host to view the final compiled results of your /dist folder , ensuring features behave accurately before deploying live onto cloud servers like Firebase
@@ -320,22 +320,22 @@ Open a PowerShell tab inside your terminal window
   ### 🤖 AI Composer System Prompt:
   * **Plaintext**
     ```
-      We are using Tailwind CSS v4, which configures design tokens directly inside the main CSS entry point using CSS variables. 
+    We are using Tailwind CSS v4, which configures design tokens directly inside the main CSS entry point using CSS variables. 
 
-      Please locate and open src/index.css. Completely rewrite it to implement our premium light-themed tech aesthetic exactly matching these design rules from our brand assets:
+    Please locate and open src/index.css. Completely rewrite it to implement our premium light-themed tech aesthetic exactly matching these design rules from our brand assets:
 
-      1. Global Styles:
-      - Primary Background: Crisp, bright light-grey background gradient (#F9F9FB blending smoothly into white)
-      - Primary Text: Deep charcoal/slate black for headings and body copy to ensure ultra-sharp readability (#111827)
-      - Accent Colors: Set up a signature electric violet/purple gradient token (#7C3AED to #A855F7)
+    1. Global Styles:
+       - Primary Background: Crisp, bright light-grey background gradient (#F9F9FB blending smoothly into white)
+       - Primary Text: Deep charcoal/slate black for headings and body copy to ensure ultra-sharp readability (#111827)
+       - Accent Colors: Set up a signature electric violet/purple gradient token (#7C3AED to #A855F7)
 
-      2. Reusable Card Theme Tokens (Define these as custom classes or CSS variables):
-      - Create a .card-lavender class: Soft lavender background (#F5F3FF) with a subtle border tint.
-      - Create a .card-blue class: Soft sky blue background (#EFF6FF) with a subtle border tint.
-      - Create a .card-cream class: Soft warm peach/cream background (#FFFBEB) with a subtle border tint.
-      - Create a .card-mint class: Soft mint green background (#F0FDF4) with a subtle border tint.
+    2. Reusable Card Theme Tokens (Define these as custom classes or CSS variables):
+       - Create a .card-lavender class: Soft lavender background (#F5F3FF) with a subtle border tint.
+       - Create a .card-blue class: Soft sky blue background (#EFF6FF) with a subtle border tint.
+       - Create a .card-cream class: Soft warm peach/cream background (#FFFBEB) with a subtle border tint.
+       - Create a .card-mint class: Soft mint green background (#F0FDF4) with a subtle border tint.
 
-      Ensure all cards feature smooth hover states (like a gentle shadow or slight lift transition). The styling must respect standard HTML semantics and apply beautifully across our components.
+    Ensure all cards feature smooth hover states (like a gentle shadow or slight lift transition). The styling must respect standard HTML semantics and apply beautifully across our components.
     ```
   ### Repository Sync Checkpoint
   * **PowerShell**
@@ -355,29 +355,29 @@ Open a PowerShell tab inside your terminal window
   ### 🤖 AI Composer System Prompt:
   * **Plaintext**
     ```
-      We want to fully scale our React application into a high-end multi-view layout using state management inside src/App.jsx. Ensure that all dark blues, heavy dark backgrounds, or unappealing dark styling blocks are completely removed from the entire application workspace. Every container, background, and text layer must reflect a clean, premium light-themed tech aesthetic (white backgrounds, soft gray transitions, and sharp charcoal text).
+    We want to fully scale our React application into a high-end multi-view layout using state management inside src/App.jsx. Ensure that all dark blues, heavy dark backgrounds, or unappealing dark styling blocks are completely removed from the entire application workspace. Every container, background, and text layer must reflect a clean, premium light-themed tech aesthetic (white backgrounds, soft gray transitions, and sharp charcoal text).
 
-      Please configure, structure, and connect the following views:
+    Please configure, structure, and connect the following views:
 
-      1. Main Portfolio Home View (src/components/sections/PortfolioHome.jsx):
-        - Implement the clean white personal portfolio UI with Royal Blue accents as seen on aitogethernow.com.
-        - Set up the main tracking badge: "ENTERPRISE AI OPERATIONS & INFRASTRUCTURE".
-        - Set up the hero title: "Orchestrating Enterprise AI Implementation."
-        - Clicking the primary dark-styled CTA button "EXPLORE FORWARD MOVES AI →" must instantly transition our state to render the Forward Moves sub-platform.
+    1. Main Portfolio Home View (src/components/sections/PortfolioHome.jsx):
+       - Implement the clean white personal portfolio UI with Royal Blue accents as seen on aitogethernow.com.
+       - Set up the main tracking badge: "ENTERPRISE AI OPERATIONS & INFRASTRUCTURE".
+       - Set up the hero title: "Orchestrating Enterprise AI Implementation."
+       - Clicking the primary dark-styled CTA button "EXPLORE FORWARD MOVES AI →" must instantly transition our state to render the Forward Moves sub-platform.
 
-      2. Forward Moves Venture Platform View (src/components/sections/ForwardMovesHome.jsx):
-        - This page acts as the main Dashboard Hub for the product. Set up a bright grid layout presenting 4 active production entry points utilizing our premium pastel color tokens:
+    2. Forward Moves Venture Platform View (src/components/sections/ForwardMovesHome.jsx):
+       - This page acts as the main Dashboard Hub for the product. Set up a bright grid layout presenting 4 active production entry points utilizing our premium pastel color tokens:
           * Card 1: Skill Studio (Soft lavender style)
           * Card 2: Careers Tracking (Soft blue style)
           * Card 3: AI Career Scout (Soft warm peach/cream style)
           * Card 4: Glossary System (Soft mint green style)
-        - Ensure each card is clickable and dynamically triggers a view change to that specific module. Remove any legacy placeholders or layout traps.
+       - Ensure each card is clickable and dynamically triggers a view change to that specific module. Remove any legacy placeholders or layout traps.
 
-      3. Top Navigation Synchronization (src/components/layout/Navbar.jsx):
-        - Set up const [view, setView] = useState('portfolio') inside src/App.jsx to govern current rendering layout blocks.
-        - The Navbar must change its links dynamically based on the current view.
-        - When on the portfolio view, display only: "FORWARD MOVES AI" and "CONTACT".
-        - When inside any Forward Moves platform view, render the full navigation selection verbatim: "🏡 HOME", "DASHBOARD HUB", "SKILL STUDIO", "CAREERS", "AI CAREER SCOUT", "GLOSSARY". Clicking "🏡 HOME" must seamlessly return the state back to the portfolio home view.
+    3. Top Navigation Synchronization (src/components/layout/Navbar.jsx):
+       - Set up const [view, setView] = useState('portfolio') inside src/App.jsx to govern current rendering layout blocks.
+       - The Navbar must change its links dynamically based on the current view.
+       - When on the portfolio view, display only: "FORWARD MOVES AI" and "CONTACT".
+       - When inside any Forward Moves platform view, render the full navigation selection verbatim: "🏡 HOME", "DASHBOARD HUB", "SKILL STUDIO", "CAREERS", "AI CAREER SCOUT", "GLOSSARY". Clicking "🏡 HOME" must seamlessly return the state back to the portfolio home view.
     ```
     ### Repository Sync Checkpoint
     * **PowerShell**
@@ -390,51 +390,56 @@ Open a PowerShell tab inside your terminal window
 ## Phase 4 — Configuration Engine & Dependency Setup
 
 ### Prompt 4.1 — Dropping the Node & Project Configuration Files   
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  
-* ** Intent: Drops required package declarations and configuration engines directly into the root workspace directory.  
+* **Execution Location:** VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  
+* **Intent:** Drops required package declarations and configuration engines directly into the root workspace directory.  
  
-### 🤖 AI Composer System Prompt
-Please look at our root directory (AI-YM-PORTFOLIO). We need to drop in the formal project configuration files so we can run the real application.
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
+        Please look at our root directory (AI-YM-PORTFOLIO). We need to drop in the formal project configuration files so we can run the real application.
 
-1. Create a package.json file exactly in the root folder with this content:
-{
-  "name": "ai-ym-portfolio",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "devDependencies": {
-    "@tailwindcss/vite": "^4.0.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
-    "@vitejs/plugin-react": "^4.3.4",
-    "tailwindcss": "^4.0.0",
-    "vite": "^6.0.0"
-  }
-}
+        1. Create a package.json file exactly in the root folder with this content:
+        {
+          "name": "ai-ym-portfolio",
+          "private": true,
+          "version": "0.0.0",
+          "type": "module",
+          "scripts": {
+            "dev": "vite",
+            "build": "vite build",
+            "preview": "vite preview"
+          },
+          "dependencies": {
+            "react": "^19.0.0",
+            "react-dom": "^19.0.0"
+          },
+          "devDependencies": {
+            "@tailwindcss/vite": "^4.0.0",
+            "@types/react": "^19.0.0",
+            "@types/react-dom": "^19.0.0",
+            "@vitejs/plugin-react": "^4.3.4",
+            "tailwindcss": "^4.0.0",
+            "vite": "^6.0.0"
+          }
+        }
 
-2. Create a vite.config.js file exactly in the root folder with this content:
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+        2. Create a vite.config.js file exactly in the root folder with this content:
+        import { defineConfig } from 'vite'
+        import react from '@vitejs/plugin-react'
+        import tailwindcss from '@tailwindcss/vite'
 
-export default defineConfig({
-  plugins: [react(), tailwindcss()],
-})
+        export default defineConfig({
+          plugins: [react(), tailwindcss()],
+        })
+        ```
 
 ### Prompt 4.2 — Creating the Root HTML Entry Point  
 
-* ** Execution Location: VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  Intent: Generates index.html referencing Vite runtime mounting patterns.  🤖 AI Composer System Prompt
+* ** Execution Location: VS Code AI Composer panel (Ctrl + I) inside Gemini Code Assist.  Intent: Generates index.html referencing Vite runtime mounting patterns.  
 
-### 🤖 AI Composer System Prompt
+  ### 🤖 AI Composer System Prompt:
+  * **Plaintext**
+    ```
 Please look at our root directory (AI-YM-PORTFOLIO). Vite requires a root entry file to display our app on localhost.
 
 Create an index.html file exactly in the root folder with this content:
