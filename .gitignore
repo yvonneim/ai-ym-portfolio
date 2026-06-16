@@ -16,6 +16,7 @@ node_modules/
 jspm_packages/
 .npm/
 .pnpm-store/
+.vite/
 
 # ── BUILD OUTPUTS ──
 # Block the local compiled production distribution folders

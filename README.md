@@ -4,52 +4,9 @@ An enterprise-grade AI portfolio tracking repository, configuration blueprint, a
 
 ---
 
-## 🎯 What is this Project About? (Layman's Terms)
-
-Imagine wanting to transition into a career in Artificial Intelligence but feeling overwhelmed by complicated jargon, not knowing which skills are actually in demand, or struggling to find credible, free courses. 
-
-This project serves as a digital career launchpad called **Forward Moves AI** (a core branch of Yvonne Martinez's unified portfolio platform). It is engineered as a clean, hyper-fast, mobile-friendly environment designed to guide individuals step-by-step into the modern AI workforce. 
-
-Instead of searching the web aimlessly, users arrive at a unified Dashboard Hub that offers four core, high-impact career transition tools:
-* **📖 Skill Studio:** A personalized digital classroom that curates top-tier, free AI training modules from trusted providers like Google and Anthropic. Users can choose their target path (e.g., Prompt Architect or AI Systems Developer) and check off completed courses as they learn.
-* **📊 Careers:** A live job-market radar that tracks real-time hiring shifts and maps out emerging career paths, helping users target high-velocity sectors like HealthTech, ClimateTech, and FinTech.
-* **🌐 AI Career Scout:** A real-time virtual career coach. Powered by **Google's Gemini Pro API**, users can ask highly specific questions about emerging job markets, regional workforce velocities, and technical skill gaps, or receive personalized advice on how to pivot their existing professional experience into AI domains.
-* **📁 Glossary System:** A simple, searchable translator that demystifies confusing tech terms (like "RAG," "Tokens," or "Embeddings") and explains them in everyday English.
-
----
-
-## 🛠️ How We Created It (The Vibe Coding Revolution)
-
-Building a single-page website that loads instantly, handles complex chat interfaces, and renders search queries in milliseconds traditionally required years of computer science background. Instead of writing every line of layout syntax and application logic manually, this repository was engineered using a progressive **AI Pair-Programming Framework** known as **Vibe Coding**.
-
-Here is the exact suite of languages and tools we utilized to create the platform:
-
-### 1. The Full-Stack Polyglot Engine (Languages We Used)
-* **JavaScript (ES6+) & JSX:** The core operational engine of our application. We leveraged JavaScript to build out the client-side state machine, process asynchronous browser API calls, handle user interface events, and compute dynamic search metrics in real time.
-* **Python:** Used in our AI research sandbox, backend scripting pipelines, and automation data structures. Python scripts handle data parsing, prompt tuning evaluation protocols, and pre-processing pipeline checks before deploying structural constraints to our live cloud infrastructure.
-* **HTML5:** Provides the semantic foundational tree and baseline root entry point layout structure for DOM parsing.
-* **Modern CSS & CSS Variables:** Serves as the primary global token dictionary and styling baseline. We leveraged deep variable tables to establish reusable design presets, light-tint borders, and layout properties natively parsed by compiled utility classes.
-
-### 2. The Core AI Development Stack
-* **Gemini Code Assist (VS Code Extension):** Our primary natural language workspace orchestrator. By installing the official *Gemini Code Assist* tool inside VS Code, we used regular conversational English to edit, refactor, and link multiple files across our workspace simultaneously using Agent mode.
-* **Google AI Studio:** The rapid prototyping dashboard where we tested our system prompts, configured safety thresholds, and acquired our production model API keys securely.
-* **Firebase & Google Cloud Platform (GCP):** Firebase served as our continuous deployment environment. Because Firebase is natively powered by Google Cloud, our serverless hosting and back-end proxies execute seamlessly on premium Google infrastructure.
-* **Firebase CLI (`firebase-tools`):** The command-line engine used to bundle, compile, and push our local files directly live onto custom domain web servers.
-
-### 3. Frontend Architecture (React 19 & Tailwind CSS v4)
-We built the interface using **React 19** for high-speed dynamic rendering. For styling, we utilized **Tailwind CSS v4**, a cutting-edge design engine. This allowed us to construct a clean, spacious, minimalist layout—using soft pastel theme borders, plenty of white space, and subtle hover animations that make the site feel premium and natural to navigate.
-
-### 4. The Smart Navigation System (History API)
-Traditional websites reload entirely when you click a link, resulting in slow load times. Single-page applications, however, often break the browser's native "Back" and "Forward" buttons, causing user frustration. To solve this, we vibe-coded a **custom History-State Router**. When a user moves from the Homepage to the Skill Studio or Glossary, the app instantly swaps out the view in milliseconds while secretly updating the address bar—ensuring native browser navigation works flawlessly without reloading the page.
-
-### 5. Bulletproof Security & Isolated Serverless AI Routing
-When connecting a client web app to intelligent LLM backends like Gemini, exposing private API keys directly in front-end browser logs is a massive security hazard. We structured this platform to follow a **Secure Proxy Pattern**. 
-Instead of the user's browser talking directly to third-party endpoints, it communicates with an isolated serverless tier (**Firebase Cloud Functions** running on **Google Cloud**). This backend layer appends hidden environment configuration secrets, manages token consumption limits, and executes **CORS (Cross-Origin Resource Sharing) Defensive Measures**, ensuring credentials are secure and completely insulated from front-end exposure.
-
----
-
 ## 🧭 Table of Contents
 - [Yvonne Martinez — Enterprise AI Operations Playbook](#yvonne-martinez--enterprise-ai-operations-playbook)
+  - [🧭 Table of Contents](#-table-of-contents)
   - [🎯 What is this Project About? (Layman's Terms)](#-what-is-this-project-about-laymans-terms)
   - [🛠️ How We Created It (The Vibe Coding Revolution)](#️-how-we-created-it-the-vibe-coding-revolution)
     - [1. The Full-Stack Polyglot Engine (Languages We Used)](#1-the-full-stack-polyglot-engine-languages-we-used)
@@ -57,7 +14,6 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [3. Frontend Architecture (React 19 \& Tailwind CSS v4)](#3-frontend-architecture-react-19--tailwind-css-v4)
     - [4. The Smart Navigation System (History API)](#4-the-smart-navigation-system-history-api)
     - [5. Bulletproof Security \& Isolated Serverless AI Routing](#5-bulletproof-security--isolated-serverless-ai-routing)
-  - [🧭 Table of Contents](#-table-of-contents)
   - [Architectural Diagrams](#architectural-diagrams)
     - [Client-Side State \& Browser History Engine](#client-side-state--browser-history-engine)
     - [Secured Enterprise Proxy Architecture](#secured-enterprise-proxy-architecture)
@@ -116,7 +72,6 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-14)
   - [Prompt 7.4 — Glossary System Integration](#prompt-74--glossary-system-integration)
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-15)
-    - [Repository Sync Checkpoint](#repository-sync-checkpoint-3)
   - [Phase 8 — Environmental Security Architecture](#phase-8--environmental-security-architecture)
     - [Prompt 8.1 — Activating the Master Git Exclusions File](#prompt-81--activating-the-master-git-exclusions-file)
     - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-16)
@@ -135,7 +90,55 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Run build to ensure code integrity](#run-build-to-ensure-code-integrity)
     - [If build passes, sync to repository](#if-build-passes-sync-to-repository)
   - [Phase 12 — Network \& API Security (CORS)](#phase-12--network--api-security-cors)
-  - [Pro-Tip for your Notes:](#pro-tip-for-your-notes)
+    - [Secure AI Orchestration Proxy Engine](#secure-ai-orchestration-proxy-engine)
+  - [💡 Pro-Tip for your Notes:](#-pro-tip-for-your-notes)
+  - [👋 Contributing](#-contributing)
+  - [📄 License](#-license)
+  - [✒️ Author Disclaimer \& Attribution](#️-author-disclaimer--attribution)
+
+---
+
+## 🎯 What is this Project About? (Layman's Terms)
+
+Imagine wanting to transition into a career in Artificial Intelligence but feeling overwhelmed by complicated jargon, not knowing which skills are actually in demand, or struggling to find credible, free courses. 
+
+This project serves as a digital career launchpad called **Forward Moves AI** (a core branch of Yvonne Martinez's unified portfolio platform). It is engineered as a clean, hyper-fast, mobile-friendly environment designed to guide individuals step-by-step into the modern AI workforce. 
+
+Instead of searching the web aimlessly, users arrive at a unified Dashboard Hub that offers four core, high-impact career transition tools:
+* **📖 Skill Studio:** A personalized digital classroom that curates top-tier, free AI training modules from trusted providers like Google and Anthropic. Users can choose their target path (e.g., Prompt Architect or AI Systems Developer) and check off completed courses as they learn.
+* **📊 Careers:** A live job-market radar that tracks real-time hiring shifts and maps out emerging career paths, helping users target high-velocity sectors like HealthTech, ClimateTech, and FinTech.
+* **🌐 AI Career Scout:** A real-time virtual career coach. Powered by **Google's Gemini Pro API**, users can ask highly specific questions about emerging job markets, regional workforce velocities, and technical skill gaps, or receive personalized advice on how to pivot their existing professional experience into AI domains.
+* **📁 Glossary System:** A simple, searchable translator that demystifies confusing tech terms (like "RAG," "Tokens," or "Embeddings") and explains them in everyday English.
+
+---
+
+## 🛠️ How We Created It (The Vibe Coding Revolution)
+
+Building a single-page website that loads instantly, handles complex chat interfaces, and renders search queries in milliseconds traditionally required years of computer science background. Instead of writing every line of layout syntax and application logic manually, this repository was engineered using a progressive **AI Pair-Programming Framework** known as **Vibe Coding**.
+
+Here is the exact suite of languages and tools we utilized to create the platform:
+
+### 1. The Full-Stack Polyglot Engine (Languages We Used)
+  * **JavaScript (ES6+) & JSX:** The core operational engine of our application. We leveraged JavaScript to build out the client-side state machine, process asynchronous browser API calls, handle user interface events, and compute dynamic search metrics in real time.
+  * **Python:** Used in our AI research sandbox, backend scripting pipelines, and automation data structures. Python scripts handle data parsing, prompt tuning evaluation protocols, and pre-processing pipeline checks before deploying structural constraints to our live cloud infrastructure.
+  * **HTML5:** Provides the semantic foundational tree and baseline root entry point layout structure for DOM parsing.
+  * **Modern CSS & CSS Variables:** Serves as the primary global token dictionary and styling baseline. We leveraged deep variable tables to establish reusable design presets, light-tint borders, and layout properties natively parsed by compiled utility classes.
+
+### 2. The Core AI Development Stack
+  * **Gemini Code Assist (VS Code Extension):** Our primary natural language workspace orchestrator. By installing the official *Gemini Code Assist* tool inside VS Code, we used regular conversational English to edit, refactor, and link multiple files across our workspace simultaneously using Agent mode.
+  * **Google AI Studio:** The rapid prototyping dashboard where we tested our system prompts, configured safety thresholds, and acquired our production model API keys securely.
+  * **Firebase & Google Cloud Platform (GCP):** Firebase served as our continuous deployment environment. Because Firebase is natively powered by Google Cloud, our serverless hosting and back-end proxies execute seamlessly on premium Google infrastructure.
+  * **Firebase CLI (`firebase-tools`):** The command-line engine used to bundle, compile, and push our local files directly live onto custom domain web servers.
+
+### 3. Frontend Architecture (React 19 & Tailwind CSS v4)
+  We built the interface using **React 19** for high-speed dynamic rendering. For styling, we utilized **Tailwind CSS v4**, a cutting-edge design engine. This allowed us to construct a clean, spacious, minimalist layout—using soft pastel theme borders, plenty of white space, and subtle hover animations that make the site feel premium and natural to navigate.
+
+### 4. The Smart Navigation System (History API)
+  Traditional websites reload entirely when you click a link, resulting in slow load times. Single-page applications, however, often break the browser's native "Back" and "Forward" buttons, causing user frustration. To solve this, we vibe-coded a **custom History-State Router**. When a user moves from the Homepage to the Skill Studio or Glossary, the app instantly swaps out the view in milliseconds while secretly updating the address bar—ensuring native browser navigation works flawlessly without reloading the page.
+
+### 5. Bulletproof Security & Isolated Serverless AI Routing
+  When connecting a client web app to intelligent LLM backends like Gemini, there is the risk of exposing private API keys within front-end browser logs, which would be a massive security hazard. We structured this platform to follow a **Secure Proxy Pattern**. 
+  Instead of the user's browser talking directly to third-party endpoints, it communicates with an isolated serverless tier (**Firebase Cloud Functions** running on **Google Cloud**). This backend layer appends hidden environment configuration secrets, manages token consumption limits, and executes **CORS (Cross-Origin Resource Sharing) Defensive Measures**, ensuring credentials are secure and completely insulated from front-end exposure.
 
 ---
 
@@ -160,7 +163,7 @@ Ensure your system environment matches these target parameters before initializi
 Follow these steps to deploy and structure your local workspace sandbox:  
 
 ### Terminal Step 1: Clone the Repository
-  * Bash
+* **Bash:**
     ```bash
     git clone [https://github.com/your-username/ai-ym-portfolio.git](https://github.com/your-username/ai-ym-portfolio.git)
     ```
@@ -168,14 +171,14 @@ Follow these steps to deploy and structure your local workspace sandbox:
 
   ### Terminal Step 1a: reminder to change folder
   * **⚠️ CRITICAL STEP:** You must physically step your terminal session inside the newly downloaded folder before running any package configurations!
-  * Bash
+  * **Bash:**
     ```bash
     cd ai-ym-portfolio
     ```
   ### Terminal Step 1b: Open the Project Folder inside VS Code
   * **To exit:** the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view.<br>
   * **Via Terminal:** Run the execution flag to open the directory path instantly inside a fresh VS Code layout:
-  * Bash
+  * **Bash:**
     ```bash
     code .
     ```
@@ -183,13 +186,13 @@ Follow these steps to deploy and structure your local workspace sandbox:
 
 ### Terminal Step 2: Install Package Dependencies
 Open your integrated VS Code terminal (`Ctrl + ``) and initialize your tracking dependencies:
-  * Bash
+  * **Bash:**
     ```bash
     npm install
     ```
 ### Terminal Step 3: Run the Local Development Environment
 Launch the real-time hot-reloading rendering environment engine to test live file updates:
-  * Bash
+  * **Bash:**
     ```bash
     npm run dev
     ```
@@ -199,7 +202,7 @@ Launch the real-time hot-reloading rendering environment engine to test live fil
 
     #### ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
     * This section serves as a quick lookup matrix for future management. Do not execute these concurrently in your active installation terminal row.  Terminal Command: Active Development Sandbox
-    * Bash
+    * **Bash:**
       ```bash
       npm run dev
       ```
@@ -207,14 +210,14 @@ Launch the real-time hot-reloading rendering environment engine to test live fil
     * Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
 
 ### Terminal Step B: Compile Static Optimization Builds
-  * Bash
+* **Bash:**
     ```bash
     npm run build
     ``` 
   * Primary Use Case: Compiles, compresses, and minifies your code into strict production static files inside the local /dist folder destination. (Note: Run this command in a second terminal tab or after stopping your development server with Ctrl + C).
   
 ### Terminal Step C: Production Sandbox Simulation Preview
-  * Bash
+* **Bash:**
     ```bash
     npm run preview
     ```
@@ -231,7 +234,7 @@ Launch the real-time hot-reloading rendering environment engine to test live fil
 ### Terminal Step A: Folder Setup & Repository Initiation
 Open a PowerShell tab inside your terminal window
 * Create folder matrices natively
-* PowerShell
+* **PowerShell:**
   ```
   mkdir src/components/layout, src/components/ui, src/components/sections, src/context, src/hooks, src/utils, src/assets -Force
   ```
@@ -242,7 +245,7 @@ Open a PowerShell tab inside your terminal window
 
 ### Terminal Git Initialization steps:
 * Stage baseline layout records
-* PowerShell
+* **PowerShell:**
   ```
   git init
   ```
@@ -277,7 +280,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Generates basic functional structures and mounts them to the root entry point.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     I have initialized our folder architecture and generated empty files for Navbar.jsx, Footer.jsx, and ThemeContext.jsx. 
 
@@ -290,7 +293,7 @@ Open a PowerShell tab inside your terminal window
     Ensure all file imports match our structural directories flawlessly and output complete, production-ready code.
     ```
   ### Repository Sync Checkpoint
-  * **PowerShell**
+  * **PowerShell:**
     ```
     git add .
     ```
@@ -306,7 +309,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Configures the global style entry sheet with customized Tailwind CSS v4 design variables.
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     We are using Tailwind CSS v4, which configures design tokens directly inside the main CSS entry point using CSS variables. 
 
@@ -326,7 +329,7 @@ Open a PowerShell tab inside your terminal window
     Ensure all cards feature smooth hover states (like a gentle shadow or slight lift transition). The styling must respect standard HTML semantics and apply beautifully across our components.
     ```
   ### Repository Sync Checkpoint
-  * **PowerShell**
+  * **PowerShell:**
     ```
     git add .
     ```
@@ -342,7 +345,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Constructs a single-page view structure utilizing dynamic rendering to clean up design components.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     We want to fully scale our React application into a high-end multi-view layout using state management inside src/App.jsx. Ensure that all dark blues, heavy dark backgrounds, or unappealing dark styling blocks are completely removed from the entire application workspace. Every container, background, and text layer must reflect a clean, premium light-themed tech aesthetic (white backgrounds, soft gray transitions, and sharp charcoal text).
 
@@ -369,7 +372,7 @@ Open a PowerShell tab inside your terminal window
        - When inside any Forward Moves platform view, render the full navigation selection verbatim: "🏡 HOME", "DASHBOARD HUB", "SKILL STUDIO", "CAREERS", "AI CAREER SCOUT", "GLOSSARY". Clicking "🏡 HOME" must seamlessly return the state back to the portfolio home view.
     ```
   ### Repository Sync Checkpoint
-  * **PowerShell**
+  * **PowerShell:**
       ```
       git add .
       ```
@@ -383,7 +386,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Drops required package declarations and configuration engines directly into the root workspace directory.  
  
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please look at our root directory (AI-YM-PORTFOLIO). We need to drop in the formal project configuration files so we can run the real application.
 
@@ -427,7 +430,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Generates index.html referencing Vite runtime mounting patterns.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please look at our root directory (AI-YM-PORTFOLIO). Vite requires a root entry file to display our app on localhost.
 
@@ -452,7 +455,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Generates mounting instructions matching React 19 standards.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please look at our src/ directory. We are missing the standard entry point execution file. 
 
@@ -476,7 +479,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Completely rewrites application entrypoint scripts to manage layout states seamlessly.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please open src/App.jsx. We need to completely rewrite it to manage our 4 production platform views using an advanced client-side state routing mechanism combined with the native browser History API to solve the back button trap. Remove all legacy dark backgrounds or old placeholder variables, and ensure container pathways match our sections perfectly.
 
@@ -550,7 +553,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Identifies and replaces broken to-white syntax layouts inside global stylesheets.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please open src/index.css. The Tailwind CSS v4 compiler is throwing a compilation error because of an unknown utility class (to-white). 
 
@@ -562,7 +565,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Enforces modern @import "tailwindcss"; conventions in src/index.css alongside customized design theme styles.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please open src/index.css. We need to rewrite it completely to fix the Tailwind v4 build crash regarding 'font-sans'. Ensure that the top of the file explicitly imports Tailwind CSS using the new modern v4 syntax, and configure our custom color tokens and utility classes inside native CSS layers so the compiler reads them perfectly. 
 
@@ -611,7 +614,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Generates responsive sticky navigation with integrated hamburger drawer panels.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please completely rewrite src/components/layout/Navbar.jsx to manage our exact 4-tool product layout. The navbar container wrapper must stay pinned perfectly to the top of the browser screen under a fixed position context, supporting full mobile responsiveness via an integrated state menu trigger panel.
 
@@ -682,7 +685,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Generates responsive footer layouts containing dynamic date generation scripts.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please rewrite src/components/layout/Footer.jsx to accept our current tracking routing props. We need to turn the static footer layout into a fully active navigation tracker that resets layout windows smoothly back to the top viewport row upon user click.
 
@@ -719,7 +722,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Eradicates default browser tab icons by loading an inline, URL-escaped vector emblem. 
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     <!DOCTYPE html>
     <html lang="en">
@@ -742,7 +745,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Standardizes card layout vectors inside the product dashboard, matching the live configuration of aitogethernow.com.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please overwrite src/components/sections/ForwardMovesHome.jsx. We need to implement our precise, final 4-card workspace matrix, completely removing old template placeholders or structural markers to align perfectly with our operational tools.
 
@@ -821,7 +824,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Deploys a searchable, multi-provider course catalog for the SkillStudioView module.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please create a new file at src/components/sections/SkillStudioView.jsx and populate it with a professional, filterable curriculum workspace. It should feature a dropdown for selecting target learning profiles (e.g., Prompt Architect, AI Data Analyst, AI Systems Developer) and a left sidebar with quick tags to filter modules by provider (e.g., Google, Anthropic, DeepLearning, edX). Implement local state storage to allow developers or users to mark modules as completed via a checkbox toggle.
     ```
@@ -831,7 +834,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Deploys an advanced chat layout wrapper connected via standard fetch queries to an abstract Firebase functions route to execute zero-exposure API streaming.
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please construct the interactive AI Career Scout conversational module by creating a new file at src/components/sections/CareerScoutView.jsx. 
 
@@ -845,17 +848,17 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Builds an interactive terminology card library inside the GlossaryView component.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please create a new file at src/components/sections/GlossaryView.jsx. Build an interactive concept card dictionary containing essential AI definitions (e.g., Generative AI, RAG, Embeddings, Tokens, Agent). Integrate a search field at the top of the card matrix that instantly filters matching vocabulary titles or descriptions as the user types. Apply smooth liftoff transition classes to cards to implement the premium tech aesthetic.
     ```
-  ### Repository Sync Checkpoint
-    ```
-    git add .
-    ```
-    ```
-    git commit -m "dashboard: expand modular tools structure into verified 4 card interactive tracking layout"
-    ```
+    ### Repository Sync Checkpoint
+      ```
+      git add .
+      ```
+      ```
+      git commit -m "dashboard: expand modular tools structure into verified 4 card interactive tracking layout"
+      ```
 
 ## Phase 8 — Environmental Security Architecture 
 
@@ -865,12 +868,12 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Generates extensive .gitignore definitions to block local credential variables from leaking into remote repository logs.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Please look at our root project workspace directory. Generate a brand new .gitignore file exactly at the root level. Ensure it explicitly lists .env, .env.local, and node_modules/ to completely secure our local environment parameters against accidental remote repository tracking.
     ```
 
-    ### Custom Grounding Asset — .gitignore Blueprint Configuration:
+    #### Custom Grounding Asset — .gitignore Blueprint Configuration:
     #### AI-YM-PORTFOLIO/.gitignore
 
     #### ── SECRET KEY PROTECTION ──
@@ -887,12 +890,12 @@ Open a PowerShell tab inside your terminal window
     build/
 
     #### Repository Sync Checkpoint
-    ```
-    git add .gitignore
-    ```
-    ```
-    git commit -m "security: deploy root variable gitignore exclusion rules to mask local sandboxes"
-    ```
+      ```
+      git add .gitignore
+      ```
+      ```
+      git commit -m "security: deploy root variable gitignore exclusion rules to mask local sandboxes"
+      ```
 
 ## Phase 9 — Production Compilation & Edge Cloud Deployments   
 
@@ -901,7 +904,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Bundles active frameworks into highly optimized structures and deploys files straight to Firebase hosting channels.  
 
 * **Terminal Action Steps:**
-* **PowerShell**
+* **PowerShell:**
     #### Step A: Package compilation tree structure assets
     ```
     npm run build
@@ -946,7 +949,7 @@ Open a PowerShell tab inside your terminal window
 * **Intent:** Initiates a strict safety and compliance review of code assets before git synchronization pipelines execute.  
 
   ### 🤖 AI Composer System Prompt:
-  * **Plaintext**
+  * **Plaintext:**
     ```
     Before committing any new feature or data integration, perform a final safety audit of the workspace.
 
@@ -960,7 +963,7 @@ Open a PowerShell tab inside your terminal window
     ```
 ### Terminal Sync Checkpoint (Final Audit Step): 
 Verify nothing is staged that shouldn't be
-* **PowerShell**
+* **PowerShell:**
   ```
   git status
   ```
@@ -985,53 +988,43 @@ Verify nothing is staged that shouldn't be
    * **In Production:** Never disable CORS settings on your server to "make it work". Only allow specific, trusted origins in your backend/API headers.  
 3. Deep-Dive: Secure AI Orchestration Proxy Engine   To activate the live conversational processing streams inside the AI Career Scout without leaking structural master access codes to the client viewport DOM, this repository standardizes on an enterprise-grade token abstraction pattern.  
 
-      * **Plaintext**
-  
-      [Client Chat Component (DOM)] ────────────(Asynchronous HTTPS JSON Prompt)───────────► [Firebase Cloud Function]
-                                                                                                    │
-                                                                                (Injects Server ENV API Secret Key)
-                                                                                                    │
-                                                                                                    ▼
-      [Client Chat Component (DOM)] ◄──────────(Returns Structural Text Stream)─────────── [Google Gemini Pro AI Core Engine]
+### Secure AI Orchestration Proxy Engine 
+![Secure AI Orchestration Proxy Engine ](./public/assets/SecureAI.png)
 
-
-      * **Client Isolation:** The user inputs an inquiries thread into the UI panel. The React layer packages the raw history data structures array and runs an encrypted fetch query calling our isolated cloud directory. Front-facing script inspectors cannot look up keys because no key parameters ever touch client memory blocks.  
-      * **Serverless Node Decoupling:** The request maps into the localized, secure cloud sandbox (Firebase Cloud Functions Proxy running on Google Cloud). The module runs cross-origin request verifications against our specific domain (aitogethernow.com), parses the prompt body, and attaches the private environment string token managed by Google AI Studio.  
-      * **Model Inference Pipeline:** The runtime relays the fully compiled payload packet directly to the underlying model (Google Gemini Pro Inference Engine). The model computes contextually grounded, low-latency text payloads, passing a sanitized data stream block back through the proxy gate into your frontend client stack.
+  * **Client Isolation:** The user inputs an inquiries thread into the UI panel. The React layer packages the raw history data structures array and runs an encrypted fetch query calling our isolated cloud directory. Front-facing script inspectors cannot look up keys because no key parameters ever touch client memory blocks.  
+  * **Serverless Node Decoupling:** The request maps into the localized, secure cloud sandbox (Firebase Cloud Functions Proxy running on Google Cloud). The module runs cross-origin request verifications against our specific domain (aitogethernow.com), parses the prompt body, and attaches the private environment string token managed by Google AI Studio.  
+  * **Model Inference Pipeline:** The runtime relays the fully compiled payload packet directly to the underlying model (Google Gemini Pro Inference Engine). The model computes contextually grounded, low-latency text payloads, passing a sanitized data stream block back through the proxy gate into your frontend client stack.
 4. Audit Checklist for Network Requests:
       * **[ ]** Does the API request include a sensitive API_KEY or AUTH_TOKEN? If yes, move to server-side proxy.  
       * **[ ]** Is the API origin configured to allow your domain (aitogethernow.com) specifically, rather than a wildcard *?
       * **[ ]** Are all sensitive endpoints protected by HTTPS?
    
-## Pro-Tip for your Notes:   
+## 💡 Pro-Tip for your Notes:   
 Since you are using Firebase for hosting, utilize Firebase Cloud Functions as your "Secure Proxy". This allows you to write the backend code that handles the API keys, and your React front-end just calls the function. This effectively makes CORS errors much easier to manage because you control both ends of the connection.  
 
-👋 **Contributing**
+## 👋 Contributing
 
-We welcome contributions from structural AI developers, systems architects, and technical educators! To contribute:  
-1. Fork the repository to your own account.  
-2. Create a feature branch: git checkout -b feature/awesome-addition.  
-3. Commit your changes following our Phase 11 Environment & Security Audit Protocol: git commit -m "feat: add comprehensive course track".  
-4. Push your branch: git push origin feature/awesome-addition.  
-5. Open a Pull Request detailing your changes.  📄 License   
- 
-This project is licensed under the MIT License. You are free to use, modify, and distribute this software for personal and commercial projects. See LICENSE for details.  
+This repository houses my personal portfolio and operational blueprints, so it is not open to public contributions, modifications, or pull requests. You are welcome to review the architecture and code structure as a demonstration of my technical capabilities.
 
-💡 **Reminders for the Future**
+## 📄 License
 
-* **The Sizing System of Markdown Headings**
+Copyright (c) 2026 Yvonne Martinez. All rights reserved.
 
-    Always keep your outline files scannable and logically structured by allocating a single hashtag # exclusively for the document header title block, a secondary double hashtag ## for structural milestones/Phases/Sync points, and a triple hashtag ### for instructional prompts or local terminal tasks.  
+This repository and its contents are proprietary and the sole intellectual property of the author. It is published publicly strictly as a professional portfolio demonstration. 
 
-* **Handling the Local White-Screen Hot-Reload Crash**
+* **Permitted Use:** You may view the source code, architectural diagrams, and documentation for educational and evaluation purposes.
+* **Prohibited Use:** You may not copy, duplicate, modify, distribute, or use any portion of this code or infrastructure blueprint for personal, commercial, or portfolio deployment without explicit written permission from the author.
 
-    If the local preview server throws a gensync compilation error or crashes while editing, kill the process (Ctrl + C), clear the internal cache by running npm r -f node_modules/.vite, and reboot clean via npm run dev.  
+---
 
-* **Forcing Favicon Cache Updates**
+## ✒️ Author Disclaimer & Attribution
 
-    Browsers aggressively save tab icons. If an icon change doesn't show immediately, close all open tabs pointed to the domain, open a fresh Incognito panel, navigate to the site, and press Ctrl + F5 (or Cmd + Shift + R on Mac) to force-evict old images from memory.  
+This playbook, along with the underlying architecture, configuration blueprints, and documentation, was conceived, structured, and authored entirely by **Yvonne Martinez**. 
 
-* **Airtight Web App Scaling**
+While modern AI pair-programming methodologies ("Vibe Coding") were leveraged to accelerate implementation loops, refine structural alignment, and generate baseline boilerplate components, all core architecture decisions, security boundaries, proxy patterns, and operational standards were directed and verified by the author. 
 
-    When adding new subpage tools, always place the core information array inside the structured conditional loops of src/App.jsx and pass down navigation functions explicitly as layout view component props. This maintains your fast, 100% cloud-independent deployment cadence.  
+This repository stands as a true reflection of my engineering philosophy, technical execution capability, and dedication to secure enterprise AI operations. 
 
+**Connect with Me:**
+* **Email:** [yvonne.martinez@aitogethernow.com](mailto:yvonne.martinez@aitogethernow.com)
+* **Portfolio Hub:** [aitogethernow.com](https://aitogethernow.com)
