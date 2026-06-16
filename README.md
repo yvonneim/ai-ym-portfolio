@@ -64,10 +64,8 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Prerequisites \& Requirements](#prerequisites--requirements)
   - [Installation Instructions](#installation-instructions)
     - [Terminal Step 1: Clone the Repository](#terminal-step-1-clone-the-repository)
-    - [💡 Username Note:](#-username-note)
     - [Terminal Step 1a: reminder to change folder](#terminal-step-1a-reminder-to-change-folder)
     - [Terminal Step 1b: Open the Project Folder inside VS Code](#terminal-step-1b-open-the-project-folder-inside-vs-code)
-    - [Terminal Step 2: Install Package Dependencies](#terminal-step-2-install-package-dependencies)
     - [Terminal Step 3: Run the Local Development Environment](#terminal-step-3-run-the-local-development-environment)
   - [⚙️ Quick Reference Scripts (Usage Cheat Sheet)](#️-quick-reference-scripts-usage-cheat-sheet)
     - [Terminal Step B: Compile Static Optimization Builds](#terminal-step-b-compile-static-optimization-builds)
@@ -177,12 +175,13 @@ git clone [https://github.com/your-username/ai-ym-portfolio.git](https://github.
 
 ```
 
-### 💡 Username Note:
-* If you are a student or developer copying the official project, use yvonneim verbatim. If you have already forked this repository to your personal GitHub profile to save your own code modifications, substitute yvonneim with your personal GitHub username.
+  💡 Username Note:
+  * If you are a student or developer copying the official project, use yvonneim verbatim. If you have already forked this repository to your personal GitHub profile to save your own code modifications, substitute yvonneim with your personal GitHub username.
 
 
 ### Terminal Step 1a: reminder to change folder
-⚠️ CRITICAL STEP: You must physically step your terminal session inside the newly downloaded folder before running any package configurations!
+  ⚠️ CRITICAL STEP: 
+  * You must physically step your terminal session inside the newly downloaded folder before running any package configurations!
 * Bash
 ```bash
 cd ai-ym-portfolio
@@ -196,7 +195,8 @@ Via Terminal: Run the execution flag to open the directory path instantly inside
 ```bash
 code .
 
-* ** or Via VS Code GUI: Navigate to the top options taskbar, click File ➔ Open Folder..., select your local ai-ym-portfolio folder path from your system path tracker, and click Select Folder.
+```
+* Via VS Code GUI: Navigate to the top options taskbar, click File ➔ Open Folder..., select your local ai-ym-portfolio folder path from your system path tracker, and click Select Folder.
 
 ```
 ### Terminal Step 2: Install Package Dependencies
