@@ -200,7 +200,7 @@ Open your integrated VS Code terminal (`Ctrl + ``) and initialize your tracking 
     ```
 ### Terminal Step 3: Run the Local Development Environment
 Launch the real-time hot-reloading rendering environment engine to test live file updates:
-   * Bash
+  * Bash
     ```bash
     npm run dev
     ```
