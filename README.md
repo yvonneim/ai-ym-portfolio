@@ -64,11 +64,6 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Prerequisites \& Requirements](#prerequisites--requirements)
   - [Installation Instructions](#installation-instructions)
     - [Terminal Step 1: Clone the Repository](#terminal-step-1-clone-the-repository)
-    - [Terminal Step 1a: reminder to change folder](#terminal-step-1a-reminder-to-change-folder)
-    - [Terminal Step 1b: Open the Project Folder inside VS Code](#terminal-step-1b-open-the-project-folder-inside-vs-code)
-    - [Terminal Step 2: Install Package Dependencies](#terminal-step-2-install-package-dependencies)
-    - [Terminal Step 3: Run the Local Development Environment](#terminal-step-3-run-the-local-development-environment)
-  - [⚙️ Quick Reference Scripts (Usage Cheat Sheet)](#️-quick-reference-scripts-usage-cheat-sheet)
     - [Terminal Step B: Compile Static Optimization Builds](#terminal-step-b-compile-static-optimization-builds)
     - [Terminal Step C: Production Sandbox Simulation Preview](#terminal-step-c-production-sandbox-simulation-preview)
   - [Phase 1 — Project Initialization \& Folder Scaffolding](#phase-1--project-initialization--folder-scaffolding)
@@ -214,14 +209,16 @@ npm run dev
 
         * ** Local Port Mapping: http://localhost:5173 
         * ** Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
-  
-  ### Terminal Step B: Compile Static Optimization Builds
-      * ** Bash
-      ```bash
-      npm run build
+```
+### Terminal Step B: Compile Static Optimization Builds
+* ** Bash
+```bash
+npm run build
+
+``` 
 
       * ** Primary Use Case: Compiles, compresses, and minifies your code into strict production static files inside the local /dist folder destination. (Note: Run this command in a second terminal tab or after stopping your development server with Ctrl + C).
-
+  
   ### Terminal Step C: Production Sandbox Simulation Preview
     * ** Bash
     npm run preview
