@@ -204,19 +204,18 @@ Launch the real-time hot-reloading rendering environment engine to test live fil
     ```bash
     npm run dev
     ```
-
   #### 💡Terminal Execution Note: 
 
   * This terminal will stay "locked" as long as the server is running. To stop the server at any time, click into the terminal window and press Ctrl + C.
 
   #### ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
   * This section serves as a quick lookup matrix for future management. Do not execute these concurrently in your active installation terminal row.  Terminal Command: Active Development Sandbox
-    * Bash
-      ```bash
-      npm run dev
-      ```
-    * Local Port Mapping: http://localhost:5173 
-    * Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
+  * Bash
+    ```bash
+    npm run dev
+    ```
+  * Local Port Mapping: http://localhost:5173 
+  * Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
 
 ### Terminal Step B: Compile Static Optimization Builds
   * Bash
@@ -245,20 +244,24 @@ Launch the real-time hot-reloading rendering environment engine to test live fil
 Open a PowerShell tab inside your terminal window
 * Create folder matrices natively
 * PowerShell
-```
-mkdir src/components/layout, src/components/ui, src/components/sections, src/context, src/hooks, src/utils, src/assets -Force
-```
+  ```
+  mkdir src/components/layout, src/components/ui, src/components/sections, src/context, src/hooks, src/utils, src/assets -Force
+  ```
 
-  * ** Initialize tracking and scaffold boilerplate file markers
+* Initialize tracking and scaffold boilerplate file markers
   New-Item src/components/layout/Navbar.jsx, src/components/layout/Footer.jsx, src/context/ThemeContext.jsx -Force
 
-  ### Terminal Git Initialization steps:
-  * ** Stage baseline layout records
+### Terminal Git Initialization steps:
+* Stage baseline layout records
+* PowerShell
+  ```
   git init
+  ```
   git add .
+  ```
   git commit -m "Initial commit: Empty project architecture and workspace files"
-    
-      ----
+  ```
+----
       🛠️ The Git Commands Explained
       1. git init
         What it does: This initializes a brand-new, empty Git repository inside your current folder.
