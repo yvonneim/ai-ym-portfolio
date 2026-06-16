@@ -84,7 +84,7 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Repository Sync Checkpoint](#repository-sync-checkpoint-1)
   - [Phase 3 — Multi-View Architecture \& Dynamic Product Sub-Pages](#phase-3--multi-view-architecture--dynamic-product-sub-pages)
     - [Prompt 3.1 — Building Interactive Light-Themed Navigation and Content Views](#prompt-31--building-interactive-light-themed-navigation-and-content-views)
-    - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-2)
+    - [🤖 AI Composer System Prompt:](#-ai-composer-system-prompt-2)
   - [Phase 4 — Configuration Engine \& Dependency Setup](#phase-4--configuration-engine--dependency-setup)
     - [Prompt 4.1 — Dropping the Node \& Project Configuration Files](#prompt-41--dropping-the-node--project-configuration-files)
     - [🤖 AI Composer System Prompt](#-ai-composer-system-prompt-3)
@@ -351,8 +351,8 @@ Open a PowerShell tab inside your terminal window
 ### Prompt 3.1 — Building Interactive Light-Themed Navigation and Content Views
   * **Execution Location:** VS Code AI Composer panel (Ctrl + I) in Agent/Project mode via Gemini Code Assist.  
   * **Intent:** Constructs a single-page view structure utilizing dynamic rendering to clean up design components.  
-   
-  ### 🤖 AI Composer System Prompt
+
+  ### 🤖 AI Composer System Prompt:
   * **Plaintext**
     ```
       We want to fully scale our React application into a high-end multi-view layout using state management inside src/App.jsx. Ensure that all dark blues, heavy dark backgrounds, or unappealing dark styling blocks are completely removed from the entire application workspace. Every container, background, and text layer must reflect a clean, premium light-themed tech aesthetic (white backgrounds, soft gray transitions, and sharp charcoal text).
@@ -387,7 +387,6 @@ Open a PowerShell tab inside your terminal window
       ```
       git commit -m "Implement 4-section product grid routing, drop old placeholders, and build dynamic navbar tabs"
       ```
-
 ## Phase 4 — Configuration Engine & Dependency Setup
 
 ### Prompt 4.1 — Dropping the Node & Project Configuration Files   
