@@ -272,17 +272,17 @@ Open a PowerShell tab inside your terminal window
 1. git init
   What it does: This initializes a brand-new, empty Git repository inside your current folder.
 
-  Why you need it: It wakes Git up and tells it to start tracking this folder. Behind the scenes, it secretly creates a hidden folder named .git where it will log every single code change you make from this moment forward.
+  - Why you need it: It wakes Git up and tells it to start tracking this folder. Behind the scenes, it secretly creates a hidden folder named .git where it will log every single code change you make from this moment forward.
 
 2. git add .
   What it does: The dot (.) means "everything." This command takes all the new folders and placeholder files you just created and moves them to the Staging Area.
 
-  Why you need it: Think of the staging area like a physical shopping cart. Before you check out, you have to place the items inside the cart. git add . tells Git, "Hey, look at all these new folders I just made; I want you to prepare them for saving."
+  - Why you need it: Think of the staging area like a physical shopping cart. Before you check out, you have to place the items inside the cart. git add . tells Git, "Hey, look at all these new folders I just made; I want you to prepare them for saving."
 
 3. git commit -m "Initial commit..."
   What it does: This takes everything currently sitting in your staging area (your shopping cart) and permanently locks it into your project history as a Commit. The -m stands for "message," which allows you to attach a readable note explaining what changed.
 
-  Why you need it: This officially purchases the items in your cart. It creates a permanent snapshot of your blank project template. If you make a mistake in a later phase, you can use this snapshot to instantly restore your folders back to this exact clean state.
+  - Why you need it: This officially purchases the items in your cart. It creates a permanent snapshot of your blank project template. If you make a mistake in a later phase, you can use this snapshot to instantly restore your folders back to this exact clean state.
       
 --- 
 
