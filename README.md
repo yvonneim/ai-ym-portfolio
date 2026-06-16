@@ -68,8 +68,8 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
     - [Terminal Step 1b: Open the Project Folder inside VS Code](#terminal-step-1b-open-the-project-folder-inside-vs-code)
     - [Terminal Step 2: Install Package Dependencies](#terminal-step-2-install-package-dependencies)
     - [Terminal Step 3: Run the Local Development Environment](#terminal-step-3-run-the-local-development-environment)
-    - [💡Terminal Execution Note:](#terminal-execution-note)
-    - [⚙️ Quick Reference Scripts (Usage Cheat Sheet)](#️-quick-reference-scripts-usage-cheat-sheet)
+      - [💡Terminal Execution Note:](#terminal-execution-note)
+      - [⚙️ Quick Reference Scripts (Usage Cheat Sheet)](#️-quick-reference-scripts-usage-cheat-sheet)
     - [Terminal Step B: Compile Static Optimization Builds](#terminal-step-b-compile-static-optimization-builds)
     - [Terminal Step C: Production Sandbox Simulation Preview](#terminal-step-c-production-sandbox-simulation-preview)
   - [Phase 1 — Project Initialization \& Folder Scaffolding](#phase-1--project-initialization--folder-scaffolding)
@@ -184,13 +184,13 @@ Follow these steps to deploy and structure your local workspace sandbox:
     cd ai-ym-portfolio
     ```
   ### Terminal Step 1b: Open the Project Folder inside VS Code
-  **To exit:** the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view.<br>
+  * **To exit:** the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view.<br>
   **Via Terminal:** Run the execution flag to open the directory path instantly inside a fresh VS Code layout:
   * Bash
     ```bash
     code .
     ```
-  **Via VS Code GUI:** Navigate to the top options taskbar, click File ➔ Open Folder..., select your local ai-ym-portfolio folder path from your system path tracker, and click Select Folder.
+  * **Via VS Code GUI:** Navigate to the top options taskbar, click File ➔ Open Folder..., select your local ai-ym-portfolio folder path from your system path tracker, and click Select Folder.
 
 ### Terminal Step 2: Install Package Dependencies
 Open your integrated VS Code terminal (`Ctrl + ``) and initialize your tracking dependencies:
@@ -205,36 +205,33 @@ Launch the real-time hot-reloading rendering environment engine to test live fil
     npm run dev
     ```
 
-### 💡Terminal Execution Note: 
+  #### 💡Terminal Execution Note: 
 
-This terminal will stay "locked" as long as the server is running. To stop the server at any time, click into the terminal window and press Ctrl + C.
+  * This terminal will stay "locked" as long as the server is running. To stop the server at any time, click into the terminal window and press Ctrl + C.
 
-  ### ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
+  #### ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
   * This section serves as a quick lookup matrix for future management. Do not execute these concurrently in your active installation terminal row.  Terminal Command: Active Development Sandbox
-      * Bash
+    * Bash
       ```bash
       npm run dev
       ```
-      * Local Port Mapping: http://localhost:5173 
-      * Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
+    * Local Port Mapping: http://localhost:5173 
+    * Primary Use Case: Run this when you are actively typing code or styling components. It tracks code updates instantly and flashes errors to your window screen.
 
 ### Terminal Step B: Compile Static Optimization Builds
-* Bash
-```bash
-npm run build
-
-``` 
-      * ** Primary Use Case: Compiles, compresses, and minifies your code into strict production static files inside the local /dist folder destination. (Note: Run this command in a second terminal tab or after stopping your development server with Ctrl + C).
+  * Bash
+    ```bash
+    npm run build
+    ``` 
+  * Primary Use Case: Compiles, compresses, and minifies your code into strict production static files inside the local /dist folder destination. (Note: Run this command in a second terminal tab or after stopping your development server with Ctrl + C).
   
 ### Terminal Step C: Production Sandbox Simulation Preview
-* Bash
-```bash
-    npm run preview
-```
-
-* Local Port Mapping: http://localhost:4173
-
-* Primary Use Case: Spins up a lightweight host to view the final compiled results of your /dist folder , ensuring features behave accurately before deploying live onto cloud servers like Firebase
+  * Bash
+    ```bash
+        npm run preview
+    ```
+  * Local Port Mapping: http://localhost:4173
+  * Primary Use Case: Spins up a lightweight host to view the final compiled results of your /dist folder , ensuring features behave accurately before deploying live onto cloud servers like Firebase
   
 ## Phase 1 — Project Initialization & Folder Scaffolding   
   
