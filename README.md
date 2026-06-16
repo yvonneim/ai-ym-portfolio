@@ -175,16 +175,16 @@ Follow these steps to deploy and structure your local workspace sandbox:
     ```bash
     git clone [https://github.com/your-username/ai-ym-portfolio.git](https://github.com/your-username/ai-ym-portfolio.git)
     ```
-  **💡 Username Note:** If you copying the official project, use yvonneim verbatim. If you have already forked this repository to your personal GitHub profile to save your own code modifications, substitute yvonneim with your personal GitHub username.
+  * **💡 Username Note:** If you copying the official project, use yvonneim verbatim. If you have already forked this repository to your personal GitHub profile to save your own code modifications, substitute yvonneim with your personal GitHub username.
 
   ### Terminal Step 1a: reminder to change folder
-  **⚠️ CRITICAL STEP:** You must physically step your terminal session inside the newly downloaded folder before running any package configurations!
+  * **⚠️ CRITICAL STEP:** You must physically step your terminal session inside the newly downloaded folder before running any package configurations!
   * Bash
     ```bash
     cd ai-ym-portfolio
     ```
   ### Terminal Step 1b: Open the Project Folder inside VS Code
-  **To exit:** the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view.
+  **To exit:** the "No Folder Opened" blank editor state, load your newly cloned directory into your workspace graphical view.<br>
   **Via Terminal:** Run the execution flag to open the directory path instantly inside a fresh VS Code layout:
   * Bash
     ```bash
