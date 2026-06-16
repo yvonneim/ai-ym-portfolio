@@ -161,11 +161,11 @@ Instead of the user's browser talking directly to third-party endpoints, it comm
 ### Prerequisites & Requirements
 Ensure your system environment matches these target parameters before initializing setup:  
 
-* ** Operating System: Windows 10/11 (PowerShell), macOS (Zsh Terminal), or Linux.  
-* ** Node.js Environment: Version v18.0.0 or higher (v20.x LTS strongly recommended).  
-* ** Package Manager: npm (packaged with Node.js) or yarn.  
-* ** Git Setup: Configured CLI with target remote authorizations.  
-* ** Hosting Command Tools: Firebase CLI (npm install -g firebase-tools).  
+* * * Operating System: Windows 10/11 (PowerShell), macOS (Zsh Terminal), or Linux.  
+* * * Node.js Environment: Version v18.0.0 or higher (v20.x LTS strongly recommended).  
+* * * Package Manager: npm (packaged with Node.js) or yarn.  
+* * * Git Setup: Configured CLI with target remote authorizations.  
+* * * Hosting Command Tools: Firebase CLI (npm install -g firebase-tools).  
 
 ## Installation Instructions
 Follow these steps to deploy and structure your local workspace sandbox:  
@@ -178,7 +178,7 @@ git clone [https://github.com/your-username/ai-ym-portfolio.git](https://github.
 ```
 
 ### 💡 Username Note:
-* ** If you are a student or developer copying the official project, use yvonneim verbatim. If you have already forked this repository to your personal GitHub profile to save your own code modifications, substitute yvonneim with your personal GitHub username.
+* If you are a student or developer copying the official project, use yvonneim verbatim. If you have already forked this repository to your personal GitHub profile to save your own code modifications, substitute yvonneim with your personal GitHub username.
 
 
 ### Terminal Step 1a: reminder to change folder
@@ -215,7 +215,8 @@ npm run dev
 
 ```
 
-###💡 Terminal Execution Note: 
+###💡Terminal Execution Note: 
+
 This terminal will stay "locked" as long as the server is running. To stop the server at any time, click into the terminal window and press Ctrl + C.
 
 ## ⚙️ Quick Reference Scripts (Usage Cheat Sheet)
